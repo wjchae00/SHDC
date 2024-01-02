@@ -1,0 +1,118 @@
+<!DOCTYPE html SYSTEM "about:legacy-compat">
+<html lang="en-US" data-colors-preset="contrast" data-primary-color="#307FFF">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta charset="UTF-8">
+    <meta name="robots" content="noindex">
+    <meta name="built-on" content="2023-12-11T09:19:28.9895826">
+    <meta name="build-number" content="${buildNumber}">
+    <title>Disassembly | VIZWide3D Document</title>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-563TQVGF4C"></script>
+<script>window.dataLayer = window.dataLayer || []; function gtag() { dataLayer.push(arguments); } gtag('js', new Date()); gtag('config', 'G-563TQVGF4C');</script>
+    <script id="virtual-toc-data"
+        type="application/json">[{"id":"addgroup","level":0,"title":"AddGroup","anchor":"#addgroup"},{"id":"cleargroup","level":0,"title":"ClearGroup","anchor":"#cleargroup"},{"id":"disassembleall","level":0,"title":"DisassembleAll","anchor":"#disassembleall"},{"id":"disassemblegroup","level":0,"title":"DisassembleGroup","anchor":"#disassemblegroup"},{"id":"disassembleselect","level":0,"title":"DisassembleSelect","anchor":"#disassembleselect"},{"id":"restoreall","level":0,"title":"RestoreAll","anchor":"#restoreall"}]</script>
+    <script id="topic-shortcuts" type="application/json"></script>
+    <link href="https://resources.jetbrains.com/writerside/apidoc/6.1.5-b176/app.css" rel="stylesheet">
+    <link rel="apple-touch-icon" sizes="180x180" href="https://jetbrains.com/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="https://jetbrains.com/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="https://jetbrains.com/favicon-16x16.png">
+    <link rel="manifest" href="https://jetbrains.com/site.webmanifest">
+    <link rel="mask-icon" href="https://jetbrains.com/safari-pinned-tab.svg" color="#000000">
+    <meta name="msapplication-TileColor" content="#000000" />
+    <meta name="msapplication-TileImage"
+        content="https://resources.jetbrains.com/storage/ui/favicons/mstile-144x144.png" />
+    <meta name="msapplication-square70x70logo"
+        content="https://resources.jetbrains.com/storage/ui/favicons/mstile-70x70.png" />
+    <meta name="msapplication-square150x150logo"
+        content="https://resources.jetbrains.com/storage/ui/favicons/mstile-150x150.png" />
+    <meta name="msapplication-wide310x150logo"
+        content="https://resources.jetbrains.com/storage/ui/favicons/mstile-310x150.png" />
+    <meta name="msapplication-square310x310logo"
+        content="https://resources.jetbrains.com/storage/ui/favicons/mstile-310x310.png" />
+    <meta name="image" content=""><!-- Open Graph -->
+    <meta property="og:title" content="Disassembly | VIZWide3D Document" />
+    <meta property="og:description" content="" />
+    <meta property="og:image" content="" />
+    <meta property="og:site_name" content="VIZWide3D Document Help" />
+    <meta property="og:type" content="website" />
+    <meta property="og:locale" content="en_US" />
+    <meta property="og:url" content="disassembly.html" /><!-- End Open Graph --><!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:site" content="">
+    <meta name="twitter:title" content="Disassembly | VIZWide3D Document">
+    <meta name="twitter:description" content="">
+    <meta name="twitter:creator" content="">
+    <meta name="twitter:image:src" content=""><!-- End Twitter Card --><!-- Schema.org WebPage -->
+    <script
+        type="application/ld+json"> { "@context": "http://schema.org", "@type": "WebPage", "@id": "disassembly.html#webpage", "url": "disassembly.html", "name": "Disassembly | VIZWide3D Document", "description": "", "image": "", "inLanguage":"en-US" }</script>
+    <!-- End Schema.org --><!-- Schema.org WebSite -->
+    <script
+        type="application/ld+json"> { "@type": "WebSite", "@id": "/#website", "url": "/", "name": "VIZWide3D Document Help" }</script>
+    <!-- End Schema.org --> <!-- Mermaid light/dark themes -->
+    <link rel="stylesheet" type="text/css" href="mermaid.css">
+</head>
+
+<body data-id="Disassembly" data-main-title="Disassembly"
+    data-article-props="{&quot;seeAlsoStyle&quot;:&quot;links&quot;}" data-template="article"
+    data-breadcrumbs="VIZWide3D-API-DOCUMENT.md|VIZWide3D">
+    <div class="wrapper">
+        <main class="panel _main">
+            <header class="panel__header">
+                <div class="container">
+                    <h3>VIZWide3D Document Help</h3>
+                    <div class="panel-trigger"></div>
+                </div>
+            </header>
+            <section class="panel__content">
+                <div class="container">
+                    <article class="article" data-shortcut-switcher="inactive">
+                        <h1 data-toc="Disassembly" id="Disassembly.md">Disassembly</h1>
+                        <section class="chapter">
+                            <h2 id="addgroup" data-toc="addgroup">AddGroup</h2>
+                            <section class="procedure-steps">
+                                <div class="collapse">
+                                    <div class="collapse__title">
+                                        <h3 id="71a8d201_118" data-toc="71a8d201_118">분해 그룹 지정</h3>
+                                    </div>
+                                    <div class="collapse__content">
+                                        <aside class="prompt" data-type="note" data-title="" id="71a8d201_119">
+                                            <p>AddGroup(groupId, ids)</p>
+                                        </aside>
+                                        <p id="71a8d201_120"><span class="control" id="71a8d201_121">Example</span></p>
+                                        <div class="code-block" data-lang="javascript">
+let nodes = vizcore.Object3D.Find.GetNodeByName(
+    'PIPE101'   // Keyword
+    , true      // Full Match
+);
+
+let ids1 = vizcore.Object3D.GetBodyIdsByNode(nodes);
+
+let ids2 = [3];           //Object ID Array
+//분해 그룹 지정
+vizcore.Disassembly.AddGroup(&quot;group1&quot;, ids1);
+vizcore.Disassembly.AddGroup(&quot;group2&quot;, ids2);
+</div><p id="71a8d201_123"><span class="control" id="71a8d201_124">Parameters</span></p><div class="table-wrapper" ><table class="wide" id="71a8d201_125"  ><thead><tr class="ijRowHead" id="71a8d201_126"><th id="71a8d201_127"><p>Name</p></th><th id="71a8d201_128"><p>Type</p></th><th id="71a8d201_129"><p>Description</p></th></tr></thead><tbody ><tr id="71a8d201_130"><td id="71a8d201_131"><p>groupId</p></td><td id="71a8d201_132"><p>String</p></td><td id="71a8d201_133"><p>Group ID</p></td></tr><tr id="71a8d201_134"><td id="71a8d201_135"><p>ids</p></td><td id="71a8d201_136"><p><code class="code" id="71a8d201_137">Array&lt;Number&gt;</code></p></td><td id="71a8d201_138"><p>Object ID List</p></td></tr></tbody ></table ></div><ol class="list _decimal"></ol></div ></div></section></section><section class="chapter"><h2 id="cleargroup" data-toc="cleargroup">ClearGroup</h2><section class="procedure-steps"   > <div class="collapse" ><div class="collapse__title"  ><h3 id="71a8d201_139" data-toc="71a8d201_139">분해 모든 그룹 제거</h3 ></div><div class="collapse__content" ><aside class="prompt" data-type="note" data-title="" id="71a8d201_140"><p>ClearGroup()</p></aside><p id="71a8d201_141"><span class="control" id="71a8d201_142">Example</span></p><div class="code-block" data-lang="javascript"         >
+//분해 모든 그룹 제거
+vizcore.Disassembly.ClearGroup();
+</div><ol class="list _decimal"></ol></div ></div></section></section><section class="chapter"><h2 id="disassembleall" data-toc="disassembleall">DisassembleAll</h2><section class="procedure-steps"   > <div class="collapse" ><div class="collapse__title"  ><h3 id="71a8d201_144" data-toc="71a8d201_144">전체 개체 분해</h3 ></div><div class="collapse__content" ><aside class="prompt" data-type="note" data-title="" id="71a8d201_145"><p>DisassembleAll(rate)</p></aside><p id="71a8d201_146"><span class="control" id="71a8d201_147">Example</span></p><div class="code-block" data-lang="javascript"         >
+//전체 개체 분해
+vizcore.Disassembly.DisassembleAll(1);
+</div><p id="71a8d201_149"><span class="control" id="71a8d201_150">Parameters</span></p><div class="table-wrapper" ><table class="wide" id="71a8d201_151"  ><thead><tr class="ijRowHead" id="71a8d201_152"><th id="71a8d201_153"><p>Name</p></th><th id="71a8d201_154"><p>Type</p></th><th id="71a8d201_155"><p>Description</p></th></tr></thead><tbody ><tr id="71a8d201_156"><td id="71a8d201_157"><p>rate</p></td><td id="71a8d201_158"><p>Number</p></td><td id="71a8d201_159"><p>거리 비율 (기본값 1.0)</p></td></tr></tbody ></table ></div><ol class="list _decimal"></ol></div ></div></section></section><section class="chapter"><h2 id="disassemblegroup" data-toc="disassemblegroup">DisassembleGroup</h2><section class="procedure-steps"   > <div class="collapse" ><div class="collapse__title"  ><h3 id="71a8d201_160" data-toc="71a8d201_160">지정된 그룹으로 분해</h3 ></div><div class="collapse__content" ><aside class="prompt" data-type="note" data-title="" id="71a8d201_161"><p>DisassembleGroup(rate)</p></aside><p id="71a8d201_162"><span class="control" id="71a8d201_163">Example</span></p><div class="code-block" data-lang="javascript"         >
+let ids1 = [9];           //Object ID Array  
+let ids2 = [3];           //Object ID Array
+
+//분해 그룹 지정
+vizcore.Disassembly.AddGroup(&quot;group1&quot;, ids1);
+vizcore.Disassembly.AddGroup(&quot;group2&quot;, ids2);
+
+//지정된 그룹으로 분해
+vizcore.Disassembly.DisassembleGroup();
+</div><p id="71a8d201_165"><span class="control" id="71a8d201_166">Parameters</span></p><div class="table-wrapper" ><table class="wide" id="71a8d201_167"  ><thead><tr class="ijRowHead" id="71a8d201_168"><th id="71a8d201_169"><p>Name</p></th><th id="71a8d201_170"><p>Type</p></th><th id="71a8d201_171"><p>Description</p></th></tr></thead><tbody ><tr id="71a8d201_172"><td id="71a8d201_173"><p>rate</p></td><td id="71a8d201_174"><p>Number</p></td><td id="71a8d201_175"><p>거리 비율 (기본값 1.0)</p></td></tr></tbody ></table ></div><ol class="list _decimal"></ol></div ></div></section></section><section class="chapter"><h2 id="disassembleselect" data-toc="disassembleselect">DisassembleSelect</h2><section class="procedure-steps"   > <div class="collapse" ><div class="collapse__title"  ><h3 id="71a8d201_176" data-toc="71a8d201_176">선택된 개체 분해</h3 ></div><div class="collapse__content" ><aside class="prompt" data-type="note" data-title="" id="71a8d201_177"><p>DisassembleSelect(rate)</p></aside><p id="71a8d201_178"><span class="control" id="71a8d201_179">Example</span></p><div class="code-block" data-lang="javascript"         >
+//선택된 개체 분해
+vizcore.Disassembly.DisassembleSelect(1);
+</div><p id="71a8d201_181"><span class="control" id="71a8d201_182">Parameters</span></p><div class="table-wrapper" ><table class="wide" id="71a8d201_183"  ><thead><tr class="ijRowHead" id="71a8d201_184"><th id="71a8d201_185"><p>Name</p></th><th id="71a8d201_186"><p>Type</p></th><th id="71a8d201_187"><p>Description</p></th></tr></thead><tbody ><tr id="71a8d201_188"><td id="71a8d201_189"><p>rate</p></td><td id="71a8d201_190"><p>Number</p></td><td id="71a8d201_191"><p>거리 비율 (기본값 1.0)</p></td></tr></tbody ></table ></div><ol class="list _decimal"></ol></div ></div></section></section><section class="chapter"><h2 id="restoreall" data-toc="restoreall">RestoreAll</h2><section class="procedure-steps"   > <div class="collapse" ><div class="collapse__title"  ><h3 id="71a8d201_192" data-toc="71a8d201_192">위치 초기화</h3 ></div><div class="collapse__content" ><aside class="prompt" data-type="note" data-title="" id="71a8d201_193"><p>RestoreAll()</p></aside><p id="71a8d201_194"><span class="control" id="71a8d201_195">Example</span></p><div class="code-block" data-lang="javascript"         >
+//위치 초기화
+vizcore.Disassembly.RestoreAll();
+</div><ol class="list _decimal"></ol></div ></div></section></section><div class="last-modified"> Last modified: 11 12월 2023</div><div data-feedback-placeholder="true"></div><div class="navigation-links _bottom">  <a class="navigation-links__prev" href="contextmenu.html">ContextMenu</a>   <a class="navigation-links__next" href="frame.html">Frame</a>  </div></article><div id="disqus_thread"></div></div></section></main></div>  <script src="https://resources.jetbrains.com/writerside/apidoc/6.1.5-b176/app.js"></script></body></html>

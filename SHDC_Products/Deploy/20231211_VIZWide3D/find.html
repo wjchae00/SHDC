@@ -1,0 +1,112 @@
+<!DOCTYPE html SYSTEM "about:legacy-compat">
+<html lang="en-US" data-colors-preset="contrast" data-primary-color="#307FFF">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta charset="UTF-8">
+    <meta name="robots" content="noindex">
+    <meta name="built-on" content="2023-12-11T09:19:29.1779868">
+    <meta name="build-number" content="${buildNumber}">
+    <title>Find | VIZWide3D Document</title>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-563TQVGF4C"></script>
+<script>window.dataLayer = window.dataLayer || []; function gtag() { dataLayer.push(arguments); } gtag('js', new Date()); gtag('config', 'G-563TQVGF4C');</script>
+    <script id="virtual-toc-data"
+        type="application/json">[{"id":"getnodebyname","level":0,"title":"GetNodeByName","anchor":"#getnodebyname"},{"id":"getnodebynames","level":0,"title":"GetNodeByNames","anchor":"#getnodebynames"},{"id":"getnodemapbynames","level":0,"title":"GetNodeMapByNames","anchor":"#getnodemapbynames"},{"id":"quicksearch","level":0,"title":"QuickSearch","anchor":"#quicksearch"}]</script>
+    <script id="topic-shortcuts" type="application/json"></script>
+    <link href="https://resources.jetbrains.com/writerside/apidoc/6.1.5-b176/app.css" rel="stylesheet">
+    <link rel="apple-touch-icon" sizes="180x180" href="https://jetbrains.com/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="https://jetbrains.com/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="https://jetbrains.com/favicon-16x16.png">
+    <link rel="manifest" href="https://jetbrains.com/site.webmanifest">
+    <link rel="mask-icon" href="https://jetbrains.com/safari-pinned-tab.svg" color="#000000">
+    <meta name="msapplication-TileColor" content="#000000" />
+    <meta name="msapplication-TileImage"
+        content="https://resources.jetbrains.com/storage/ui/favicons/mstile-144x144.png" />
+    <meta name="msapplication-square70x70logo"
+        content="https://resources.jetbrains.com/storage/ui/favicons/mstile-70x70.png" />
+    <meta name="msapplication-square150x150logo"
+        content="https://resources.jetbrains.com/storage/ui/favicons/mstile-150x150.png" />
+    <meta name="msapplication-wide310x150logo"
+        content="https://resources.jetbrains.com/storage/ui/favicons/mstile-310x150.png" />
+    <meta name="msapplication-square310x310logo"
+        content="https://resources.jetbrains.com/storage/ui/favicons/mstile-310x310.png" />
+    <meta name="image" content=""><!-- Open Graph -->
+    <meta property="og:title" content="Find | VIZWide3D Document" />
+    <meta property="og:description" content="" />
+    <meta property="og:image" content="" />
+    <meta property="og:site_name" content="VIZWide3D Document Help" />
+    <meta property="og:type" content="website" />
+    <meta property="og:locale" content="en_US" />
+    <meta property="og:url" content="find.html" /><!-- End Open Graph --><!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:site" content="">
+    <meta name="twitter:title" content="Find | VIZWide3D Document">
+    <meta name="twitter:description" content="">
+    <meta name="twitter:creator" content="">
+    <meta name="twitter:image:src" content=""><!-- End Twitter Card --><!-- Schema.org WebPage -->
+    <script
+        type="application/ld+json"> { "@context": "http://schema.org", "@type": "WebPage", "@id": "find.html#webpage", "url": "find.html", "name": "Find | VIZWide3D Document", "description": "", "image": "", "inLanguage":"en-US" }</script>
+    <!-- End Schema.org --><!-- Schema.org WebSite -->
+    <script
+        type="application/ld+json"> { "@type": "WebSite", "@id": "/#website", "url": "/", "name": "VIZWide3D Document Help" }</script>
+    <!-- End Schema.org --> <!-- Mermaid light/dark themes -->
+    <link rel="stylesheet" type="text/css" href="mermaid.css">
+</head>
+
+<body data-id="Find" data-main-title="Find" data-article-props="{&quot;seeAlsoStyle&quot;:&quot;links&quot;}"
+    data-template="article" data-breadcrumbs="VIZWide3D-API-DOCUMENT.md|VIZWide3D///Object3D.md|Object3D">
+    <div class="wrapper">
+        <main class="panel _main">
+            <header class="panel__header">
+                <div class="container">
+                    <h3>VIZWide3D Document Help</h3>
+                    <div class="panel-trigger"></div>
+                </div>
+            </header>
+            <section class="panel__content">
+                <div class="container">
+                    <article class="article" data-shortcut-switcher="inactive">
+                        <h1 data-toc="Find" id="Find.md">Find</h1>
+                        <section class="chapter">
+                            <h2 id="getnodebyname" data-toc="getnodebyname">GetNodeByName</h2>
+                            <section class="procedure-steps">
+                                <div class="collapse">
+                                    <div class="collapse__title">
+                                        <h3 id="4119ba83_39" data-toc="4119ba83_39">노드 이름에 해당하는 노드 반환</h3>
+                                    </div>
+                                    <div class="collapse__content">
+                                        <aside class="prompt" data-type="note" data-title="" id="4119ba83_40">
+                                            <p>GetNodeByName(keyword, fullMatch) &rarr; {Array}</p>
+                                        </aside>
+                                        <p id="4119ba83_41"><span class="control" id="4119ba83_42">Example</span></p>
+                                        <div class="code-block" data-lang="javascript">
+//노드 이름에 해당하는 노드 반환
+let nodes = vizcore.Object3D.Find.GetNodeByName(
+    'PIPE101'   // Keyword
+    , true      // Full Match
+);
+//노드 색상 변경
+vizcore.Object3D.Color.SetColorByNode(nodes, new VIZCore.Color(255, 125, 0, 255));
+</div><p id="4119ba83_44"><span class="control" id="4119ba83_45">Parameters</span></p><div class="table-wrapper" ><table class="wide" id="4119ba83_46"  ><thead><tr class="ijRowHead" id="4119ba83_47"><th id="4119ba83_48"><p>Name</p></th><th id="4119ba83_49"><p>Type</p></th><th id="4119ba83_50"><p>Description</p></th></tr></thead><tbody ><tr id="4119ba83_51"><td id="4119ba83_52"><p>keyword</p></td><td id="4119ba83_53"><p>String</p></td><td id="4119ba83_54"><p>검색어</p></td></tr><tr id="4119ba83_55"><td id="4119ba83_56"><p>fullMatch</p></td><td id="4119ba83_57"><p>Boolean</p></td><td id="4119ba83_58"><p>검색어 일치 여부 - True(일치), False(포함)</p></td></tr></tbody ></table ></div><p id="4119ba83_59"><span class="control" id="4119ba83_60">Returns</span></p><div class="table-wrapper" ><table class="wide" id="4119ba83_61"  ><thead><tr class="ijRowHead" id="4119ba83_62"><th id="4119ba83_63"><p>Type</p></th><th id="4119ba83_64"><p>Description</p></th></tr></thead><tbody ><tr id="4119ba83_65"><td id="4119ba83_66"><p>Array</p></td><td id="4119ba83_67"><p>Node Array</p></td></tr></tbody ></table ></div><ol class="list _decimal"></ol></div ></div></section></section><section class="chapter"><h2 id="getnodebynames" data-toc="getnodebynames">GetNodeByNames</h2><section class="procedure-steps"   > <div class="collapse" ><div class="collapse__title"  ><h3 id="4119ba83_68" data-toc="4119ba83_68">노드 이름에 해당하는 노드 반환</h3 ></div><div class="collapse__content" ><aside class="prompt" data-type="note" data-title="" id="4119ba83_69"><p>GetNodeByNames(keyword, fullMatch) &rarr; {Array}</p></aside><p id="4119ba83_70"><span class="control" id="4119ba83_71">Example</span></p><div class="code-block" data-lang="javascript"         >
+//노드 이름에 해당하는 노드 반환
+let nodes = vizcore.Object3D.Find.GetNodeByNames(     //Array
+    ['PIPE101','PIPE101']   // Keyword
+    , true      // Full Match
+);
+//노드 색상 변경
+vizcore.Object3D.Color.SetColorByNode(nodes, new VIZCore.Color(255, 125, 0, 255));
+</div><p id="4119ba83_73"><span class="control" id="4119ba83_74">Parameters</span></p><div class="table-wrapper" ><table class="wide" id="4119ba83_75"  ><thead><tr class="ijRowHead" id="4119ba83_76"><th id="4119ba83_77"><p>Name</p></th><th id="4119ba83_78"><p>Type</p></th><th id="4119ba83_79"><p>Description</p></th></tr></thead><tbody ><tr id="4119ba83_80"><td id="4119ba83_81"><p>keyword</p></td><td id="4119ba83_82"><p>Array</p></td><td id="4119ba83_83"><p>검색어</p></td></tr><tr id="4119ba83_84"><td id="4119ba83_85"><p>fullMatch</p></td><td id="4119ba83_86"><p>Boolean</p></td><td id="4119ba83_87"><p>검색어 일치 여부 - True(일치), False(포함)</p></td></tr></tbody ></table ></div><p id="4119ba83_88"><span class="control" id="4119ba83_89">Returns</span></p><div class="table-wrapper" ><table class="wide" id="4119ba83_90"  ><thead><tr class="ijRowHead" id="4119ba83_91"><th id="4119ba83_92"><p>Type</p></th><th id="4119ba83_93"><p>Description</p></th></tr></thead><tbody ><tr id="4119ba83_94"><td id="4119ba83_95"><p>Array</p></td><td id="4119ba83_96"><p>Node Array</p></td></tr></tbody ></table ></div><ol class="list _decimal"></ol></div ></div></section></section><section class="chapter"><h2 id="getnodemapbynames" data-toc="getnodemapbynames">GetNodeMapByNames</h2><section class="procedure-steps"   > <div class="collapse" ><div class="collapse__title"  ><h3 id="4119ba83_97" data-toc="4119ba83_97">노드 이름에 해당하는 노드맵 반환</h3 ></div><div class="collapse__content" ><aside class="prompt" data-type="note" data-title="" id="4119ba83_98"><p>GetNodeMapByNames(keyword, fullMatch, importChild, importChild) &rarr; {Map}</p></aside><p id="4119ba83_99"><span class="control" id="4119ba83_100">Example</span></p><div class="code-block" data-lang="javascript"         >
+//노드 이름에 해당하는 노드맵 반환
+let nodes = vizcore.Object3D.Find.GetNodeMapByNames(
+    ['PIPE101'], true, true, true 
+);
+</div><p id="4119ba83_102"><span class="control" id="4119ba83_103">Parameters</span></p><div class="table-wrapper" ><table class="wide" id="4119ba83_104"  ><thead><tr class="ijRowHead" id="4119ba83_105"><th id="4119ba83_106"><p>Name</p></th><th id="4119ba83_107"><p>Type</p></th><th id="4119ba83_108"><p>Description</p></th></tr></thead><tbody ><tr id="4119ba83_109"><td id="4119ba83_110"><p>keyword</p></td><td id="4119ba83_111"><p>Array</p></td><td id="4119ba83_112"><p>검색어</p></td></tr><tr id="4119ba83_113"><td id="4119ba83_114"><p>fullMatch</p></td><td id="4119ba83_115"><p>Boolean</p></td><td id="4119ba83_116"><p>검색어 일치 여부 - True(일치), False(포함)</p></td></tr><tr id="4119ba83_117"><td id="4119ba83_118"><p>importChild</p></td><td id="4119ba83_119"><p>Boolean</p></td><td id="4119ba83_120"><p>하위 노드 포함 여부 - True(포함), False(포함하지 않음)</p></td></tr><tr id="4119ba83_121"><td id="4119ba83_122"><p>importChild</p></td><td id="4119ba83_123"><p>Boolean</p></td><td id="4119ba83_124"><p>검색 대상이 아닌 노드 포함 여부 - True(포함), False(포함하지 않음)</p></td></tr></tbody ></table ></div><p id="4119ba83_125"><span class="control" id="4119ba83_126">Returns</span></p><div class="table-wrapper" ><table class="wide" id="4119ba83_127"  ><thead><tr class="ijRowHead" id="4119ba83_128"><th id="4119ba83_129"><p>Type</p></th><th id="4119ba83_130"><p>Description</p></th></tr></thead><tbody ><tr id="4119ba83_131"><td id="4119ba83_132"><p>Map</p></td><td id="4119ba83_133"><p>Node map</p></td></tr></tbody ></table ></div><ol class="list _decimal"></ol></div ></div></section></section><section class="chapter"><h2 id="quicksearch" data-toc="quicksearch">QuickSearch</h2><section class="procedure-steps"   > <div class="collapse" ><div class="collapse__title"  ><h3 id="4119ba83_134" data-toc="4119ba83_134">노드 이름에 해당하는 노드 반환</h3 ></div><div class="collapse__content" ><aside class="prompt" data-type="note" data-title="" id="4119ba83_135"><p>QuickSearch(keyword, fullMatch) &rarr; {Array}</p></aside><p id="4119ba83_136"><span class="control" id="4119ba83_137">Example</span></p><div class="code-block" data-lang="javascript"         >
+//노드 이름에 해당하는 노드 반환
+let nodes = vizcore.Object3D.Find.QuickSearch(
+    'PIPE101'   // Keyword
+    , true      // Full Match
+);
+//노드 색상 변경
+vizcore.Object3D.Color.SetColorByNode(nodes, new VIZCore.Color(255, 125, 0, 255));
+</div><p id="4119ba83_139"><span class="control" id="4119ba83_140">Parameters</span></p><div class="table-wrapper" ><table class="wide" id="4119ba83_141"  ><thead><tr class="ijRowHead" id="4119ba83_142"><th id="4119ba83_143"><p>Name</p></th><th id="4119ba83_144"><p>Type</p></th><th id="4119ba83_145"><p>Description</p></th></tr></thead><tbody ><tr id="4119ba83_146"><td id="4119ba83_147"><p>keyword</p></td><td id="4119ba83_148"><p>String</p></td><td id="4119ba83_149"><p>검색어</p></td></tr><tr id="4119ba83_150"><td id="4119ba83_151"><p>fullMatch</p></td><td id="4119ba83_152"><p>Boolean</p></td><td id="4119ba83_153"><p>검색어 일치 여부 - True(일치), False(포함)</p></td></tr></tbody ></table ></div><p id="4119ba83_154"><span class="control" id="4119ba83_155">Returns</span></p><div class="table-wrapper" ><table class="wide" id="4119ba83_156"  ><thead><tr class="ijRowHead" id="4119ba83_157"><th id="4119ba83_158"><p>Type</p></th><th id="4119ba83_159"><p>Description</p></th></tr></thead><tbody ><tr id="4119ba83_160"><td id="4119ba83_161"><p>Array</p></td><td id="4119ba83_162"><p>Node Array</p></td></tr></tbody ></table ></div><ol class="list _decimal"></ol></div ></div></section></section><div class="last-modified"> Last modified: 11 12월 2023</div><div data-feedback-placeholder="true"></div><div class="navigation-links _bottom">  <a class="navigation-links__prev" href="customedge.html">CustomEdge</a>   <a class="navigation-links__next" href="geometryproperty.html">GeometryProperty</a>  </div></article><div id="disqus_thread"></div></div></section></main></div>  <script src="https://resources.jetbrains.com/writerside/apidoc/6.1.5-b176/app.js"></script></body></html>

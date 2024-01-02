@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<buildprofiles xsi:noNamespaceSchemaLocation="https://resources.jetbrains.com/writerside/1.0/build-profiles.xsd"
+               xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+
+    <variables>
+        <analytics-head-script-file>
+            gtag.js
+        </analytics-head-script-file>
+        <header-logo>SHDClogo.png</header-logo>
+        <product-web-url>https://www.softhills.net/SHDC</product-web-url>
+        <custom-favicons>SHDClogo.png</custom-favicons>
+<!--                <color-preset>Soft</color-preset>-->
+<!--                <primary-color>dracula</primary-color>-->
+    </variables>
+    <build-profile instance="shdc">
+
+    </build-profile>
+    <footer>
+        <copyright>SOFTHILLS Co.,Ltd. All right reserved.</copyright>
+        <link href="mailto:tech@softhills.net">Contact us</link>
+        <social type="youtube" href="https://youtube.com/@softhillsco.ltd.8464?si=TnFCRt2nRnT3foEl"></social>
+    </footer>
+</buildprofiles>

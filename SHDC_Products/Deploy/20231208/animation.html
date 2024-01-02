@@ -1,0 +1,1069 @@
+<!DOCTYPE html SYSTEM "about:legacy-compat">
+<html lang="en-US" data-colors-preset="contrast" data-primary-color="#307FFF">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta charset="UTF-8">
+    <meta name="robots" content="noindex">
+    <meta name="built-on" content="2023-12-08T10:08:52.3681896">
+    <meta name="build-number" content="${buildNumber}">
+    <title>Animation | Softhills Documentation Center</title>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-563TQVGF4C"></script>
+    <script>window.dataLayer = window.dataLayer || []; function gtag() { dataLayer.push(arguments); } gtag('js', new Date()); gtag('config', 'G-563TQVGF4C');</script>
+    <script id="virtual-toc-data"
+        type="application/json">[{"id":"addanimationitem","level":0,"title":"AddAnimationItem","anchor":"#addanimationitem"},{"id":"addnoteanimation","level":0,"title":"AddNoteAnimation","anchor":"#addnoteanimation"},{"id":"addnoteanimation2dtemplate","level":0,"title":"AddNoteAnimation2DTemplate","anchor":"#addnoteanimation2dtemplate"},{"id":"clear","level":0,"title":"Clear","anchor":"#clear"},{"id":"clearnoteanimation","level":0,"title":"ClearNoteAnimation","anchor":"#clearnoteanimation"},{"id":"enableevent","level":0,"title":"EnableEvent","anchor":"#enableevent"},{"id":"getplaytime","level":0,"title":"GetPlayTime","anchor":"#getplaytime"},{"id":"init","level":0,"title":"Init","anchor":"#init"},{"id":"isanimationplay","level":0,"title":"IsAnimationPlay","anchor":"#isanimationplay"},{"id":"pause","level":0,"title":"Pause","anchor":"#pause"},{"id":"seteventinterval","level":0,"title":"SetEventInterval","anchor":"#seteventinterval"},{"id":"setplaytime","level":0,"title":"SetPlayTime","anchor":"#setplaytime"},{"id":"setrestorestatus","level":0,"title":"SetRestoreStatus","anchor":"#setrestorestatus"},{"id":"setstartdate","level":0,"title":"SetStartDate","anchor":"#setstartdate"},{"id":"start","level":0,"title":"Start","anchor":"#start"},{"id":"startnoteanimation","level":0,"title":"StartNoteAnimation","anchor":"#startnoteanimation"},{"id":"stop","level":0,"title":"Stop","anchor":"#stop"},{"id":"event-listener","level":0,"title":"--- Event Listener ---","anchor":"#event-listener"},{"id":"onchangedframeevent","level":0,"title":"OnChangedFrameEvent","anchor":"#onchangedframeevent"},{"id":"onchangedplaytimeevent","level":0,"title":"OnChangedPlayTimeEvent","anchor":"#onchangedplaytimeevent"}]</script>
+    <script id="topic-shortcuts" type="application/json"></script>
+    <link href="https://resources.jetbrains.com/writerside/apidoc/6.1.5-b176/app.css" rel="stylesheet">
+    <link rel="apple-touch-icon" sizes="180x180" href="https://jetbrains.com/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="https://jetbrains.com/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="https://jetbrains.com/favicon-16x16.png">
+    <link rel="manifest" href="https://jetbrains.com/site.webmanifest">
+    <link rel="mask-icon" href="https://jetbrains.com/safari-pinned-tab.svg" color="#000000">
+    <meta name="msapplication-TileColor" content="#000000" />
+    <meta name="msapplication-TileImage"
+        content="https://resources.jetbrains.com/storage/ui/favicons/mstile-144x144.png" />
+    <meta name="msapplication-square70x70logo"
+        content="https://resources.jetbrains.com/storage/ui/favicons/mstile-70x70.png" />
+    <meta name="msapplication-square150x150logo"
+        content="https://resources.jetbrains.com/storage/ui/favicons/mstile-150x150.png" />
+    <meta name="msapplication-wide310x150logo"
+        content="https://resources.jetbrains.com/storage/ui/favicons/mstile-310x150.png" />
+    <meta name="msapplication-square310x310logo"
+        content="https://resources.jetbrains.com/storage/ui/favicons/mstile-310x310.png" />
+    <meta name="image" content=""><!-- Open Graph -->
+    <meta property="og:title" content="Animation | Softhills Documentation Center" />
+    <meta property="og:description" content="" />
+    <meta property="og:image" content="" />
+    <meta property="og:site_name" content="Softhills Documentation Center Help" />
+    <meta property="og:type" content="website" />
+    <meta property="og:locale" content="en_US" />
+    <meta property="og:url" content="animation.html" /><!-- End Open Graph --><!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:site" content="">
+    <meta name="twitter:title" content="Animation | Softhills Documentation Center">
+    <meta name="twitter:description" content="">
+    <meta name="twitter:creator" content="">
+    <meta name="twitter:image:src" content=""><!-- End Twitter Card --><!-- Schema.org WebPage -->
+    <script
+        type="application/ld+json"> { "@context": "http://schema.org", "@type": "WebPage", "@id": "animation.html#webpage", "url": "animation.html", "name": "Animation | Softhills Documentation Center", "description": "", "image": "", "inLanguage":"en-US" }</script>
+    <!-- End Schema.org --><!-- Schema.org WebSite -->
+    <script
+        type="application/ld+json"> { "@type": "WebSite", "@id": "/#website", "url": "/", "name": "Softhills Documentation Center Help" }</script>
+    <!-- End Schema.org --> <!-- Mermaid light/dark themes -->
+    <link rel="stylesheet" type="text/css" href="mermaid.css">
+</head>
+
+<body data-id="Animation" data-main-title="Animation" data-article-props="{&quot;seeAlsoStyle&quot;:&quot;links&quot;}"
+    data-template="article"
+    data-breadcrumbs="SHDC.topic|SHDC///제품///VIZWide3D-API-DOCUMENT.md|VIZWide3D///VIZWide3D API">
+    <div class="wrapper">
+        <main class="panel _main">
+            <header class="panel__header">
+                <div class="container">
+                    <h3>Softhills Documentation Center Help</h3>
+                    <div class="panel-trigger"></div>
+                </div>
+            </header>
+            <section class="panel__content">
+                <div class="container">
+                    <article class="article" data-shortcut-switcher="inactive">
+                        <h1 data-toc="Animation" id="Animation.md">Animation</h1>
+                        <section class="chapter">
+                            <h2 id="addanimationitem" data-toc="addanimationitem">AddAnimationItem</h2>
+                            <section class="procedure-steps">
+                                <div class="collapse">
+                                    <div class="collapse__title">
+                                        <h3 id="53072e82_15948" data-toc="53072e82_15948">애니메이션 추가</h3>
+                                    </div>
+                                    <div class="collapse__content">
+                                        <aside class="prompt" data-type="note" data-title="" id="53072e82_15949">
+                                            <p>AddAnimationItem(ids, startTime, duration, startColor, endColor)</p>
+                                        </aside>
+                                        <p id="53072e82_15950"><span class="control" id="53072e82_15951">Example</span>
+                                        </p>
+                                        <div class="code-block" data-lang="javascript">
+                                            // 애니메이션 시작일 지정
+                                            vizcore.Animation.SetStartDate(new Date(2022,7,9), 1);
+                                            //노드 이름에 해당하는 노드 반환
+                                            let nodes = vizcore.Object3D.Find.GetNodeByName(
+                                            'PIPE101' // Keyword
+                                            , true // Full Match
+                                            );
+                                            //지정된 노드 하위 BodyID 목록 반환
+                                            let ids = vizcore.Object3D.GetBodyIdsByNode(nodes);
+
+                                            // 애니메이션 추가
+                                            vizcore.Animation.AddAnimationItem(
+                                            ids // Body IDs(Array or Number)
+                                            ,0 // 시작 시간
+                                            ,10 // 재생 시간
+                                            ,new VIZCore.Color(255,0,0,255) //시작 색상 (R, G, B, A)
+                                            ,new VIZCore.Color(0,255,0,255) //종료 색상 (R, G, B, A)
+                                            );
+
+                                            // 애니메이션 시작
+                                            vizcore.Animation.Start();
+                                        </div>
+                                        <p id="53072e82_15953"><span class="control"
+                                                id="53072e82_15954">Parameters</span></p>
+                                        <div class="table-wrapper">
+                                            <table class="wide" id="53072e82_15955">
+                                                <thead>
+                                                    <tr class="ijRowHead" id="53072e82_15956">
+                                                        <th id="53072e82_15957">
+                                                            <p>Name</p>
+                                                        </th>
+                                                        <th id="53072e82_15958">
+                                                            <p>Type</p>
+                                                        </th>
+                                                        <th id="53072e82_15959">
+                                                            <p>Description</p>
+                                                        </th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr id="53072e82_15960">
+                                                        <td id="53072e82_15961">
+                                                            <p>ids</p>
+                                                        </td>
+                                                        <td id="53072e82_15962">
+                                                            <p>Array</p>
+                                                        </td>
+                                                        <td id="53072e82_15963">
+                                                            <p>Body IDs(Array or Number)</p>
+                                                        </td>
+                                                    </tr>
+                                                    <tr id="53072e82_15964">
+                                                        <td id="53072e82_15965">
+                                                            <p>startTime</p>
+                                                        </td>
+                                                        <td id="53072e82_15966">
+                                                            <p>Number</p>
+                                                        </td>
+                                                        <td id="53072e82_15967">
+                                                            <p>시작 시간</p>
+                                                        </td>
+                                                    </tr>
+                                                    <tr id="53072e82_15968">
+                                                        <td id="53072e82_15969">
+                                                            <p>duration</p>
+                                                        </td>
+                                                        <td id="53072e82_15970">
+                                                            <p>Number</p>
+                                                        </td>
+                                                        <td id="53072e82_15971">
+                                                            <p>재생 시간</p>
+                                                        </td>
+                                                    </tr>
+                                                    <tr id="53072e82_15972">
+                                                        <td id="53072e82_15973">
+                                                            <p>startColor</p>
+                                                        </td>
+                                                        <td id="53072e82_15974">
+                                                            <p>VIZCore.Color</p>
+                                                        </td>
+                                                        <td id="53072e82_15975">
+                                                            <p>시작 색상</p>
+                                                        </td>
+                                                    </tr>
+                                                    <tr id="53072e82_15976">
+                                                        <td id="53072e82_15977">
+                                                            <p>endColor</p>
+                                                        </td>
+                                                        <td id="53072e82_15978">
+                                                            <p>VIZCore.Color</p>
+                                                        </td>
+                                                        <td id="53072e82_15979">
+                                                            <p>종료 색상</p>
+                                                        </td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                        <ol class="list _decimal"></ol>
+                                    </div>
+                                </div>
+                            </section>
+                        </section>
+                        <section class="chapter">
+                            <h2 id="addnoteanimation" data-toc="addnoteanimation">AddNoteAnimation</h2>
+                            <section class="procedure-steps">
+                                <div class="collapse">
+                                    <div class="collapse__title">
+                                        <h3 id="53072e82_15980" data-toc="53072e82_15980">노트 애니메이션 키 등록</h3>
+                                    </div>
+                                    <div class="collapse__content">
+                                        <aside class="prompt" data-type="note" data-title="" id="53072e82_15981">
+                                            <p>AddNoteAnimation(key)</p>
+                                        </aside>
+                                        <p id="53072e82_15982"><span class="control" id="53072e82_15983">Example</span>
+                                        </p>
+                                        <div class="code-block" data-lang="javascript">
+                                            //3D 노트 생성
+                                            let note = vizcore.Review.Note.NewNote3D();
+
+                                            let text = [];
+                                            text.push('3D Note #1');
+                                            text.push('3D Note #2');
+
+                                            note.text.value = text; // Array
+                                            note.text.position = new VIZCore.Vector3(0, 0, 0); // x, y, z
+                                            note.style.font.size = 10; // number
+                                            note.style.font.color.set(0, 56, 101, 255); // R, G, B, A
+                                            note.style.border.type = 1; // 0 (Rectangle), 1(Rounded Rectangle)
+                                            note.style.border.color.set(41, 143, 194, 255); // R, G, B, A
+                                            note.style.background.color.set(255, 255, 255, 200); // R, G, B, A
+
+                                            //3D 노트 추가
+                                            let noteId = vizcore.Review.Note.AddNote(note);
+
+                                            //노트 애니메이션 템플릿 등록
+                                            vizcore.Animation.AddNoteAnimation2DTemplate(
+                                            &quot;ANIMATION1&quot; // Animation Key
+                                            , [noteId] // Note ID Array
+                                            , 1 // Action Kind
+                                            , 1000 // Duration (ms.)
+                                            , new VIZCore.Vector3(0.3, 0.1, 0.1) // 시작 위치 ( -1 ~ +1 )
+                                            , new VIZCore.Vector3(0.1, 0.1, 0.1) // 종료 위치 ( -1 ~ +1 )
+                                            );
+
+                                            //노트 애니메이션 키 등록
+                                            vizcore.Animation.AddNoteAnimation(&quot;ANIMATION1&quot;);
+
+                                            //노트 애니메이션 재생
+                                            vizcore.Animation.StartNoteAnimation();
+                                        </div>
+                                        <p id="53072e82_15985"><span class="control"
+                                                id="53072e82_15986">Parameters</span></p>
+                                        <div class="table-wrapper">
+                                            <table class="wide" id="53072e82_15987">
+                                                <thead>
+                                                    <tr class="ijRowHead" id="53072e82_15988">
+                                                        <th id="53072e82_15989">
+                                                            <p>Name</p>
+                                                        </th>
+                                                        <th id="53072e82_15990">
+                                                            <p>Type</p>
+                                                        </th>
+                                                        <th id="53072e82_15991">
+                                                            <p>Description</p>
+                                                        </th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr id="53072e82_15992">
+                                                        <td id="53072e82_15993">
+                                                            <p>key</p>
+                                                        </td>
+                                                        <td id="53072e82_15994">
+                                                            <p>String</p>
+                                                        </td>
+                                                        <td id="53072e82_15995">
+                                                            <p>Animation Key</p>
+                                                        </td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                        <ol class="list _decimal"></ol>
+                                    </div>
+                                </div>
+                            </section>
+                        </section>
+                        <section class="chapter">
+                            <h2 id="addnoteanimation2dtemplate" data-toc="addnoteanimation2dtemplate">
+                                AddNoteAnimation2DTemplate</h2>
+                            <section class="procedure-steps">
+                                <div class="collapse">
+                                    <div class="collapse__title">
+                                        <h3 id="53072e82_15996" data-toc="53072e82_15996">노트 애니메이션 템플릿 등록</h3>
+                                    </div>
+                                    <div class="collapse__content">
+                                        <aside class="prompt" data-type="note" data-title="" id="53072e82_15997">
+                                            <p>AddNoteAnimation2DTemplate(key, noteId, actionKind, duration, start, end)
+                                            </p>
+                                        </aside>
+                                        <p id="53072e82_15998"><span class="control" id="53072e82_15999">Example</span>
+                                        </p>
+                                        <div class="code-block" data-lang="javascript">
+                                            //3D 노트 생성
+                                            let note = vizcore.Review.Note.NewNote3D();
+
+                                            //3D 노트 추가
+                                            let noteId = vizcore.Review.Note.AddNote(note);
+
+                                            //노트 애니메이션 템플릿 등록
+                                            vizcore.Animation.AddNoteAnimation2DTemplate(
+                                            &quot;ANIMATION1&quot; // Animation Key
+                                            , [noteId] // Note ID Array
+                                            , 1 // Action Kind
+                                            , 1000 // Duration (ms.)
+                                            , new VIZCore.Vector3(0.3, 0.1, 0.1) // 시작 위치 ( -1 ~ +1 )
+                                            , new VIZCore.Vector3(0.1, 0.1, 0.1) // 종료 위치 ( -1 ~ +1 )
+                                            );
+                                        </div>
+                                        <p id="53072e82_16001"><span class="control"
+                                                id="53072e82_16002">Parameters</span></p>
+                                        <div class="table-wrapper">
+                                            <table class="wide" id="53072e82_16003">
+                                                <thead>
+                                                    <tr class="ijRowHead" id="53072e82_16004">
+                                                        <th id="53072e82_16005">
+                                                            <p>Name</p>
+                                                        </th>
+                                                        <th id="53072e82_16006">
+                                                            <p>Type</p>
+                                                        </th>
+                                                        <th id="53072e82_16007">
+                                                            <p>Description</p>
+                                                        </th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr id="53072e82_16008">
+                                                        <td id="53072e82_16009">
+                                                            <p>key</p>
+                                                        </td>
+                                                        <td id="53072e82_16010">
+                                                            <p>String</p>
+                                                        </td>
+                                                        <td id="53072e82_16011">
+                                                            <p>Animation Key</p>
+                                                        </td>
+                                                    </tr>
+                                                    <tr id="53072e82_16012">
+                                                        <td id="53072e82_16013">
+                                                            <p>noteId</p>
+                                                        </td>
+                                                        <td id="53072e82_16014">
+                                                            <p>Array</p>
+                                                        </td>
+                                                        <td id="53072e82_16015">
+                                                            <p>Note Id Array</p>
+                                                        </td>
+                                                    </tr>
+                                                    <tr id="53072e82_16016">
+                                                        <td id="53072e82_16017">
+                                                            <p>actionKind</p>
+                                                        </td>
+                                                        <td id="53072e82_16018">
+                                                            <p>Number</p>
+                                                        </td>
+                                                        <td id="53072e82_16019">
+                                                            <p>Action Kind</p>
+                                                        </td>
+                                                    </tr>
+                                                    <tr id="53072e82_16020">
+                                                        <td id="53072e82_16021">
+                                                            <p>duration</p>
+                                                        </td>
+                                                        <td id="53072e82_16022">
+                                                            <p>Number</p>
+                                                        </td>
+                                                        <td id="53072e82_16023">
+                                                            <p>Duration</p>
+                                                        </td>
+                                                    </tr>
+                                                    <tr id="53072e82_16024">
+                                                        <td id="53072e82_16025">
+                                                            <p>start</p>
+                                                        </td>
+                                                        <td id="53072e82_16026">
+                                                            <p>VIZCore.Vector3</p>
+                                                        </td>
+                                                        <td id="53072e82_16027">
+                                                            <p>Start Position</p>
+                                                        </td>
+                                                    </tr>
+                                                    <tr id="53072e82_16028">
+                                                        <td id="53072e82_16029">
+                                                            <p>end</p>
+                                                        </td>
+                                                        <td id="53072e82_16030">
+                                                            <p>VIZCore.Vector3</p>
+                                                        </td>
+                                                        <td id="53072e82_16031">
+                                                            <p>End Position</p>
+                                                        </td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                        <ol class="list _decimal"></ol>
+                                    </div>
+                                </div>
+                            </section>
+                        </section>
+                        <section class="chapter">
+                            <h2 id="clear" data-toc="clear">Clear</h2>
+                            <section class="procedure-steps">
+                                <div class="collapse">
+                                    <div class="collapse__title">
+                                        <h3 id="53072e82_16032" data-toc="53072e82_16032">애니메이션 데이터 초기화(삭제)</h3>
+                                    </div>
+                                    <div class="collapse__content">
+                                        <aside class="prompt" data-type="note" data-title="" id="53072e82_16033">
+                                            <p>Clear()</p>
+                                        </aside>
+                                        <p id="53072e82_16034"><span class="control" id="53072e82_16035">Example</span>
+                                        </p>
+                                        <div class="code-block" data-lang="javascript">
+                                            //애니메이션 데이터 초기화
+                                            vizcore.Animation.Clear();
+                                        </div>
+                                        <ol class="list _decimal"></ol>
+                                    </div>
+                                </div>
+                            </section>
+                        </section>
+                        <section class="chapter">
+                            <h2 id="clearnoteanimation" data-toc="clearnoteanimation">ClearNoteAnimation</h2>
+                            <section class="procedure-steps">
+                                <div class="collapse">
+                                    <div class="collapse__title">
+                                        <h3 id="53072e82_16037" data-toc="53072e82_16037">노트 애니메이션 초기화(삭제)</h3>
+                                    </div>
+                                    <div class="collapse__content">
+                                        <aside class="prompt" data-type="note" data-title="" id="53072e82_16038">
+                                            <p>ClearNoteAnimation()</p>
+                                        </aside>
+                                        <p id="53072e82_16039"><span class="control" id="53072e82_16040">Example</span>
+                                        </p>
+                                        <div class="code-block" data-lang="javascript">
+                                            //노트 애니메이션 초기화(삭제)
+                                            vizcore.Animation.ClearNoteAnimation();
+                                        </div>
+                                        <ol class="list _decimal"></ol>
+                                    </div>
+                                </div>
+                            </section>
+                        </section>
+                        <section class="chapter">
+                            <h2 id="enableevent" data-toc="enableevent">EnableEvent</h2>
+                            <section class="procedure-steps">
+                                <div class="collapse">
+                                    <div class="collapse__title">
+                                        <h3 id="53072e82_16042" data-toc="53072e82_16042">애니메이션 이벤트 제어 활성화 시 이벤트 발생</h3>
+                                    </div>
+                                    <div class="collapse__content">
+                                        <aside class="prompt" data-type="note" data-title="" id="53072e82_16043">
+                                            <p>EnableEvent(enable)</p>
+                                        </aside>
+                                        <p id="53072e82_16044"><span class="control" id="53072e82_16045">Example</span>
+                                        </p>
+                                        <div class="code-block" data-lang="javascript">
+                                            //애니메이션 이벤트 제어 활성화 시 이벤트 발생
+                                            vizcore.Animation.EnableEvent(true);
+                                        </div>
+                                        <p id="53072e82_16047"><span class="control"
+                                                id="53072e82_16048">Parameters</span></p>
+                                        <div class="table-wrapper">
+                                            <table class="wide" id="53072e82_16049">
+                                                <thead>
+                                                    <tr class="ijRowHead" id="53072e82_16050">
+                                                        <th id="53072e82_16051">
+                                                            <p>Name</p>
+                                                        </th>
+                                                        <th id="53072e82_16052">
+                                                            <p>Type</p>
+                                                        </th>
+                                                        <th id="53072e82_16053">
+                                                            <p>Description</p>
+                                                        </th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr id="53072e82_16054">
+                                                        <td id="53072e82_16055">
+                                                            <p>enable</p>
+                                                        </td>
+                                                        <td id="53072e82_16056">
+                                                            <p>Boolean</p>
+                                                        </td>
+                                                        <td id="53072e82_16057">
+                                                            <p>활성화/비활성화</p>
+                                                        </td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                        <ol class="list _decimal"></ol>
+                                    </div>
+                                </div>
+                            </section>
+                        </section>
+                        <section class="chapter">
+                            <h2 id="getplaytime" data-toc="getplaytime">GetPlayTime</h2>
+                            <section class="procedure-steps">
+                                <div class="collapse">
+                                    <div class="collapse__title">
+                                        <h3 id="53072e82_16058" data-toc="53072e82_16058">애니메이션 재생 시간 반환</h3>
+                                    </div>
+                                    <div class="collapse__content">
+                                        <aside class="prompt" data-type="note" data-title="" id="53072e82_16059">
+                                            <p>GetPlayTime() &rarr; {Number}</p>
+                                        </aside>
+                                        <p id="53072e82_16060"><span class="control" id="53072e82_16061">Example</span>
+                                        </p>
+                                        <div class="code-block" data-lang="javascript">
+                                            //애니메이션 재생 시간 반환
+                                            let time = vizcore.Animation.GetPlayTime();
+                                        </div>
+                                        <p id="53072e82_16063"><span class="control" id="53072e82_16064">Returns</span>
+                                        </p>
+                                        <div class="table-wrapper">
+                                            <table class="wide" id="53072e82_16065">
+                                                <thead>
+                                                    <tr class="ijRowHead" id="53072e82_16066">
+                                                        <th id="53072e82_16067">
+                                                            <p>Type</p>
+                                                        </th>
+                                                        <th id="53072e82_16068">
+                                                            <p>Description</p>
+                                                        </th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr id="53072e82_16069">
+                                                        <td id="53072e82_16070">
+                                                            <p>Number</p>
+                                                        </td>
+                                                        <td id="53072e82_16071">
+                                                            <p>재생 시간</p>
+                                                        </td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                        <ol class="list _decimal"></ol>
+                                    </div>
+                                </div>
+                            </section>
+                        </section>
+                        <section class="chapter">
+                            <h2 id="init" data-toc="init">Init</h2>
+                            <section class="procedure-steps">
+                                <div class="collapse">
+                                    <div class="collapse__title">
+                                        <h3 id="53072e82_16072" data-toc="53072e82_16072">애니메이션 초기화</h3>
+                                    </div>
+                                    <div class="collapse__content">
+                                        <aside class="prompt" data-type="note" data-title="" id="53072e82_16073">
+                                            <p>Init()</p>
+                                        </aside>
+                                        <p id="53072e82_16074"><span class="control" id="53072e82_16075">Example</span>
+                                        </p>
+                                        <div class="code-block" data-lang="javascript">
+                                            // 애니메이션 초기화
+                                            vizcore.Animation.Init();
+                                        </div>
+                                        <ol class="list _decimal"></ol>
+                                    </div>
+                                </div>
+                            </section>
+                        </section>
+                        <section class="chapter">
+                            <h2 id="isanimationplay" data-toc="isanimationplay">IsAnimationPlay</h2>
+                            <section class="procedure-steps">
+                                <div class="collapse">
+                                    <div class="collapse__title">
+                                        <h3 id="53072e82_16077" data-toc="53072e82_16077">애니메이션 재생 상태 확인</h3>
+                                    </div>
+                                    <div class="collapse__content">
+                                        <aside class="prompt" data-type="note" data-title="" id="53072e82_16078">
+                                            <p>IsAnimationPlay() &rarr; {Boolean}</p>
+                                        </aside>
+                                        <p id="53072e82_16079"><span class="control" id="53072e82_16080">Example</span>
+                                        </p>
+                                        <div class="code-block" data-lang="javascript">
+                                            //애니메이션 재생 상태 확인
+                                            let play = vizcore.Animation.IsAnimationPlay();
+                                        </div>
+                                        <p id="53072e82_16082"><span class="control" id="53072e82_16083">Returns</span>
+                                        </p>
+                                        <div class="table-wrapper">
+                                            <table class="wide" id="53072e82_16084">
+                                                <thead>
+                                                    <tr class="ijRowHead" id="53072e82_16085">
+                                                        <th id="53072e82_16086">
+                                                            <p>Type</p>
+                                                        </th>
+                                                        <th id="53072e82_16087">
+                                                            <p>Description</p>
+                                                        </th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr id="53072e82_16088">
+                                                        <td id="53072e82_16089">
+                                                            <p>Boolean</p>
+                                                        </td>
+                                                        <td id="53072e82_16090">
+                                                            <p>재생 상태</p>
+                                                        </td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                        <ol class="list _decimal"></ol>
+                                    </div>
+                                </div>
+                            </section>
+                        </section>
+                        <section class="chapter">
+                            <h2 id="pause" data-toc="pause">Pause</h2>
+                            <section class="procedure-steps">
+                                <div class="collapse">
+                                    <div class="collapse__title">
+                                        <h3 id="53072e82_16091" data-toc="53072e82_16091">애니메이션 일시 정지</h3>
+                                    </div>
+                                    <div class="collapse__content">
+                                        <aside class="prompt" data-type="note" data-title="" id="53072e82_16092">
+                                            <p>Pause()</p>
+                                        </aside>
+                                        <p id="53072e82_16093"><span class="control" id="53072e82_16094">Example</span>
+                                        </p>
+                                        <div class="code-block" data-lang="javascript">
+                                            //애니메이션 일시 정지
+                                            vizcore.Animation.Pause();
+                                        </div>
+                                        <ol class="list _decimal"></ol>
+                                    </div>
+                                </div>
+                            </section>
+                        </section>
+                        <section class="chapter">
+                            <h2 id="seteventinterval" data-toc="seteventinterval">SetEventInterval</h2>
+                            <section class="procedure-steps">
+                                <div class="collapse">
+                                    <div class="collapse__title">
+                                        <h3 id="53072e82_16096" data-toc="53072e82_16096">애니메이션 이벤트 발생 시간 설정</h3>
+                                    </div>
+                                    <div class="collapse__content">
+                                        <aside class="prompt" data-type="note" data-title="" id="53072e82_16097">
+                                            <p>SetEventInterval(val)</p>
+                                        </aside>
+                                        <p id="53072e82_16098"><span class="control" id="53072e82_16099">Example</span>
+                                        </p>
+                                        <div class="code-block" data-lang="javascript">
+                                            // 이벤트 발생시간 3초 설정
+                                            vizcore.Animation.SetEventInterval(3000);
+                                        </div>
+                                        <p id="53072e82_16101"><span class="control"
+                                                id="53072e82_16102">Parameters</span></p>
+                                        <div class="table-wrapper">
+                                            <table class="wide" id="53072e82_16103">
+                                                <thead>
+                                                    <tr class="ijRowHead" id="53072e82_16104">
+                                                        <th id="53072e82_16105">
+                                                            <p>Name</p>
+                                                        </th>
+                                                        <th id="53072e82_16106">
+                                                            <p>Type</p>
+                                                        </th>
+                                                        <th id="53072e82_16107">
+                                                            <p>Description</p>
+                                                        </th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr id="53072e82_16108">
+                                                        <td id="53072e82_16109">
+                                                            <p>val</p>
+                                                        </td>
+                                                        <td id="53072e82_16110">
+                                                            <p>Number</p>
+                                                        </td>
+                                                        <td id="53072e82_16111">
+                                                            <p>이벤트 발생 시간(ms)</p>
+                                                        </td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                        <ol class="list _decimal"></ol>
+                                    </div>
+                                </div>
+                            </section>
+                        </section>
+                        <section class="chapter">
+                            <h2 id="setplaytime" data-toc="setplaytime">SetPlayTime</h2>
+                            <section class="procedure-steps">
+                                <div class="collapse">
+                                    <div class="collapse__title">
+                                        <h3 id="53072e82_16112" data-toc="53072e82_16112">애니메이션 재생 시간 설정</h3>
+                                    </div>
+                                    <div class="collapse__content">
+                                        <aside class="prompt" data-type="note" data-title="" id="53072e82_16113">
+                                            <p>SetPlayTime(tick)</p>
+                                        </aside>
+                                        <p id="53072e82_16114"><span class="control" id="53072e82_16115">Example</span>
+                                        </p>
+                                        <div class="code-block" data-lang="javascript">
+                                            //애니메이션 재생 시간 5초 설정
+                                            vizcore.Animation.SetPlayTime(5000);
+                                        </div>
+                                        <p id="53072e82_16117"><span class="control"
+                                                id="53072e82_16118">Parameters</span></p>
+                                        <div class="table-wrapper">
+                                            <table class="wide" id="53072e82_16119">
+                                                <thead>
+                                                    <tr class="ijRowHead" id="53072e82_16120">
+                                                        <th id="53072e82_16121">
+                                                            <p>Name</p>
+                                                        </th>
+                                                        <th id="53072e82_16122">
+                                                            <p>Type</p>
+                                                        </th>
+                                                        <th id="53072e82_16123">
+                                                            <p>Description</p>
+                                                        </th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr id="53072e82_16124">
+                                                        <td id="53072e82_16125">
+                                                            <p>tick</p>
+                                                        </td>
+                                                        <td id="53072e82_16126">
+                                                            <p>Number</p>
+                                                        </td>
+                                                        <td id="53072e82_16127">
+                                                            <p>Animation 재생 시간</p>
+                                                        </td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                        <ol class="list _decimal"></ol>
+                                    </div>
+                                </div>
+                            </section>
+                        </section>
+                        <section class="chapter">
+                            <h2 id="setrestorestatus" data-toc="setrestorestatus">SetRestoreStatus</h2>
+                            <section class="procedure-steps">
+                                <div class="collapse">
+                                    <div class="collapse__title">
+                                        <h3 id="53072e82_16128" data-toc="53072e82_16128">애니메이션 재생 시 자동 색상 복원 설정</h3>
+                                    </div>
+                                    <div class="collapse__content">
+                                        <aside class="prompt" data-type="note" data-title="" id="53072e82_16129">
+                                            <p>SetRestoreStatus(enable)</p>
+                                        </aside>
+                                        <p id="53072e82_16130"><span class="control" id="53072e82_16131">Example</span>
+                                        </p>
+                                        <div class="code-block" data-lang="javascript">
+                                            // 자동 색상 복원 설정
+                                            vizcore.Animation.SetRestoreStatus(true);
+                                        </div>
+                                        <p id="53072e82_16133"><span class="control"
+                                                id="53072e82_16134">Parameters</span></p>
+                                        <div class="table-wrapper">
+                                            <table class="wide" id="53072e82_16135">
+                                                <thead>
+                                                    <tr class="ijRowHead" id="53072e82_16136">
+                                                        <th id="53072e82_16137">
+                                                            <p>Name</p>
+                                                        </th>
+                                                        <th id="53072e82_16138">
+                                                            <p>Type</p>
+                                                        </th>
+                                                        <th id="53072e82_16139">
+                                                            <p>Description</p>
+                                                        </th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr id="53072e82_16140">
+                                                        <td id="53072e82_16141">
+                                                            <p>enable</p>
+                                                        </td>
+                                                        <td id="53072e82_16142">
+                                                            <p>Boolean</p>
+                                                        </td>
+                                                        <td id="53072e82_16143">
+                                                            <p>활성화/비활성화</p>
+                                                        </td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                        <ol class="list _decimal"></ol>
+                                    </div>
+                                </div>
+                            </section>
+                        </section>
+                        <section class="chapter">
+                            <h2 id="setstartdate" data-toc="setstartdate">SetStartDate</h2>
+                            <section class="procedure-steps">
+                                <div class="collapse">
+                                    <div class="collapse__title">
+                                        <h3 id="53072e82_16144" data-toc="53072e82_16144">애니메이션 시작일 지정</h3>
+                                    </div>
+                                    <div class="collapse__content">
+                                        <aside class="prompt" data-type="note" data-title="" id="53072e82_16145">
+                                            <p>SetStartDate(date, offset)</p>
+                                        </aside>
+                                        <p id="53072e82_16146"><span class="control" id="53072e82_16147">Example</span>
+                                        </p>
+                                        <div class="code-block" data-lang="javascript">
+                                            // 애니메이션 시작일 지정
+                                            vizcore.Animation.SetStartDate(
+                                            new Date(2022,7, 9) // 시작일
+                                            ,1); // 1초 재생시간 기준 1 Day 변화
+                                        </div>
+                                        <p id="53072e82_16149"><span class="control"
+                                                id="53072e82_16150">Parameters</span></p>
+                                        <div class="table-wrapper">
+                                            <table class="wide" id="53072e82_16151">
+                                                <thead>
+                                                    <tr class="ijRowHead" id="53072e82_16152">
+                                                        <th id="53072e82_16153">
+                                                            <p>Name</p>
+                                                        </th>
+                                                        <th id="53072e82_16154">
+                                                            <p>Type</p>
+                                                        </th>
+                                                        <th id="53072e82_16155">
+                                                            <p>Description</p>
+                                                        </th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr id="53072e82_16156">
+                                                        <td id="53072e82_16157">
+                                                            <p>date</p>
+                                                        </td>
+                                                        <td id="53072e82_16158">
+                                                            <p>Date</p>
+                                                        </td>
+                                                        <td id="53072e82_16159">
+                                                            <p>시작일</p>
+                                                        </td>
+                                                    </tr>
+                                                    <tr id="53072e82_16160">
+                                                        <td id="53072e82_16161">
+                                                            <p>offset</p>
+                                                        </td>
+                                                        <td id="53072e82_16162">
+                                                            <p>Number</p>
+                                                        </td>
+                                                        <td id="53072e82_16163">
+                                                            <p>재생시간(1초)에 따른 Date 변화량(Day)</p>
+                                                        </td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                        <ol class="list _decimal"></ol>
+                                    </div>
+                                </div>
+                            </section>
+                        </section>
+                        <section class="chapter">
+                            <h2 id="start" data-toc="start">Start</h2>
+                            <section class="procedure-steps">
+                                <div class="collapse">
+                                    <div class="collapse__title">
+                                        <h3 id="53072e82_16164" data-toc="53072e82_16164">애니메이션 시작</h3>
+                                    </div>
+                                    <div class="collapse__content">
+                                        <aside class="prompt" data-type="note" data-title="" id="53072e82_16165">
+                                            <p>Start()</p>
+                                        </aside>
+                                        <p id="53072e82_16166"><span class="control" id="53072e82_16167">Example</span>
+                                        </p>
+                                        <div class="code-block" data-lang="javascript">
+                                            // 애니메이션 시작
+                                            vizcore.Animation.Start();
+                                        </div>
+                                        <ol class="list _decimal"></ol>
+                                    </div>
+                                </div>
+                            </section>
+                        </section>
+                        <section class="chapter">
+                            <h2 id="startnoteanimation" data-toc="startnoteanimation">StartNoteAnimation</h2>
+                            <section class="procedure-steps">
+                                <div class="collapse">
+                                    <div class="collapse__title">
+                                        <h3 id="53072e82_16169" data-toc="53072e82_16169">노트 애니메이션 재생(시작)</h3>
+                                    </div>
+                                    <div class="collapse__content">
+                                        <aside class="prompt" data-type="note" data-title="" id="53072e82_16170">
+                                            <p>StartNoteAnimation()</p>
+                                        </aside>
+                                        <p id="53072e82_16171"><span class="control" id="53072e82_16172">Example</span>
+                                        </p>
+                                        <div class="code-block" data-lang="javascript">
+                                            //노트 애니메이션 재생
+                                            vizcore.Animation.StartNoteAnimation();
+                                        </div>
+                                        <ol class="list _decimal"></ol>
+                                    </div>
+                                </div>
+                            </section>
+                        </section>
+                        <section class="chapter">
+                            <h2 id="stop" data-toc="stop">Stop</h2>
+                            <section class="procedure-steps">
+                                <div class="collapse">
+                                    <div class="collapse__title">
+                                        <h3 id="53072e82_16174" data-toc="53072e82_16174">애니메이션 정지</h3>
+                                    </div>
+                                    <div class="collapse__content">
+                                        <aside class="prompt" data-type="note" data-title="" id="53072e82_16175">
+                                            <p>Stop()</p>
+                                        </aside>
+                                        <p id="53072e82_16176"><span class="control" id="53072e82_16177">Example</span>
+                                        </p>
+                                        <div class="code-block" data-lang="javascript">
+                                            //애니메이션 정지
+                                            vizcore.Animation.Stop();
+                                        </div>
+                                        <ol class="list _decimal"></ol>
+                                    </div>
+                                </div>
+                            </section>
+                        </section>
+                        <section class="chapter">
+                            <h2 id="event-listener" data-toc="event-listener">--- Event Listener ---</h2>
+                        </section>
+                        <section class="chapter">
+                            <h2 id="onchangedframeevent" data-toc="onchangedframeevent">OnChangedFrameEvent</h2>
+                            <section class="procedure-steps">
+                                <div class="collapse">
+                                    <div class="collapse__title">
+                                        <h3 id="53072e82_16179" data-toc="53072e82_16179">애니메이션 재생 이벤트 등록</h3>
+                                    </div>
+                                    <div class="collapse__content">
+                                        <aside class="prompt" data-type="note" data-title="" id="53072e82_16180">
+                                            <p>OnChangedFrameEvent(listener)</p>
+                                        </aside>
+                                        <p id="53072e82_16181"><span class="control" id="53072e82_16182">Example</span>
+                                        </p>
+                                        <div class="code-block" data-lang="javascript">
+
+                                            // Event : onChangedFrameEvent
+                                            let onChangedFrameEvent = function (event) {
+                                            console.log(event.data);
+                                            }
+
+                                            // Add Event Handler : 애니메이션 재생 이벤트
+                                            vizcore.Animation.OnChangedFrameEvent(onChangedFrameEvent);
+                                        </div>
+                                        <p id="53072e82_16184"><span class="control"
+                                                id="53072e82_16185">Parameters</span></p>
+                                        <div class="table-wrapper">
+                                            <table class="wide" id="53072e82_16186">
+                                                <thead>
+                                                    <tr class="ijRowHead" id="53072e82_16187">
+                                                        <th id="53072e82_16188">
+                                                            <p>Name</p>
+                                                        </th>
+                                                        <th id="53072e82_16189">
+                                                            <p>Type</p>
+                                                        </th>
+                                                        <th id="53072e82_16190">
+                                                            <p>Description</p>
+                                                        </th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr id="53072e82_16191">
+                                                        <td id="53072e82_16192">
+                                                            <p>listener</p>
+                                                        </td>
+                                                        <td id="53072e82_16193">
+                                                            <p>Object</p>
+                                                        </td>
+                                                        <td id="53072e82_16194">
+                                                            <p>Event Listener</p>
+                                                        </td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                        <ol class="list _decimal"></ol>
+                                    </div>
+                                </div>
+                            </section>
+                        </section>
+                        <section class="chapter">
+                            <h2 id="onchangedplaytimeevent" data-toc="onchangedplaytimeevent">OnChangedPlayTimeEvent
+                            </h2>
+                            <section class="procedure-steps">
+                                <div class="collapse">
+                                    <div class="collapse__title">
+                                        <h3 id="53072e82_16195" data-toc="53072e82_16195">애니메이션 재생 시간 변경 이벤트 등록</h3>
+                                    </div>
+                                    <div class="collapse__content">
+                                        <aside class="prompt" data-type="note" data-title="" id="53072e82_16196">
+                                            <p>OnChangedPlayTimeEvent(listener)</p>
+                                        </aside>
+                                        <p id="53072e82_16197"><span class="control" id="53072e82_16198">Example</span>
+                                        </p>
+                                        <div class="code-block" data-lang="javascript">
+
+                                            // Event : onChangedPlayTimeEvent
+                                            let onChangedPlayTimeEvent = function (event) {
+                                            console.log(event);
+                                            }
+
+                                            // Add Event Handler : 애니메이션 재생 시간 변경 이벤트
+                                            vizcore.Animation.OnChangedPlayTimeEvent(onChangedPlayTimeEvent);
+                                        </div>
+                                        <p id="53072e82_16200"><span class="control"
+                                                id="53072e82_16201">Parameters</span></p>
+                                        <div class="table-wrapper">
+                                            <table class="wide" id="53072e82_16202">
+                                                <thead>
+                                                    <tr class="ijRowHead" id="53072e82_16203">
+                                                        <th id="53072e82_16204">
+                                                            <p>Name</p>
+                                                        </th>
+                                                        <th id="53072e82_16205">
+                                                            <p>Type</p>
+                                                        </th>
+                                                        <th id="53072e82_16206">
+                                                            <p>Description</p>
+                                                        </th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr id="53072e82_16207">
+                                                        <td id="53072e82_16208">
+                                                            <p>listener</p>
+                                                        </td>
+                                                        <td id="53072e82_16209">
+                                                            <p>Object</p>
+                                                        </td>
+                                                        <td id="53072e82_16210">
+                                                            <p>Event Listener</p>
+                                                        </td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                        <ol class="list _decimal"></ol>
+                                    </div>
+                                </div>
+                            </section>
+                        </section>
+                        <div class="last-modified"> Last modified: 08 12월 2023</div>
+                        <div data-feedback-placeholder="true"></div>
+                        <div class="navigation-links _bottom"> <a class="navigation-links__prev"
+                                href="vizwide3d-api-document.html">VIZWide3D</a> <a class="navigation-links__next"
+                                href="contextmenu.html">ContextMenu</a> </div>
+                    </article>
+                    <div id="disqus_thread"></div>
+                </div>
+            </section>
+        </main>
+    </div>
+    <script src="https://resources.jetbrains.com/writerside/apidoc/6.1.5-b176/app.js"></script>
+</body>
+
+</html>

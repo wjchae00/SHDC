@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE instance-profile
+        SYSTEM "https://resources.jetbrains.com/writerside/1.0/product-profile.dtd">
+
+<instance-profile id="hi"
+                 name="Softhills Documentation Center"
+                 start-page="SHDC.topic">
+
+    <toc-element topic="SHDC.topic">
+        <toc-element toc-title="제품">
+            <toc-element topic="VIZCLASH-NET.md" target-for-accept-web-file-names="https://www.softhills.net/SHDC/VIZCLASH.NET"/>
+            <toc-element topic="VIZCore3D.md" target-for-accept-web-file-names="https://www.softhills.net/SHDC/VIZCore3D"/>
+            <toc-element topic="VIZCore3D-NET.md" target-for-accept-web-file-names="https://www.softhills.net/SHDC/VIZCore3D.NET/"/>
+            <toc-element topic="VIZZARD.md" target-for-accept-web-file-names="https://www.softhills.net/SHDC/VIZZARD/"/>
+            <toc-element topic="VIZWide3D.md" target-for-accept-web-file-names="https://www.softhills.net/SHDC/VIZWide3D/"/>
+            <toc-element topic="VIZWed3D.md" target-for-accept-web-file-names="https://www.softhills.net/SHDC/VIZWeb3D/"/>
+            <toc-element topic="VIZWing.md" target-for-accept-web-file-names="https://www.softhills.net/SHDC/VIZWing/"/>
+            <toc-element topic="VIZPub.md" target-for-accept-web-file-names="https://www.softhills.net/SHDC/VIZPub"/>
+        </toc-element>
+        <toc-element toc-title="라이브러리">
+            <toc-element topic="ShdCore-NET.topic" target-for-accept-web-file-names="https://www.softhills.net/SHDC/ShdCore.NET/"/>
+            <toc-element topic="VIZXML.topic" target-for-accept-web-file-names="https://www.softhills.net/SHDC/VIZXML/"/>
+        </toc-element>
+    </toc-element>
+</instance-profile>

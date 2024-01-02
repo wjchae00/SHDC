@@ -1,0 +1,106 @@
+<!DOCTYPE html SYSTEM "about:legacy-compat">
+<html lang="en-US" data-colors-preset="contrast" data-primary-color="#307FFF">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta charset="UTF-8">
+    <meta name="robots" content="noindex">
+    <meta name="built-on" content="2023-12-08T10:08:52.2164704">
+    <meta name="build-number" content="${buildNumber}">
+    <title>GeometryUtility | Softhills Documentation Center</title>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-563TQVGF4C"></script>
+    <script>window.dataLayer = window.dataLayer || []; function gtag() { dataLayer.push(arguments); } gtag('js', new Date()); gtag('config', 'G-563TQVGF4C');</script>
+    <script id="virtual-toc-data"
+        type="application/json">[{"id":"showosnap","level":0,"title":"ShowOsnap","anchor":"#showosnap"},{"id":"showosnapbyonlymodel","level":0,"title":"ShowOsnapByOnlyModel","anchor":"#showosnapbyonlymodel"},{"id":"showosnapbyonlyshapedrawing","level":0,"title":"ShowOsnapByOnlyShapeDrawing","anchor":"#showosnapbyonlyshapedrawing"}]</script>
+    <script id="topic-shortcuts" type="application/json"></script>
+    <link href="https://resources.jetbrains.com/writerside/apidoc/6.1.5-b176/app.css" rel="stylesheet">
+    <link rel="apple-touch-icon" sizes="180x180" href="https://jetbrains.com/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="https://jetbrains.com/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="https://jetbrains.com/favicon-16x16.png">
+    <link rel="manifest" href="https://jetbrains.com/site.webmanifest">
+    <link rel="mask-icon" href="https://jetbrains.com/safari-pinned-tab.svg" color="#000000">
+    <meta name="msapplication-TileColor" content="#000000" />
+    <meta name="msapplication-TileImage"
+        content="https://resources.jetbrains.com/storage/ui/favicons/mstile-144x144.png" />
+    <meta name="msapplication-square70x70logo"
+        content="https://resources.jetbrains.com/storage/ui/favicons/mstile-70x70.png" />
+    <meta name="msapplication-square150x150logo"
+        content="https://resources.jetbrains.com/storage/ui/favicons/mstile-150x150.png" />
+    <meta name="msapplication-wide310x150logo"
+        content="https://resources.jetbrains.com/storage/ui/favicons/mstile-310x150.png" />
+    <meta name="msapplication-square310x310logo"
+        content="https://resources.jetbrains.com/storage/ui/favicons/mstile-310x310.png" />
+    <meta name="image" content=""><!-- Open Graph -->
+    <meta property="og:title" content="GeometryUtility | Softhills Documentation Center" />
+    <meta property="og:description" content="" />
+    <meta property="og:image" content="" />
+    <meta property="og:site_name" content="Softhills Documentation Center Help" />
+    <meta property="og:type" content="website" />
+    <meta property="og:locale" content="en_US" />
+    <meta property="og:url" content="geometryutility.html" /><!-- End Open Graph --><!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:site" content="">
+    <meta name="twitter:title" content="GeometryUtility | Softhills Documentation Center">
+    <meta name="twitter:description" content="">
+    <meta name="twitter:creator" content="">
+    <meta name="twitter:image:src" content=""><!-- End Twitter Card --><!-- Schema.org WebPage -->
+    <script
+        type="application/ld+json"> { "@context": "http://schema.org", "@type": "WebPage", "@id": "geometryutility.html#webpage", "url": "geometryutility.html", "name": "GeometryUtility | Softhills Documentation Center", "description": "", "image": "", "inLanguage":"en-US" }</script>
+    <!-- End Schema.org --><!-- Schema.org WebSite -->
+    <script
+        type="application/ld+json"> { "@type": "WebSite", "@id": "/#website", "url": "/", "name": "Softhills Documentation Center Help" }</script>
+    <!-- End Schema.org --> <!-- Mermaid light/dark themes -->
+    <link rel="stylesheet" type="text/css" href="mermaid.css">
+</head>
+
+<body data-id="GeometryUtility" data-main-title="GeometryUtility"
+    data-article-props="{&quot;seeAlsoStyle&quot;:&quot;links&quot;}" data-template="article"
+    data-breadcrumbs="SHDC.topic|SHDC///제품///VIZWide3D-API-DOCUMENT.md|VIZWide3D///VIZWide3D API">
+    <div class="wrapper">
+        <main class="panel _main">
+            <header class="panel__header">
+                <div class="container">
+                    <h3>Softhills Documentation Center Help</h3>
+                    <div class="panel-trigger"></div>
+                </div>
+            </header>
+            <section class="panel__content">
+                <div class="container">
+                    <article class="article" data-shortcut-switcher="inactive">
+                        <h1 data-toc="GeometryUtility" id="GeometryUtility.md">GeometryUtility</h1>
+                        <section class="chapter">
+                            <h2 id="showosnap" data-toc="showosnap">ShowOsnap</h2>
+                            <section class="procedure-steps">
+                                <div class="collapse">
+                                    <div class="collapse__title">
+                                        <h3 id="c5bbaf2d_1702" data-toc="c5bbaf2d_1702">오스냅(Osnap) 기능 사용</h3>
+                                    </div>
+                                    <div class="collapse__content">
+                                        <aside class="prompt" data-type="note" data-title="" id="c5bbaf2d_1703">
+                                            <p>ShowOsnap(cbCallback, surface, vertex, line)</p>
+                                        </aside>
+                                        <p id="c5bbaf2d_1704"><span class="control" id="c5bbaf2d_1705">Example</span>
+                                        </p>
+                                        <div class="code-block" data-lang="javascript">
+//Callback
+let pickCallback = function(e) {
+    console.log(e);
+};
+//오스냅(Osnap) 기능 사용
+vizcore.GeometryUtility.ShowOsnap(pickCallback, true, false, false);
+</div><p id="c5bbaf2d_1707"><span class="control" id="c5bbaf2d_1708">Parameters</span></p><div class="table-wrapper" ><table class="wide" id="c5bbaf2d_1709"  ><thead><tr class="ijRowHead" id="c5bbaf2d_1710"><th id="c5bbaf2d_1711"><p>Name</p></th><th id="c5bbaf2d_1712"><p>Type</p></th><th id="c5bbaf2d_1713"><p>Description</p></th></tr></thead><tbody ><tr id="c5bbaf2d_1714"><td id="c5bbaf2d_1715"><p>cbCallback</p></td><td id="c5bbaf2d_1716"><p>function</p></td><td id="c5bbaf2d_1717"><p>Callback</p></td></tr><tr id="c5bbaf2d_1718"><td id="c5bbaf2d_1719"><p>surface</p></td><td id="c5bbaf2d_1720"><p>Boolean</p></td><td id="c5bbaf2d_1721"><p>면 선택 가능 여부 (좌표 및 normal 반환)</p></td></tr><tr id="c5bbaf2d_1722"><td id="c5bbaf2d_1723"><p>vertex</p></td><td id="c5bbaf2d_1724"><p>Boolean</p></td><td id="c5bbaf2d_1725"><p>preselect 정점 가능 여부 (좌표 반환)</p></td></tr><tr id="c5bbaf2d_1726"><td id="c5bbaf2d_1727"><p>line</p></td><td id="c5bbaf2d_1728"><p>Boolean</p></td><td id="c5bbaf2d_1729"><p>preselect 라인 가능 여부 (라인 좌표 반환)</p></td></tr></tbody ></table ></div><ol class="list _decimal"></ol></div ></div></section></section><section class="chapter"><h2 id="showosnapbyonlymodel" data-toc="showosnapbyonlymodel">ShowOsnapByOnlyModel</h2><section class="procedure-steps"   > <div class="collapse" ><div class="collapse__title"  ><h3 id="c5bbaf2d_1730" data-toc="c5bbaf2d_1730">오스냅(Osnap) 기능 사용 (모델 개체만 선택 가능)</h3 ></div><div class="collapse__content" ><aside class="prompt" data-type="note" data-title="" id="c5bbaf2d_1731"><p>ShowOsnapByOnlyModel(cbCallback, surface, vertex, line)</p></aside><p id="c5bbaf2d_1732"><span class="control" id="c5bbaf2d_1733">Example</span></p><div class="code-block" data-lang="javascript"         >
+//Callback
+let pickCallback = function(e) {
+    console.log(e);
+};
+오스냅(Osnap) 기능 사용 (모델 개체만 선택 가능)
+vizcore.GeometryUtility.ShowOsnapByOnlyModel(pickCallback, true, false, false);
+</div><p id="c5bbaf2d_1735"><span class="control" id="c5bbaf2d_1736">Parameters</span></p><div class="table-wrapper" ><table class="wide" id="c5bbaf2d_1737"  ><thead><tr class="ijRowHead" id="c5bbaf2d_1738"><th id="c5bbaf2d_1739"><p>Name</p></th><th id="c5bbaf2d_1740"><p>Type</p></th><th id="c5bbaf2d_1741"><p>Description</p></th></tr></thead><tbody ><tr id="c5bbaf2d_1742"><td id="c5bbaf2d_1743"><p>cbCallback</p></td><td id="c5bbaf2d_1744"><p>function</p></td><td id="c5bbaf2d_1745"><p>Callback</p></td></tr><tr id="c5bbaf2d_1746"><td id="c5bbaf2d_1747"><p>surface</p></td><td id="c5bbaf2d_1748"><p>Boolean</p></td><td id="c5bbaf2d_1749"><p>면 선택 가능 여부 (좌표 및 normal 반환)</p></td></tr><tr id="c5bbaf2d_1750"><td id="c5bbaf2d_1751"><p>vertex</p></td><td id="c5bbaf2d_1752"><p>Boolean</p></td><td id="c5bbaf2d_1753"><p>preselect 정점 가능 여부 (좌표 반환)</p></td></tr><tr id="c5bbaf2d_1754"><td id="c5bbaf2d_1755"><p>line</p></td><td id="c5bbaf2d_1756"><p>Boolean</p></td><td id="c5bbaf2d_1757"><p>preselect 라인 가능 여부 (라인 좌표 반환)</p></td></tr></tbody ></table ></div><ol class="list _decimal"></ol></div ></div></section></section><section class="chapter"><h2 id="showosnapbyonlyshapedrawing" data-toc="showosnapbyonlyshapedrawing">ShowOsnapByOnlyShapeDrawing</h2><section class="procedure-steps"   > <div class="collapse" ><div class="collapse__title"  ><h3 id="c5bbaf2d_1758" data-toc="c5bbaf2d_1758">오스냅(Osnap) 기능 사용 (ShapeDrawing 개체만 선택 가능)</h3 ></div><div class="collapse__content" ><aside class="prompt" data-type="note" data-title="" id="c5bbaf2d_1759"><p>ShowOsnapByOnlyShapeDrawing(cbCallback, surface, vertex, line)</p></aside><p id="c5bbaf2d_1760"><span class="control" id="c5bbaf2d_1761">Example</span></p><div class="code-block" data-lang="javascript"         >
+//Callback
+let pickCallback = function(e) {
+    console.log(e);
+};
+//오스냅(Osnap) 기능 사용 (ShapeDrawing 개체만 선택 가능)
+vizcore.GeometryUtility.ShowOsnapByOnlyShapeDrawing(pickCallback, true, false, false);
+</div><p id="c5bbaf2d_1763"><span class="control" id="c5bbaf2d_1764">Parameters</span></p><div class="table-wrapper" ><table class="wide" id="c5bbaf2d_1765"  ><thead><tr class="ijRowHead" id="c5bbaf2d_1766"><th id="c5bbaf2d_1767"><p>Name</p></th><th id="c5bbaf2d_1768"><p>Type</p></th><th id="c5bbaf2d_1769"><p>Description</p></th></tr></thead><tbody ><tr id="c5bbaf2d_1770"><td id="c5bbaf2d_1771"><p>cbCallback</p></td><td id="c5bbaf2d_1772"><p>function</p></td><td id="c5bbaf2d_1773"><p>Callback</p></td></tr><tr id="c5bbaf2d_1774"><td id="c5bbaf2d_1775"><p>surface</p></td><td id="c5bbaf2d_1776"><p>Boolean</p></td><td id="c5bbaf2d_1777"><p>면 선택 가능 여부 (좌표 및 normal 반환)</p></td></tr><tr id="c5bbaf2d_1778"><td id="c5bbaf2d_1779"><p>vertex</p></td><td id="c5bbaf2d_1780"><p>Boolean</p></td><td id="c5bbaf2d_1781"><p>preselect 정점 가능 여부 (좌표 반환)</p></td></tr><tr id="c5bbaf2d_1782"><td id="c5bbaf2d_1783"><p>line</p></td><td id="c5bbaf2d_1784"><p>Boolean</p></td><td id="c5bbaf2d_1785"><p>preselect 라인 가능 여부 (라인 좌표 반환)</p></td></tr></tbody ></table ></div><ol class="list _decimal"></ol></div ></div></section></section><div class="last-modified"> Last modified: 08 12월 2023</div><div data-feedback-placeholder="true"></div><div class="navigation-links _bottom">  <a class="navigation-links__prev" href="frame.html">Frame</a>   <a class="navigation-links__next" href="model.html">Model</a>  </div></article><div id="disqus_thread"></div></div></section></main></div>  <script src="https://resources.jetbrains.com/writerside/apidoc/6.1.5-b176/app.js"></script></body></html>

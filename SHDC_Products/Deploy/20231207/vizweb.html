@@ -1,0 +1,164 @@
+<!DOCTYPE html SYSTEM "about:legacy-compat"><html lang="en-US" data-colors-preset="contrast" data-primary-color="#307FFF"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><meta charset="UTF-8"><meta name="robots" content="noindex">  <meta name="built-on" content="2023-12-07T15:52:50.9559096"><meta name="build-number" content="${buildNumber}">       <title>VIZWeb | Softhills Documentation Center</title><script id="virtual-toc-data" type="application/json">[{"id":"vizweb","level":0,"title":"VIZWeb 생성","anchor":"#vizweb"},{"id":"beginupdate","level":0,"title":"BeginUpdate","anchor":"#beginupdate"},{"id":"clear","level":0,"title":"Clear","anchor":"#clear"},{"id":"disconnect","level":0,"title":"Disconnect","anchor":"#disconnect"},{"id":"draw","level":0,"title":"Draw","anchor":"#draw"},{"id":"endupdate","level":0,"title":"EndUpdate","anchor":"#endupdate"},{"id":"getrepeatrender","level":0,"title":"GetRepeatRender","anchor":"#getrepeatrender"},{"id":"render","level":0,"title":"Render","anchor":"#render"},{"id":"resize","level":0,"title":"Resize","anchor":"#resize"},{"id":"setrepeatrender","level":0,"title":"SetRepeatRender","anchor":"#setrepeatrender"}]</script><script id="topic-shortcuts" type="application/json"></script><link href="https://resources.jetbrains.com/writerside/apidoc/6.1.5-b176/app.css" rel="stylesheet">   <link rel="apple-touch-icon" sizes="180x180" href="https://jetbrains.com/apple-touch-icon.png"><link rel="icon" type="image/png" sizes="32x32" href="https://jetbrains.com/favicon-32x32.png"><link rel="icon" type="image/png" sizes="16x16" href="https://jetbrains.com/favicon-16x16.png"><link rel="manifest" href="https://jetbrains.com/site.webmanifest"><link rel="mask-icon" href="https://jetbrains.com/safari-pinned-tab.svg" color="#000000"><meta name="msapplication-TileColor" content="#000000"/><meta name="msapplication-TileImage" content="https://resources.jetbrains.com/storage/ui/favicons/mstile-144x144.png"/><meta name="msapplication-square70x70logo" content="https://resources.jetbrains.com/storage/ui/favicons/mstile-70x70.png"/><meta name="msapplication-square150x150logo" content="https://resources.jetbrains.com/storage/ui/favicons/mstile-150x150.png"/><meta name="msapplication-wide310x150logo" content="https://resources.jetbrains.com/storage/ui/favicons/mstile-310x150.png"/><meta name="msapplication-square310x310logo" content="https://resources.jetbrains.com/storage/ui/favicons/mstile-310x310.png"/>  <meta name="image" content=""><!-- Open Graph --><meta property="og:title" content="VIZWeb | Softhills Documentation Center"/><meta property="og:description" content=""/><meta property="og:image" content=""/><meta property="og:site_name" content="Softhills Documentation Center Help"/><meta property="og:type" content="website"/><meta property="og:locale" content="en_US"/><meta property="og:url" content="vizweb.html"/><!-- End Open Graph --><!-- Twitter Card --><meta name="twitter:card" content="summary_large_image"><meta name="twitter:site" content=""><meta name="twitter:title" content="VIZWeb | Softhills Documentation Center"><meta name="twitter:description" content=""><meta name="twitter:creator" content=""><meta name="twitter:image:src" content=""><!-- End Twitter Card --><!-- Schema.org WebPage --><script type="application/ld+json"> { "@context": "http://schema.org", "@type": "WebPage", "@id": "vizweb.html#webpage", "url": "vizweb.html", "name": "VIZWeb | Softhills Documentation Center", "description": "", "image": "", "inLanguage":"en-US" }</script><!-- End Schema.org --><!-- Schema.org WebSite --><script type="application/ld+json"> { "@type": "WebSite", "@id": "/#website", "url": "/", "name": "Softhills Documentation Center Help" }</script><!-- End Schema.org --> <!-- Mermaid light/dark themes -->  <link rel="stylesheet" type="text/css" href="mermaid.css">  </head>     <body data-id="VIZWeb" data-main-title="VIZWeb" data-article-props="{&quot;seeAlsoStyle&quot;:&quot;links&quot;}"  data-template="article"  data-breadcrumbs="SHDC.topic|SHDC///VIZWide3D-API-DOCUMENT.md|VIZWide3D///VIZWide3D API"  >   <div class="wrapper"><main class="panel _main"><header class="panel__header"><div class="container"><h3>Softhills Documentation Center  Help</h3><div class="panel-trigger"></div></div></header><section class="panel__content"><div class="container"><article class="article" data-shortcut-switcher="inactive"><h1 data-toc="VIZWeb"  id="VIZWeb.md"  >VIZWeb</h1>  <section class="chapter"><h2 id="vizweb" data-toc="vizweb">VIZWeb 생성</h2><section class="procedure-steps"   ><h3 id="8e9999cf_565" data-toc="8e9999cf_565">VIZWeb 생성</h3 ><aside class="prompt" data-type="note" data-title="" id="8e9999cf_566"><p>new VIZWeb(viewContainer)</p></aside><p id="8e9999cf_567"><span class="control" id="8e9999cf_568">Example</span></p><div class="code-block" data-lang="javascript"         >
+// Defalt Example
+&lt;!DOCTYPE html&gt;
+&lt;html xmlns=&quot;http://www.w3.org/1999/xhtml&quot;&gt;
+&lt;head&gt;
+    &lt;meta charset=&quot;utf-8&quot; /&gt;
+    &lt;title&gt;Core :: SOFTHILLS&lt;/title&gt;
+    &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0,user-scalable=no&quot; /&gt;
+    &lt;script src=&quot;https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js&quot;&gt;&lt;/script&gt;
+    &lt;link rel=&quot;stylesheet&quot; href=&quot;VIZCore/Resource/css/VIZCore.css&quot;&gt;
+    &lt;script type=&quot;module&quot;&gt;
+        import Core from &quot;./VIZCore/VIZCore.js&quot;;
+        import { VIZCore } from &quot;./VIZCore/VIZCore.js&quot;;
+
+        let viewElement = document.getElementById(&quot;view&quot;);
+        viewElement.className = &quot;VIZCore&quot;;
+        let vizcore = new Core(viewElement);
+        let statusInit = vizwide3d.Init();
+
+        // When initialization is successful, basic operation is performed
+        if (statusInit === true) {
+            loadModel();
+        }
+
+        //=======================================
+        // Function :: Load Model (*.vizw)
+        //=======================================
+        function loadModel() {
+            vizcore.Model.OpenHeader(&quot;./VIZCore/Model/WebModel_wh.vizw&quot;);
+        }
+    &lt;/script&gt;
+&lt;/head&gt;
+&lt;body&gt;
+    &lt;div id=&quot;view&quot;&gt;&lt;/div&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+
+
+
+
+
+
+// Defalt Event Example
+&lt;!DOCTYPE html&gt;
+&lt;html xmlns=&quot;http://www.w3.org/1999/xhtml&quot;&gt;
+&lt;head&gt;
+    &lt;meta charset=&quot;utf-8&quot; /&gt;
+    &lt;title&gt;Core :: SOFTHILLS&lt;/title&gt;
+    &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0,user-scalable=no&quot; /&gt;
+    &lt;script src=&quot;https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js&quot;&gt;&lt;/script&gt;
+    &lt;link rel=&quot;stylesheet&quot; href=&quot;VIZCore/Resource/css/VIZCore.css&quot;&gt;
+    &lt;script type=&quot;module&quot;&gt;
+        import Core from &quot;./VIZCore/VIZCore.js&quot;;
+        import { VIZCore } from &quot;./VIZCore/VIZCore.js&quot;;
+
+        let viewElement = document.getElementById(&quot;view&quot;);
+        viewElement.className = &quot;VIZCore&quot;;
+        let vizcore = new Core(viewElement);
+        let statusInit = vizwide3d.Init();
+
+        //=======================================
+        // Event :: OnModelOpenedEvent
+        //=======================================
+        let OnModelOpenedEvent = function (event) {
+            console.log('Model Opend.');
+        }
+
+        //=======================================
+        // Event :: OnObject3DSelectedEvent
+        //=======================================
+        let OnObject3DSelected = function (event) {
+            // No Object Selected.
+            if (event.data.id == -1) {
+                console.log('No Object Selected.');
+            }
+            // Object Selected.
+            else {
+                // Get Data By Selected Object.
+                let node = vizcore.Object3D.FromID(event.data.id);
+                let parent = vizcore.Object3D.FromID(node.parentId);
+
+                let id = node.id;
+                let index = node.index;
+                let nodeKind = node.kind;
+                let nodeKindStr = node.kindStr;
+                let parentId = node.parentId;
+                let name = node.name;
+                let level = node.level;
+                let boundBox = node.boundBox;
+
+                // Get Structure Data
+                let nodes = vizcore.Object3D.GetNodeStructure(
+                    event.data.id   // Node ID
+                    , false         // Direction - True(Top Down), False(Bottom Up) 
+                );
+
+                for (let i = 0; i &lt; nodes.length; i++) {
+                    console.log('Node Name : ' + nodes[i].name);
+                    }
+                }
+            }
+        }
+
+        // When initialization is successful, basic operation is performed
+        if (statusInit === true) {
+            initEvent();
+
+            loadModel();
+        }
+        
+
+        //=======================================
+        // Function :: Add Event Handler
+        //=======================================
+        function initEvent() {
+            // Add Event Handler : Loading Completed Event 
+            vizcore.Model.OnModelOpenedEvent(OnModelOpenedEvent);
+
+            // Add Event Handler : Object Selected Event
+            vizcore.Object3D.OnObject3DSelected(OnObject3DSelected);
+        }
+
+        //=======================================
+        // Function :: Load Model (*.vizw)
+        //=======================================
+        function loadModel() {
+            vizcore.Model.OpenHeader(&quot;./VIZCore/Model/WebModel_wh.vizw&quot;);
+        }
+    &lt;/script&gt;
+&lt;/head&gt;
+&lt;body&gt;
+    &lt;div id=&quot;view&quot;&gt;&lt;/div&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+</div><p id="8e9999cf_570"><span class="control" id="8e9999cf_571">Parameters</span></p><div class="table-wrapper" ><table class="wide" id="8e9999cf_572"  ><thead><tr class="ijRowHead" id="8e9999cf_573"><th id="8e9999cf_574"><p>Name</p></th><th id="8e9999cf_575"><p>Type</p></th><th id="8e9999cf_576"><p>Description</p></th></tr></thead><tbody ><tr id="8e9999cf_577"><td id="8e9999cf_578"><p>viewContainer</p></td><td id="8e9999cf_579"><p>Object</p></td><td id="8e9999cf_580"><p>HTML Div. (Division) Element</p></td></tr></tbody ></table ></div><ol class="list _decimal"></ol></section></section><section class="chapter"><h2 id="beginupdate" data-toc="beginupdate">BeginUpdate</h2><section class="procedure-steps"   ><h3 id="8e9999cf_581" data-toc="8e9999cf_581">3D 화면 Rendering 차단</h3 ><aside class="prompt" data-type="note" data-title="" id="8e9999cf_582"><p>BeginUpdate()</p></aside><p id="8e9999cf_583"><span class="control" id="8e9999cf_584">Example</span></p><div class="code-block" data-lang="javascript"         >
+//3D 화면 Rendering 차단
+vizcore.BeginUpdate();
+</div><ol class="list _decimal"></ol></section></section><section class="chapter"><h2 id="clear" data-toc="clear">Clear</h2><section class="procedure-steps"   ><h3 id="8e9999cf_586" data-toc="8e9999cf_586">VIZWide3D Element Clear 인스턴스를 새로 생성하기 전 호출해야 함.</h3 ><aside class="prompt" data-type="note" data-title="" id="8e9999cf_587"><p>Clear()</p></aside><p id="8e9999cf_588"><span class="control" id="8e9999cf_589">Example</span></p><div class="code-block" data-lang="javascript"         >
+//VIZCore Element Clear
+vizcore.Clear();
+</div><ol class="list _decimal"></ol></section></section><section class="chapter"><h2 id="disconnect" data-toc="disconnect">Disconnect</h2><section class="procedure-steps"   ><h3 id="8e9999cf_591" data-toc="8e9999cf_591">VIZCore 라이선스 서버 연결 해제</h3 ><aside class="prompt" data-type="note" data-title="" id="8e9999cf_592"><p>Disconnect()</p></aside><p id="8e9999cf_593"><span class="control" id="8e9999cf_594">Example</span></p><div class="code-block" data-lang="javascript"         >
+//VIZCore 라이선스 서버 연결 해제
+vizcore.Disconnect();
+</div><ol class="list _decimal"></ol></section></section><section class="chapter"><h2 id="draw" data-toc="draw">Draw</h2><section class="procedure-steps"   ><h3 id="8e9999cf_596" data-toc="8e9999cf_596">3D 화면 갱신</h3 ><aside class="prompt" data-type="note" data-title="" id="8e9999cf_597"><p>Draw()</p></aside><p id="8e9999cf_598"><span class="control" id="8e9999cf_599">Example</span></p><div class="code-block" data-lang="javascript"         >
+//3D 화면 갱신
+vizcore.Draw();
+</div><ol class="list _decimal"></ol></section></section><section class="chapter"><h2 id="endupdate" data-toc="endupdate">EndUpdate</h2><section class="procedure-steps"   ><h3 id="8e9999cf_601" data-toc="8e9999cf_601">3D 화면 Rendering 차단해제</h3 ><aside class="prompt" data-type="note" data-title="" id="8e9999cf_602"><p>EndUpdate()</p></aside><p id="8e9999cf_603"><span class="control" id="8e9999cf_604">Example</span></p><div class="code-block" data-lang="javascript"         >
+//3D 화면 Rendering 차단해제
+vizcore.EndUpdate();
+</div><ol class="list _decimal"></ol></section></section><section class="chapter"><h2 id="getrepeatrender" data-toc="getrepeatrender">GetRepeatRender</h2><section class="procedure-steps"   ><h3 id="8e9999cf_606" data-toc="8e9999cf_606">화면 반복 그리기 설정 반환</h3 ><aside class="prompt" data-type="note" data-title="" id="8e9999cf_607"><p>GetRepeatRender() &rarr; {boolean}</p></aside><p id="8e9999cf_608"><span class="control" id="8e9999cf_609">Example</span></p><div class="code-block" data-lang="javascript"         >
+//화면 반복 그리기 설정 반환
+vizcore.GetRepeatRender();
+</div><p id="8e9999cf_611"><span class="control" id="8e9999cf_612">Returns</span></p><div class="table-wrapper" ><table class="wide" id="8e9999cf_613"  ><thead><tr class="ijRowHead" id="8e9999cf_614"><th id="8e9999cf_615"><p>Type</p></th><th id="8e9999cf_616"><p>Description</p></th></tr></thead><tbody ><tr id="8e9999cf_617"><td id="8e9999cf_618"><p>boolean</p></td><td id="8e9999cf_619"><p>true : 반복그리기, false : Render 시 그리기</p></td></tr></tbody ></table ></div><ol class="list _decimal"></ol></section></section><section class="chapter"><h2 id="render" data-toc="render">Render</h2><section class="procedure-steps"   ><h3 id="8e9999cf_620" data-toc="8e9999cf_620">3D 화면 모델 Render</h3 ><aside class="prompt" data-type="note" data-title="" id="8e9999cf_621"><p>Render()</p></aside><p id="8e9999cf_622"><span class="control" id="8e9999cf_623">Example</span></p><div class="code-block" data-lang="javascript"         >
+//3D 화면 모델 Render
+vizcore.Render();
+</div><ol class="list _decimal"></ol></section></section><section class="chapter"><h2 id="resize" data-toc="resize">Resize</h2><section class="procedure-steps"   ><h3 id="8e9999cf_625" data-toc="8e9999cf_625">3D 화면 크기 갱신</h3 ><aside class="prompt" data-type="note" data-title="" id="8e9999cf_626"><p>Resize()</p></aside><p id="8e9999cf_627"><span class="control" id="8e9999cf_628">Example</span></p><div class="code-block" data-lang="javascript"         >
+//3D 화면 크기 갱신
+vizcore.Resize();
+</div><ol class="list _decimal"></ol></section></section><section class="chapter"><h2 id="setrepeatrender" data-toc="setrepeatrender">SetRepeatRender</h2><section class="procedure-steps"   ><h3 id="8e9999cf_630" data-toc="8e9999cf_630">화면 반복 그리기 설정</h3 ><aside class="prompt" data-type="note" data-title="" id="8e9999cf_631"><p>SetRepeatRender(enable)</p></aside><p id="8e9999cf_632"><span class="control" id="8e9999cf_633">Example</span></p><div class="code-block" data-lang="javascript"         >
+//화면 반복 그리기 설정
+vizcore.SetRepeatRender(true);
+
+//주의) 잦은 렌더링으로 성능 영향이 있습니다.
+</div><p id="8e9999cf_635"><span class="control" id="8e9999cf_636">Parameters</span></p><div class="table-wrapper" ><table class="wide" id="8e9999cf_637"  ><thead><tr class="ijRowHead" id="8e9999cf_638"><th id="8e9999cf_639"><p>Name</p></th><th id="8e9999cf_640"><p>Type</p></th><th id="8e9999cf_641"><p>Description</p></th></tr></thead><tbody ><tr id="8e9999cf_642"><td id="8e9999cf_643"><p>enable</p></td><td id="8e9999cf_644"><p>boolean</p></td><td id="8e9999cf_645"><p>true : 반복그리기, false : Render 시 그리기</p></td></tr></tbody ></table ></div><ol class="list _decimal"></ol></section></section><div class="last-modified"> Last modified: 07 12월 2023</div><div data-feedback-placeholder="true"></div><div class="navigation-links _bottom">  <a class="navigation-links__prev" href="xray.html">Xray</a>   <a class="navigation-links__next" href="vizpub-start.html">VIZPub</a>  </div></article><div id="disqus_thread"></div></div></section></main></div>  <script src="https://resources.jetbrains.com/writerside/apidoc/6.1.5-b176/app.js"></script></body></html>

@@ -1,0 +1,104 @@
+<!DOCTYPE html SYSTEM "about:legacy-compat">
+<html lang="en-US" data-colors-preset="contrast" data-primary-color="#307FFF">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta charset="UTF-8">
+    <meta name="robots" content="noindex">
+    <meta name="built-on" content="2023-12-11T09:19:28.9173325">
+    <meta name="build-number" content="${buildNumber}">
+    <title>Walkthrough | VIZWide3D Document</title>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-563TQVGF4C"></script>
+<script>window.dataLayer = window.dataLayer || []; function gtag() { dataLayer.push(arguments); } gtag('js', new Date()); gtag('config', 'G-563TQVGF4C');</script>
+    <script id="virtual-toc-data"
+        type="application/json">[{"id":"action","level":0,"title":"Action","anchor":"#action"},{"id":"avatar","level":0,"title":"Avatar","anchor":"#avatar"},{"id":"enable","level":0,"title":"Enable","anchor":"#enable"},{"id":"endaction","level":0,"title":"EndAction","anchor":"#endaction"},{"id":"moveavatarposition","level":0,"title":"MoveAvatarPosition","anchor":"#moveavatarposition"}]</script>
+    <script id="topic-shortcuts" type="application/json"></script>
+    <link href="https://resources.jetbrains.com/writerside/apidoc/6.1.5-b176/app.css" rel="stylesheet">
+    <link rel="apple-touch-icon" sizes="180x180" href="https://jetbrains.com/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="https://jetbrains.com/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="https://jetbrains.com/favicon-16x16.png">
+    <link rel="manifest" href="https://jetbrains.com/site.webmanifest">
+    <link rel="mask-icon" href="https://jetbrains.com/safari-pinned-tab.svg" color="#000000">
+    <meta name="msapplication-TileColor" content="#000000" />
+    <meta name="msapplication-TileImage"
+        content="https://resources.jetbrains.com/storage/ui/favicons/mstile-144x144.png" />
+    <meta name="msapplication-square70x70logo"
+        content="https://resources.jetbrains.com/storage/ui/favicons/mstile-70x70.png" />
+    <meta name="msapplication-square150x150logo"
+        content="https://resources.jetbrains.com/storage/ui/favicons/mstile-150x150.png" />
+    <meta name="msapplication-wide310x150logo"
+        content="https://resources.jetbrains.com/storage/ui/favicons/mstile-310x150.png" />
+    <meta name="msapplication-square310x310logo"
+        content="https://resources.jetbrains.com/storage/ui/favicons/mstile-310x310.png" />
+    <meta name="image" content=""><!-- Open Graph -->
+    <meta property="og:title" content="Walkthrough | VIZWide3D Document" />
+    <meta property="og:description" content="" />
+    <meta property="og:image" content="" />
+    <meta property="og:site_name" content="VIZWide3D Document Help" />
+    <meta property="og:type" content="website" />
+    <meta property="og:locale" content="en_US" />
+    <meta property="og:url" content="walkthrough.html" /><!-- End Open Graph --><!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:site" content="">
+    <meta name="twitter:title" content="Walkthrough | VIZWide3D Document">
+    <meta name="twitter:description" content="">
+    <meta name="twitter:creator" content="">
+    <meta name="twitter:image:src" content=""><!-- End Twitter Card --><!-- Schema.org WebPage -->
+    <script
+        type="application/ld+json"> { "@context": "http://schema.org", "@type": "WebPage", "@id": "walkthrough.html#webpage", "url": "walkthrough.html", "name": "Walkthrough | VIZWide3D Document", "description": "", "image": "", "inLanguage":"en-US" }</script>
+    <!-- End Schema.org --><!-- Schema.org WebSite -->
+    <script
+        type="application/ld+json"> { "@type": "WebSite", "@id": "/#website", "url": "/", "name": "VIZWide3D Document Help" }</script>
+    <!-- End Schema.org --> <!-- Mermaid light/dark themes -->
+    <link rel="stylesheet" type="text/css" href="mermaid.css">
+</head>
+
+<body data-id="Walkthrough" data-main-title="Walkthrough"
+    data-article-props="{&quot;seeAlsoStyle&quot;:&quot;links&quot;}" data-template="article"
+    data-breadcrumbs="VIZWide3D-API-DOCUMENT.md|VIZWide3D///View.md|View">
+    <div class="wrapper">
+        <main class="panel _main">
+            <header class="panel__header">
+                <div class="container">
+                    <h3>VIZWide3D Document Help</h3>
+                    <div class="panel-trigger"></div>
+                </div>
+            </header>
+            <section class="panel__content">
+                <div class="container">
+                    <article class="article" data-shortcut-switcher="inactive">
+                        <h1 data-toc="Walkthrough" id="Walkthrough.md">Walkthrough</h1>
+                        <section class="chapter">
+                            <h2 id="action" data-toc="action">Action</h2>
+                            <section class="procedure-steps">
+                                <div class="collapse">
+                                    <div class="collapse__title">
+                                        <h3 id="e1be24a4_119" data-toc="e1be24a4_119">WalkThrough 이동 Key down, key
+                                            press, Mouse down등의 이벤트 연동</h3>
+                                    </div>
+                                    <div class="collapse__content">
+                                        <aside class="prompt" data-type="note" data-title="" id="e1be24a4_120">
+                                            <p>Action(state)</p>
+                                        </aside>
+                                        <p id="e1be24a4_121"><span class="control" id="e1be24a4_122">Example</span></p>
+                                        <div class="code-block" data-lang="javascript">
+//WalkThrough 사용 설정
+vizcore.View.Walkthrough.Enable(true);
+// 앞으로 이동
+vizcore.View.Walkthrough.Action(VIZCore.Enum.ACTION_STATE.FORWARD);
+</div><p id="e1be24a4_124"><span class="control" id="e1be24a4_125">Parameters</span></p><div class="table-wrapper" ><table class="wide" id="e1be24a4_126"  ><thead><tr class="ijRowHead" id="e1be24a4_127"><th id="e1be24a4_128"><p>Name</p></th><th id="e1be24a4_129"><p>Type</p></th><th id="e1be24a4_130"><p>Description</p></th></tr></thead><tbody ><tr id="e1be24a4_131"><td id="e1be24a4_132"><p>state</p></td><td id="e1be24a4_133"><p>VIZCore.Enum.ACTION_STATE</p></td><td id="e1be24a4_134"><p>WalkThrough Action</p></td></tr></tbody ></table ></div><ol class="list _decimal"></ol></div ></div></section></section><section class="chapter"><h2 id="avatar" data-toc="avatar">Avatar</h2><section class="procedure-steps"   > <div class="collapse" ><div class="collapse__title"  ><h3 id="e1be24a4_135" data-toc="e1be24a4_135">WalkThrough 아바타 사용 설정</h3 ></div><div class="collapse__content" ><aside class="prompt" data-type="note" data-title="" id="e1be24a4_136"><p>Avatar(enable)</p></aside><p id="e1be24a4_137"><span class="control" id="e1be24a4_138">Example</span></p><div class="code-block" data-lang="javascript"         >
+//WalkThrough 사용 설정
+vizcore.View.Walkthrough.Enable(true);
+//WalkThrough 아바타 사용 설정
+vizcore.View.Walkthrough.Avatar(true);
+</div><p id="e1be24a4_140"><span class="control" id="e1be24a4_141">Parameters</span></p><div class="table-wrapper" ><table class="wide" id="e1be24a4_142"  ><thead><tr class="ijRowHead" id="e1be24a4_143"><th id="e1be24a4_144"><p>Name</p></th><th id="e1be24a4_145"><p>Type</p></th><th id="e1be24a4_146"><p>Description</p></th></tr></thead><tbody ><tr id="e1be24a4_147"><td id="e1be24a4_148"><p>enable</p></td><td id="e1be24a4_149"><p>boolean</p></td><td id="e1be24a4_150"><p>사용/미사용</p></td></tr></tbody ></table ></div><ol class="list _decimal"></ol></div ></div></section></section><section class="chapter"><h2 id="enable" data-toc="enable">Enable</h2><section class="procedure-steps"   > <div class="collapse" ><div class="collapse__title"  ><h3 id="e1be24a4_151" data-toc="e1be24a4_151">WalkThrough 사용 설정</h3 ></div><div class="collapse__content" ><aside class="prompt" data-type="note" data-title="" id="e1be24a4_152"><p>Enable(enable)</p></aside><p id="e1be24a4_153"><span class="control" id="e1be24a4_154">Example</span></p><div class="code-block" data-lang="javascript"         >
+//WalkThrough 사용 설정
+vizcore.View.Walkthrough.Enable(true);
+</div><p id="e1be24a4_156"><span class="control" id="e1be24a4_157">Parameters</span></p><div class="table-wrapper" ><table class="wide" id="e1be24a4_158"  ><thead><tr class="ijRowHead" id="e1be24a4_159"><th id="e1be24a4_160"><p>Name</p></th><th id="e1be24a4_161"><p>Type</p></th><th id="e1be24a4_162"><p>Description</p></th></tr></thead><tbody ><tr id="e1be24a4_163"><td id="e1be24a4_164"><p>enable</p></td><td id="e1be24a4_165"><p>boolean</p></td><td id="e1be24a4_166"><p>사용/미사용</p></td></tr></tbody ></table ></div><ol class="list _decimal"></ol></div ></div></section></section><section class="chapter"><h2 id="endaction" data-toc="endaction">EndAction</h2><section class="procedure-steps"   > <div class="collapse" ><div class="collapse__title"  ><h3 id="e1be24a4_167" data-toc="e1be24a4_167">WalkThrough 이동 종료 Key up, Mouse up등의 이벤트 연동</h3 ></div><div class="collapse__content" ><aside class="prompt" data-type="note" data-title="" id="e1be24a4_168"><p>EndAction(state)</p></aside><p id="e1be24a4_169"><span class="control" id="e1be24a4_170">Example</span></p><div class="code-block" data-lang="javascript"         >
+// 앞으로 이동 종료
+vizcore.View.Walkthrough.EndAction(VIZCore.Enum.ACTION_STATE.FORWARD);
+</div><p id="e1be24a4_172"><span class="control" id="e1be24a4_173">Parameters</span></p><div class="table-wrapper" ><table class="wide" id="e1be24a4_174"  ><thead><tr class="ijRowHead" id="e1be24a4_175"><th id="e1be24a4_176"><p>Name</p></th><th id="e1be24a4_177"><p>Type</p></th><th id="e1be24a4_178"><p>Description</p></th></tr></thead><tbody ><tr id="e1be24a4_179"><td id="e1be24a4_180"><p>state</p></td><td id="e1be24a4_181"><p>VIZCore.Enum.ACTION_STATE</p></td><td id="e1be24a4_182"><p>WalkThrough Action</p></td></tr></tbody ></table ></div><ol class="list _decimal"></ol></div ></div></section></section><section class="chapter"><h2 id="moveavatarposition" data-toc="moveavatarposition">MoveAvatarPosition</h2><section class="procedure-steps"   > <div class="collapse" ><div class="collapse__title"  ><h3 id="e1be24a4_183" data-toc="e1be24a4_183">WalkThrough 아바타 위치 설정</h3 ></div><div class="collapse__content" ><aside class="prompt" data-type="note" data-title="" id="e1be24a4_184"><p>MoveAvatarPosition(pos)</p></aside><p id="e1be24a4_185"><span class="control" id="e1be24a4_186">Example</span></p><div class="code-block" data-lang="javascript"         >
+//WalkThrough 아바타 위치 설정
+vizcore.View.Walkthrough.MoveAvatarPosition(new VIZCore.Vector3(83720,-9762,22561));
+</div><p id="e1be24a4_188"><span class="control" id="e1be24a4_189">Parameters</span></p><div class="table-wrapper" ><table class="wide" id="e1be24a4_190"  ><thead><tr class="ijRowHead" id="e1be24a4_191"><th id="e1be24a4_192"><p>Name</p></th><th id="e1be24a4_193"><p>Type</p></th><th id="e1be24a4_194"><p>Description</p></th></tr></thead><tbody ><tr id="e1be24a4_195"><td id="e1be24a4_196"><p>pos</p></td><td id="e1be24a4_197"><p>VIZCore.Vector3</p></td><td id="e1be24a4_198"><p>이동 위치</p></td></tr></tbody ></table ></div><ol class="list _decimal"></ol></div ></div></section></section><div class="last-modified"> Last modified: 11 12월 2023</div><div data-feedback-placeholder="true"></div><div class="navigation-links _bottom">  <a class="navigation-links__prev" href="viewcube.html">ViewCube</a>   <a class="navigation-links__next" href="weather.html">Weather</a>  </div></article><div id="disqus_thread"></div></div></section></main></div>  <script src="https://resources.jetbrains.com/writerside/apidoc/6.1.5-b176/app.js"></script></body></html>

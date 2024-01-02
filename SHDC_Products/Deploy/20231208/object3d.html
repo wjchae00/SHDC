@@ -1,0 +1,438 @@
+<!DOCTYPE html SYSTEM "about:legacy-compat">
+<html lang="en-US" data-colors-preset="contrast" data-primary-color="#307FFF">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta charset="UTF-8">
+    <meta name="robots" content="noindex">
+    <meta name="built-on" content="2023-12-08T10:08:52.3844235">
+    <meta name="build-number" content="${buildNumber}">
+    <title>Object3D | Softhills Documentation Center</title>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-563TQVGF4C"></script>
+    <script>window.dataLayer = window.dataLayer || []; function gtag() { dataLayer.push(arguments); } gtag('js', new Date()); gtag('config', 'G-563TQVGF4C');</script>
+    <script id="virtual-toc-data"
+        type="application/json">[{"id":"disableviewdistancebox","level":0,"title":"DisableViewDistanceBox","anchor":"#disableviewdistancebox"},{"id":"fromfile","level":0,"title":"FromFile","anchor":"#fromfile"},{"id":"fromfilter","level":0,"title":"FromFilter","anchor":"#fromfilter"},{"id":"fromid","level":0,"title":"FromID","anchor":"#fromid"},{"id":"fromlevel","level":0,"title":"FromLevel","anchor":"#fromlevel"},{"id":"fromorigin","level":0,"title":"FromOrigin","anchor":"#fromorigin"},{"id":"fromroot","level":0,"title":"FromRoot","anchor":"#fromroot"},{"id":"fromrootbykey","level":0,"title":"FromRootByKey","anchor":"#fromrootbykey"},{"id":"fromrootbyurl","level":0,"title":"FromRootByUrl","anchor":"#fromrootbyurl"},{"id":"getbodiesbyfile","level":0,"title":"GetBodiesByFile","anchor":"#getbodiesbyfile"},{"id":"getbodiesbynode","level":0,"title":"GetBodiesByNode","anchor":"#getbodiesbynode"},{"id":"getbodiesbynodeid","level":0,"title":"GetBodiesByNodeID","anchor":"#getbodiesbynodeid"},{"id":"getbodyidsbyfile","level":0,"title":"GetBodyIdsByFile","anchor":"#getbodyidsbyfile"},{"id":"getbodyidsbynode","level":0,"title":"GetBodyIdsByNode","anchor":"#getbodyidsbynode"},{"id":"getbodyidsbynodeid","level":0,"title":"GetBodyIdsByNodeID","anchor":"#getbodyidsbynodeid"},{"id":"getbodyidsbynodeoriginid","level":0,"title":"GetBodyIdsByNodeOriginID","anchor":"#getbodyidsbynodeoriginid"},{"id":"getboundbox","level":0,"title":"GetBoundBox","anchor":"#getboundbox"},{"id":"getboundboxbynode","level":0,"title":"GetBoundBoxByNode","anchor":"#getboundboxbynode"},{"id":"getboundboxbynodeid","level":0,"title":"GetBoundBoxByNodeID","anchor":"#getboundboxbynodeid"},{"id":"getinnerobjects","level":0,"title":"GetInnerObjects","anchor":"#getinnerobjects"},{"id":"getnodestructure","level":0,"title":"GetNodeStructure","anchor":"#getnodestructure"},{"id":"getoriginboundbox","level":0,"title":"GetOriginBoundBox","anchor":"#getoriginboundbox"},{"id":"getselectedobject3d","level":0,"title":"GetSelectedObject3D","anchor":"#getselectedobject3d"},{"id":"hideunselectedobject","level":0,"title":"HideUnselectedObject","anchor":"#hideunselectedobject"},{"id":"invertselection","level":0,"title":"InvertSelection","anchor":"#invertselection"},{"id":"lockmeshcache","level":0,"title":"LockMeshCache","anchor":"#lockmeshcache"},{"id":"refreshbbox","level":0,"title":"RefreshBBox","anchor":"#refreshbbox"},{"id":"selectall","level":0,"title":"SelectAll","anchor":"#selectall"},{"id":"selectbyfile","level":0,"title":"SelectByFile","anchor":"#selectbyfile"},{"id":"selectbynode","level":0,"title":"SelectByNode","anchor":"#selectbynode"},{"id":"selectbynodeid","level":0,"title":"SelectByNodeID","anchor":"#selectbynodeid"},{"id":"selectbyorigin","level":0,"title":"SelectByOrigin","anchor":"#selectbyorigin"},{"id":"setobjectdisableviewdistancebbox","level":0,"title":"SetObjectDisableViewDistanceBBox","anchor":"#setobjectdisableviewdistancebbox"},{"id":"setobjectdisableviewdistancebboxbyarray","level":0,"title":"SetObjectDisableViewDistanceBBoxByArray","anchor":"#setobjectdisableviewdistancebboxbyarray"},{"id":"setselectioncolor","level":0,"title":"SetSelectionColor","anchor":"#setselectioncolor"},{"id":"setviewdistancebox","level":0,"title":"SetViewDistanceBox","anchor":"#setviewdistancebox"},{"id":"showall","level":0,"title":"ShowAll","anchor":"#showall"},{"id":"showbyfile","level":0,"title":"ShowByFile","anchor":"#showbyfile"},{"id":"showbynode","level":0,"title":"ShowByNode","anchor":"#showbynode"},{"id":"showbynodeid","level":0,"title":"ShowByNodeID","anchor":"#showbynodeid"},{"id":"showbyorigin","level":0,"title":"ShowByOrigin","anchor":"#showbyorigin"},{"id":"showselectedobject","level":0,"title":"ShowSelectedObject","anchor":"#showselectedobject"},{"id":"unlockmeshcache","level":0,"title":"UnlockMeshCache","anchor":"#unlockmeshcache"},{"id":"event-listener","level":0,"title":"--- Event Listener ---","anchor":"#event-listener"},{"id":"onboxselected","level":0,"title":"OnBoxSelected","anchor":"#onboxselected"},{"id":"onobject3dselected","level":0,"title":"OnObject3DSelected","anchor":"#onobject3dselected"}]</script>
+    <script id="topic-shortcuts" type="application/json"></script>
+    <link href="https://resources.jetbrains.com/writerside/apidoc/6.1.5-b176/app.css" rel="stylesheet">
+    <link rel="apple-touch-icon" sizes="180x180" href="https://jetbrains.com/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="https://jetbrains.com/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="https://jetbrains.com/favicon-16x16.png">
+    <link rel="manifest" href="https://jetbrains.com/site.webmanifest">
+    <link rel="mask-icon" href="https://jetbrains.com/safari-pinned-tab.svg" color="#000000">
+    <meta name="msapplication-TileColor" content="#000000" />
+    <meta name="msapplication-TileImage"
+        content="https://resources.jetbrains.com/storage/ui/favicons/mstile-144x144.png" />
+    <meta name="msapplication-square70x70logo"
+        content="https://resources.jetbrains.com/storage/ui/favicons/mstile-70x70.png" />
+    <meta name="msapplication-square150x150logo"
+        content="https://resources.jetbrains.com/storage/ui/favicons/mstile-150x150.png" />
+    <meta name="msapplication-wide310x150logo"
+        content="https://resources.jetbrains.com/storage/ui/favicons/mstile-310x150.png" />
+    <meta name="msapplication-square310x310logo"
+        content="https://resources.jetbrains.com/storage/ui/favicons/mstile-310x310.png" />
+    <meta name="image" content=""><!-- Open Graph -->
+    <meta property="og:title" content="Object3D | Softhills Documentation Center" />
+    <meta property="og:description" content="" />
+    <meta property="og:image" content="" />
+    <meta property="og:site_name" content="Softhills Documentation Center Help" />
+    <meta property="og:type" content="website" />
+    <meta property="og:locale" content="en_US" />
+    <meta property="og:url" content="object3d.html" /><!-- End Open Graph --><!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:site" content="">
+    <meta name="twitter:title" content="Object3D | Softhills Documentation Center">
+    <meta name="twitter:description" content="">
+    <meta name="twitter:creator" content="">
+    <meta name="twitter:image:src" content=""><!-- End Twitter Card --><!-- Schema.org WebPage -->
+    <script
+        type="application/ld+json"> { "@context": "http://schema.org", "@type": "WebPage", "@id": "object3d.html#webpage", "url": "object3d.html", "name": "Object3D | Softhills Documentation Center", "description": "", "image": "", "inLanguage":"en-US" }</script>
+    <!-- End Schema.org --><!-- Schema.org WebSite -->
+    <script
+        type="application/ld+json"> { "@type": "WebSite", "@id": "/#website", "url": "/", "name": "Softhills Documentation Center Help" }</script>
+    <!-- End Schema.org --> <!-- Mermaid light/dark themes -->
+    <link rel="stylesheet" type="text/css" href="mermaid.css">
+</head>
+
+<body data-id="Object3D" data-main-title="Object3D" data-article-props="{&quot;seeAlsoStyle&quot;:&quot;links&quot;}"
+    data-template="article"
+    data-breadcrumbs="SHDC.topic|SHDC///제품///VIZWide3D-API-DOCUMENT.md|VIZWide3D///VIZWide3D API">
+    <div class="wrapper">
+        <main class="panel _main">
+            <header class="panel__header">
+                <div class="container">
+                    <h3>Softhills Documentation Center Help</h3>
+                    <div class="panel-trigger"></div>
+                </div>
+            </header>
+            <section class="panel__content">
+                <div class="container">
+                    <article class="article" data-shortcut-switcher="inactive">
+                        <h1 data-toc="Object3D" id="Object3D.md">Object3D</h1>
+                        <section class="chapter">
+                            <h2 id="disableviewdistancebox" data-toc="disableviewdistancebox">DisableViewDistanceBox
+                            </h2>
+                            <section class="procedure-steps">
+                                <div class="collapse">
+                                    <div class="collapse__title">
+                                        <h3 id="36721271_13251" data-toc="36721271_13251">설정 거리보다 먼 경우 박스 표시 해제</h3>
+                                    </div>
+                                    <div class="collapse__content">
+                                        <aside class="prompt" data-type="note" data-title="" id="36721271_13252">
+                                            <p>DisableViewDistanceBox(fileKey)</p>
+                                        </aside>
+                                        <p id="36721271_13253"><span class="control" id="36721271_13254">Example</span>
+                                        </p>
+                                        <div class="code-block" data-lang="javascript">
+//VIZWide3D 용 VIZW 파일의 헤더 추가
+let models = [];
+models.push({url:&quot;./VIZCore/Model/Sample1_wh.vizw&quot;, key:&quot;sample1&quot;});
+vizcore.Model.AddHeader(models);
+//설정 거리보다 먼 경우 박스 표시 해제
+vizcore.Object3D.DisableViewDistanceBox(&quot;sample1&quot;);
+</div><p id="36721271_13256"><span class="control" id="36721271_13257">Parameters</span></p><div class="table-wrapper" ><table class="wide" id="36721271_13258"  ><thead><tr class="ijRowHead" id="36721271_13259"><th id="36721271_13260"><p>Name</p></th><th id="36721271_13261"><p>Type</p></th><th id="36721271_13262"><p>Description</p></th></tr></thead><tbody ><tr id="36721271_13263"><td id="36721271_13264"><p>fileKey</p></td><td id="36721271_13265"><p>Object</p></td><td id="36721271_13266"><p>파일 ID</p></td></tr></tbody ></table ></div><ol class="list _decimal"></ol></div ></div></section></section><section class="chapter"><h2 id="fromfile" data-toc="fromfile">FromFile</h2><section class="procedure-steps"   > <div class="collapse" ><div class="collapse__title"  ><h3 id="36721271_13267" data-toc="36721271_13267">FileID에 해당하는 Node 정보 반환</h3 ></div><div class="collapse__content" ><aside class="prompt" data-type="note" data-title="" id="36721271_13268"><p>FromFile(fileId) &rarr; {Array}</p></aside><p id="36721271_13269"><span class="control" id="36721271_13270">Example</span></p><div class="code-block" data-lang="javascript"         >
+//FileID에 해당하는 Node 정보 반환
+let nodes = vizcore.Object3D.FromFile(&quot;FileKey&quot;);
+</div><p id="36721271_13272"><span class="control" id="36721271_13273">Parameters</span></p><div class="table-wrapper" ><table class="wide" id="36721271_13274"  ><thead><tr class="ijRowHead" id="36721271_13275"><th id="36721271_13276"><p>Name</p></th><th id="36721271_13277"><p>Type</p></th><th id="36721271_13278"><p>Description</p></th></tr></thead><tbody ><tr id="36721271_13279"><td id="36721271_13280"><p>fileId</p></td><td id="36721271_13281"><p>Object</p></td><td id="36721271_13282"><p>File ID</p></td></tr></tbody ></table ></div><p id="36721271_13283"><span class="control" id="36721271_13284">Returns</span></p><div class="table-wrapper" ><table class="wide" id="36721271_13285"  ><thead><tr class="ijRowHead" id="36721271_13286"><th id="36721271_13287"><p>Type</p></th><th id="36721271_13288"><p>Description</p></th></tr></thead><tbody ><tr id="36721271_13289"><td id="36721271_13290"><p>Array</p></td><td id="36721271_13291"><p>Node Data Array</p></td></tr></tbody ></table ></div><ol class="list _decimal"></ol></div ></div></section></section><section class="chapter"><h2 id="fromfilter" data-toc="fromfilter">FromFilter</h2><section class="procedure-steps"   > <div class="collapse" ><div class="collapse__title"  ><h3 id="36721271_13292" data-toc="36721271_13292">Filter에 해당하는 Node 정보 반환</h3 ></div><div class="collapse__content" ><aside class="prompt" data-type="note" data-title="" id="36721271_13293"><p id="36721271_13294">FromFilter(filter) &rarr; <code class="code" id="36721271_13295">{Array&lt;Object&gt;}</code></p></aside><p id="36721271_13296"><span class="control" id="36721271_13297">Example</span></p><div class="code-block" data-lang="javascript"         >
+//Filter에 해당하는 Node 정보 반환
+let item = vizcore.Object3D.FromFilter(VIZCore.Enum.OBJECT3D_FILTER.ALL);
+</div><p id="36721271_13299"><span class="control" id="36721271_13300">Parameters</span></p><div class="table-wrapper" ><table class="wide" id="36721271_13301"  ><thead><tr class="ijRowHead" id="36721271_13302"><th id="36721271_13303"><p>Name</p></th><th id="36721271_13304"><p>Type</p></th><th id="36721271_13305"><p>Description</p></th></tr></thead><tbody ><tr id="36721271_13306"><td id="36721271_13307"><p>filter</p></td><td id="36721271_13308"><p>VIZCore.Enum.OBJECT3D_FILTER</p></td><td id="36721271_13309"><p><code class="code" id="36721271_13310">//* @returns {Array} nodes ID</code></p></td></tr></tbody ></table ></div><p id="36721271_13311"><span class="control" id="36721271_13312">Returns</span></p><div class="table-wrapper" ><table class="wide" id="36721271_13313"  ><thead><tr class="ijRowHead" id="36721271_13314"><th id="36721271_13315"><p>Type</p></th><th id="36721271_13316"><p>Description</p></th></tr></thead><tbody ><tr id="36721271_13317"><td id="36721271_13318"><p><code class="code" id="36721271_13319">Array&lt;Object&gt;</code></p></td><td id="36721271_13320"><p>nodes</p></td></tr></tbody ></table ></div><ol class="list _decimal"></ol></div ></div></section></section><section class="chapter"><h2 id="fromid" data-toc="fromid">FromID</h2><section class="procedure-steps"   > <div class="collapse" ><div class="collapse__title"  ><h3 id="36721271_13321" data-toc="36721271_13321">Node ID에 해당하는 정보 반환</h3 ></div><div class="collapse__content" ><aside class="prompt" data-type="note" data-title="" id="36721271_13322"><p>FromID(id) &rarr; {Array}</p></aside><p id="36721271_13323"><span class="control" id="36721271_13324">Example</span></p><div class="code-block" data-lang="javascript"         >
+//노드 이름에 해당하는 노드 반환
+let nodes = vizcore.Object3D.Find.GetNodeByName(
+    'PIPE101'   // Keyword
+    , true      // Full Match
+);
+
+let nodeIds = [];                                       //Array&lt;Number&gt;
+for (let i = 0; i &lt; nodes.length; i++) {
+    nodeIds.push(nodes[i].id);
+}
+
+//Node ID에 해당하는 정보 반환
+let node = vizcore.Object3D.FromID(nodeIds);
+</div><p id="36721271_13326"><span class="control" id="36721271_13327">Parameters</span></p><div class="table-wrapper" ><table class="wide" id="36721271_13328"  ><thead><tr class="ijRowHead" id="36721271_13329"><th id="36721271_13330"><p>Name</p></th><th id="36721271_13331"><p>Type</p></th><th id="36721271_13332"><p>Description</p></th></tr></thead><tbody ><tr id="36721271_13333"><td id="36721271_13334"><p>id</p></td><td id="36721271_13335"><p>Number</p></td><td id="36721271_13336"><p>Node ID</p></td></tr></tbody ></table ></div><p id="36721271_13337"><span class="control" id="36721271_13338">Returns</span></p><div class="table-wrapper" ><table class="wide" id="36721271_13339"  ><thead><tr class="ijRowHead" id="36721271_13340"><th id="36721271_13341"><p>Type</p></th><th id="36721271_13342"><p>Description</p></th></tr></thead><tbody ><tr id="36721271_13343"><td id="36721271_13344"><p>Array</p></td><td id="36721271_13345"><p>Node Data Array</p></td></tr></tbody ></table ></div><ol class="list _decimal"></ol></div ></div></section></section><section class="chapter"><h2 id="fromlevel" data-toc="fromlevel">FromLevel</h2><section class="procedure-steps"   > <div class="collapse" ><div class="collapse__title"  ><h3 id="36721271_13346" data-toc="36721271_13346">Level에 해당하는 Node 정보 반환</h3 ></div><div class="collapse__content" ><aside class="prompt" data-type="note" data-title="" id="36721271_13347"><p>FromLevel(level) &rarr; {Array}</p></aside><p id="36721271_13348"><span class="control" id="36721271_13349">Example</span></p><div class="code-block" data-lang="javascript"         >
+//Level에 해당하는 Node 정보 반환
+let nodes = vizcore.Object3D.FromLevel(2);
+</div><p id="36721271_13351"><span class="control" id="36721271_13352">Parameters</span></p><div class="table-wrapper" ><table class="wide" id="36721271_13353"  ><thead><tr class="ijRowHead" id="36721271_13354"><th id="36721271_13355"><p>Name</p></th><th id="36721271_13356"><p>Type</p></th><th id="36721271_13357"><p>Description</p></th></tr></thead><tbody ><tr id="36721271_13358"><td id="36721271_13359"><p>level</p></td><td id="36721271_13360"><p>Number</p></td><td id="36721271_13361"><p>Level</p></td></tr></tbody ></table ></div><p id="36721271_13362"><span class="control" id="36721271_13363">Returns</span></p><div class="table-wrapper" ><table class="wide" id="36721271_13364"  ><thead><tr class="ijRowHead" id="36721271_13365"><th id="36721271_13366"><p>Type</p></th><th id="36721271_13367"><p>Description</p></th></tr></thead><tbody ><tr id="36721271_13368"><td id="36721271_13369"><p>Array</p></td><td id="36721271_13370"><p>Node Data Array</p></td></tr></tbody ></table ></div><ol class="list _decimal"></ol></div ></div></section></section><section class="chapter"><h2 id="fromorigin" data-toc="fromorigin">FromOrigin</h2><section class="procedure-steps"   > <div class="collapse" ><div class="collapse__title"  ><h3 id="36721271_13371" data-toc="36721271_13371">FileID, OriginID에 해당하는 Node 정보 반환</h3 ></div><div class="collapse__content" ><aside class="prompt" data-type="note" data-title="" id="36721271_13372"><p>FromOrigin(fileId, originId) &rarr; {Array}</p></aside><p id="36721271_13373"><span class="control" id="36721271_13374">Example</span></p><div class="code-block" data-lang="javascript"         >
+//FileID, OriginID에 해당하는 Node 정보 반환
+let node = vizcore.Object3D.FromOrigin(&quot;FileKey&quot;, 1);
+</div><p id="36721271_13376"><span class="control" id="36721271_13377">Parameters</span></p><div class="table-wrapper" ><table class="wide" id="36721271_13378"  ><thead><tr class="ijRowHead" id="36721271_13379"><th id="36721271_13380"><p>Name</p></th><th id="36721271_13381"><p>Type</p></th><th id="36721271_13382"><p>Description</p></th></tr></thead><tbody ><tr id="36721271_13383"><td id="36721271_13384"><p>fileId</p></td><td id="36721271_13385"><p>string</p></td><td id="36721271_13386"><p>File ID</p></td></tr><tr id="36721271_13387"><td id="36721271_13388"><p>originId</p></td><td id="36721271_13389"><p>Number</p></td><td id="36721271_13390"><p>Origin ID</p></td></tr></tbody ></table ></div><p id="36721271_13391"><span class="control" id="36721271_13392">Returns</span></p><div class="table-wrapper" ><table class="wide" id="36721271_13393"  ><thead><tr class="ijRowHead" id="36721271_13394"><th id="36721271_13395"><p>Type</p></th><th id="36721271_13396"><p>Description</p></th></tr></thead><tbody ><tr id="36721271_13397"><td id="36721271_13398"><p>Array</p></td><td id="36721271_13399"><p>Node Data Array</p></td></tr></tbody ></table ></div><ol class="list _decimal"></ol></div ></div></section></section><section class="chapter"><h2 id="fromroot" data-toc="fromroot">FromRoot</h2><section class="procedure-steps"   > <div class="collapse" ><div class="collapse__title"  ><h3 id="36721271_13400" data-toc="36721271_13400">전체 최상위 노드 반환</h3 ></div><div class="collapse__content" ><aside class="prompt" data-type="note" data-title="" id="36721271_13401"><p id="36721271_13402">FromRoot() &rarr; <code class="code" id="36721271_13403">{Array&lt;Object&gt;}</code></p></aside><p id="36721271_13404"><span class="control" id="36721271_13405">Example</span></p><div class="code-block" data-lang="javascript"         >
+//전체 최상위 노드 반환
+let root = vizcore.Object3D.FromRoot();
+</div><p id="36721271_13407"><span class="control" id="36721271_13408">Returns</span></p><div class="table-wrapper" ><table class="wide" id="36721271_13409"  ><thead><tr class="ijRowHead" id="36721271_13410"><th id="36721271_13411"><p>Type</p></th><th id="36721271_13412"><p>Description</p></th></tr></thead><tbody ><tr id="36721271_13413"><td id="36721271_13414"><p><code class="code" id="36721271_13415">Array&lt;Object&gt;</code></p></td><td id="36721271_13416"><p>Node ID</p></td></tr></tbody ></table ></div><ol class="list _decimal"></ol></div ></div></section></section><section class="chapter"><h2 id="fromrootbykey" data-toc="fromrootbykey">FromRootByKey</h2><section class="procedure-steps"   > <div class="collapse" ><div class="collapse__title"  ><h3 id="36721271_13417" data-toc="36721271_13417">지정된 모델 Key의 최상위 노드 반환</h3 ></div><div class="collapse__content" ><aside class="prompt" data-type="note" data-title="" id="36721271_13418"><p id="36721271_13419">FromRootByKey(key) &rarr; <code class="code" id="36721271_13420">{Array&lt;Object&gt;}</code></p></aside><p id="36721271_13421"><span class="control" id="36721271_13422">Example</span></p><div class="code-block" data-lang="javascript"         >
+//VIZWide3D 용 VIZW 파일의 헤더 추가
+let models = [];
+models.push({url:&quot;./VIZCore/Model/Sample1_wh.vizw&quot;, key:&quot;sample1&quot;});
+vizcore.Model.AddHeader(models);
+//지정된 모델 Key의 최상위 노드 반환
+let nodes = vizcore.Object3D.FromRootByKey(&quot;sample1&quot;);
+</div><p id="36721271_13424"><span class="control" id="36721271_13425">Parameters</span></p><div class="table-wrapper" ><table class="wide" id="36721271_13426"  ><thead><tr class="ijRowHead" id="36721271_13427"><th id="36721271_13428"><p>Name</p></th><th id="36721271_13429"><p>Type</p></th><th id="36721271_13430"><p>Description</p></th></tr></thead><tbody ><tr id="36721271_13431"><td id="36721271_13432"><p>key</p></td><td id="36721271_13433"><p>string</p></td><td id="36721271_13434"><p>File ID</p></td></tr></tbody ></table ></div><p id="36721271_13435"><span class="control" id="36721271_13436">Returns</span></p><div class="table-wrapper" ><table class="wide" id="36721271_13437"  ><thead><tr class="ijRowHead" id="36721271_13438"><th id="36721271_13439"><p>Type</p></th><th id="36721271_13440"><p>Description</p></th></tr></thead><tbody ><tr id="36721271_13441"><td id="36721271_13442"><p><code class="code" id="36721271_13443">Array&lt;Object&gt;</code></p></td><td id="36721271_13444"><p>Node ID</p></td></tr></tbody ></table ></div><ol class="list _decimal"></ol></div ></div></section></section><section class="chapter"><h2 id="fromrootbyurl" data-toc="fromrootbyurl">FromRootByUrl</h2><section class="procedure-steps"   > <div class="collapse" ><div class="collapse__title"  ><h3 id="36721271_13445" data-toc="36721271_13445">지정된 URL의 최상위 노드 반환</h3 ></div><div class="collapse__content" ><aside class="prompt" data-type="note" data-title="" id="36721271_13446"><p id="36721271_13447">FromRootByUrl(url) &rarr; <code class="code" id="36721271_13448">{Array&lt;Object&gt;}</code></p></aside><p id="36721271_13449"><span class="control" id="36721271_13450">Example</span></p><div class="code-block" data-lang="javascript"         >
+//VIZWide3D 용 VIZW 파일의 헤더 추가
+let models = [];
+models.push({url:&quot;./VIZCore/Model/Sample1_wh.vizw&quot;, key:&quot;sample1&quot;});
+vizcore.Model.AddHeader(models);
+//지정된 URL의 최상위 노드 반환
+let nodes = vizcore.Object3D.FromRootByUrl(&quot;./VIZCore/Model/Sample1_wh.vizw&quot;);
+</div><p id="36721271_13452"><span class="control" id="36721271_13453">Parameters</span></p><div class="table-wrapper" ><table class="wide" id="36721271_13454"  ><thead><tr class="ijRowHead" id="36721271_13455"><th id="36721271_13456"><p>Name</p></th><th id="36721271_13457"><p>Type</p></th><th id="36721271_13458"><p>Description</p></th></tr></thead><tbody ><tr id="36721271_13459"><td id="36721271_13460"><p>url</p></td><td id="36721271_13461"><p>string</p></td><td id="36721271_13462"><p>File Download URL</p></td></tr></tbody ></table ></div><p id="36721271_13463"><span class="control" id="36721271_13464">Returns</span></p><div class="table-wrapper" ><table class="wide" id="36721271_13465"  ><thead><tr class="ijRowHead" id="36721271_13466"><th id="36721271_13467"><p>Type</p></th><th id="36721271_13468"><p>Description</p></th></tr></thead><tbody ><tr id="36721271_13469"><td id="36721271_13470"><p><code class="code" id="36721271_13471">Array&lt;Object&gt;</code></p></td><td id="36721271_13472"><p>Node ID</p></td></tr></tbody ></table ></div><ol class="list _decimal"></ol></div ></div></section></section><section class="chapter"><h2 id="getbodiesbyfile" data-toc="getbodiesbyfile">GetBodiesByFile</h2><section class="procedure-steps"   > <div class="collapse" ><div class="collapse__title"  ><h3 id="36721271_13473" data-toc="36721271_13473">지정된 파일 하위 Body 목록 반환</h3 ></div><div class="collapse__content" ><aside class="prompt" data-type="note" data-title="" id="36721271_13474"><p id="36721271_13475">GetBodiesByFile(fileKey) &rarr; <code class="code" id="36721271_13476">{ArrayObject}</code></p></aside><p id="36721271_13477"><span class="control" id="36721271_13478">Example</span></p><div class="code-block" data-lang="javascript"         >
+//VIZWide3D 용 VIZW 파일의 헤더 추가
+let models = [];
+models.push({url:&quot;./VIZCore/Model/Sample1_wh.vizw&quot;, key:&quot;sample1&quot;});
+vizcore.Model.AddHeader(models);
+//지정된 파일 하위 Body 목록 반환
+let bodies = vizcore.Object3D.GetBodiesByFile(&quot;sample1&quot;);
+</div><p id="36721271_13480"><span class="control" id="36721271_13481">Parameters</span></p><div class="table-wrapper" ><table class="wide" id="36721271_13482"  ><thead><tr class="ijRowHead" id="36721271_13483"><th id="36721271_13484"><p>Name</p></th><th id="36721271_13485"><p>Type</p></th><th id="36721271_13486"><p>Description</p></th></tr></thead><tbody ><tr id="36721271_13487"><td id="36721271_13488"><p>fileKey</p></td><td id="36721271_13489"><p>string</p></td><td id="36721271_13490"><p>File ID</p></td></tr></tbody ></table ></div><p id="36721271_13491"><span class="control" id="36721271_13492">Returns</span></p><div class="table-wrapper" ><table class="wide" id="36721271_13493"  ><thead><tr class="ijRowHead" id="36721271_13494"><th id="36721271_13495"><p>Type</p></th><th id="36721271_13496"><p>Description</p></th></tr></thead><tbody ><tr id="36721271_13497"><td id="36721271_13498"><p><code class="code" id="36721271_13499">Array&lt;Object&gt;</code></p></td><td id="36721271_13500"><p>Body Object Array</p></td></tr></tbody ></table ></div><ol class="list _decimal"></ol></div ></div></section></section><section class="chapter"><h2 id="getbodiesbynode" data-toc="getbodiesbynode">GetBodiesByNode</h2><section class="procedure-steps"   > <div class="collapse" ><div class="collapse__title"  ><h3 id="36721271_13501" data-toc="36721271_13501">지정된 노드의 하위 Body 목록 반환</h3 ></div><div class="collapse__content" ><aside class="prompt" data-type="note" data-title="" id="36721271_13502"><p id="36721271_13503">GetBodiesByNode(nodes) &rarr; {<code class="code" id="36721271_13504">Array&lt;Object&gt;</code>}</p></aside><p id="36721271_13505"><span class="control" id="36721271_13506">Example</span></p><div class="code-block" data-lang="javascript"         >
+//노드 이름에 해당하는 노드 반환
+let nodes = vizcore.Object3D.Find.GetNodeByName(
+    'PIPE101'   // Keyword
+    , true      // Full Match
+);
+
+let color = new VIZCore.Color(255, 125, 0, 255);                    //R, G, B, A
+//지정된 노드의 하위 Body 목록 반환
+let bodies = vizcore.Object3D.GetBodiesByNode(nodes);
+vizcore.Object3D.Color.SetColorByBody(bodies, color);
+</div><p id="36721271_13508"><span class="control" id="36721271_13509">Parameters</span></p><div class="table-wrapper" ><table class="wide" id="36721271_13510"  ><thead><tr class="ijRowHead" id="36721271_13511"><th id="36721271_13512"><p>Name</p></th><th id="36721271_13513"><p>Type</p></th><th id="36721271_13514"><p>Description</p></th></tr></thead><tbody ><tr id="36721271_13515"><td id="36721271_13516"><p>nodes</p></td><td id="36721271_13517"><p><code class="code" id="36721271_13518">Array&lt;Object&gt;</code></p></td><td id="36721271_13519"><p>Node Object Array</p></td></tr></tbody ></table ></div><p id="36721271_13520"><span class="control" id="36721271_13521">Returns</span></p><div class="table-wrapper" ><table class="wide" id="36721271_13522"  ><thead><tr class="ijRowHead" id="36721271_13523"><th id="36721271_13524"><p>Type</p></th><th id="36721271_13525"><p>Description</p></th></tr></thead><tbody ><tr id="36721271_13526"><td id="36721271_13527"><p><code class="code" id="36721271_13528">Array&lt;Object&gt;</code></p></td><td id="36721271_13529"><p>Body Object Array</p></td></tr></tbody ></table ></div><ol class="list _decimal"></ol></div ></div></section></section><section class="chapter"><h2 id="getbodiesbynodeid" data-toc="getbodiesbynodeid">GetBodiesByNodeID</h2><section class="procedure-steps"   > <div class="collapse" ><div class="collapse__title"  ><h3 id="36721271_13530" data-toc="36721271_13530">지정된 Node ID의 하위 Body 목록 반환</h3 ></div><div class="collapse__content" ><aside class="prompt" data-type="note" data-title="" id="36721271_13531"><p id="36721271_13532">GetBodiesByNodeID(nodeIds) &rarr; {<code class="code" id="36721271_13533">Array&lt;Object&gt;</code>}</p></aside><p id="36721271_13534"><span class="control" id="36721271_13535">Example</span></p><div class="code-block" data-lang="javascript"         >
+//노드 이름에 해당하는 노드 반환
+let nodes = vizcore.Object3D.Find.GetNodeByName(
+    'PIPE101'   // Keyword
+    , true      // Full Match
+);
+
+let nodeIds = [];                                       //Array&lt;Number&gt;
+for (let i = 0; i &lt; nodes.length; i++) {
+    nodeIds.push(nodes[i].id);
+}
+//지정된 Node ID의 하위 Body 목록 반환
+let bodies = vizcore.Object3D.GetBodiesByNodeID(nodeIds);
+</div><p id="36721271_13537"><span class="control" id="36721271_13538">Parameters</span></p><div class="table-wrapper" ><table class="wide" id="36721271_13539"  ><thead><tr class="ijRowHead" id="36721271_13540"><th id="36721271_13541"><p>Name</p></th><th id="36721271_13542"><p>Type</p></th><th id="36721271_13543"><p>Description</p></th></tr></thead><tbody ><tr id="36721271_13544"><td id="36721271_13545"><p>nodeIds</p></td><td id="36721271_13546"><p><code class="code" id="36721271_13547">Array&lt;Number&gt;</code></p></td><td id="36721271_13548"><p>Node Object ID Array</p></td></tr></tbody ></table ></div><p id="36721271_13549"><span class="control" id="36721271_13550">Returns</span></p><div class="table-wrapper" ><table class="wide" id="36721271_13551"  ><thead><tr class="ijRowHead" id="36721271_13552"><th id="36721271_13553"><p>Type</p></th><th id="36721271_13554"><p>Description</p></th></tr></thead><tbody ><tr id="36721271_13555"><td id="36721271_13556"><p><code class="code" id="36721271_13557">Array&lt;Object&gt;</code></p></td><td id="36721271_13558"><p>Body Object Array</p></td></tr></tbody ></table ></div><ol class="list _decimal"></ol></div ></div></section></section><section class="chapter"><h2 id="getbodyidsbyfile" data-toc="getbodyidsbyfile">GetBodyIdsByFile</h2><section class="procedure-steps"   > <div class="collapse" ><div class="collapse__title"  ><h3 id="36721271_13559" data-toc="36721271_13559">지정된 파일 하위 BodyID 목록 반환</h3 ></div><div class="collapse__content" ><aside class="prompt" data-type="note" data-title="" id="36721271_13560"><p id="36721271_13561">GetBodyIdsByFile(fileKey) &rarr; <code class="code" id="36721271_13562">{Array&lt;Number&gt;}</code></p></aside><p id="36721271_13563"><span class="control" id="36721271_13564">Example</span></p><div class="code-block" data-lang="javascript"         >
+//VIZWide3D 용 VIZW 파일의 헤더 추가
+let models = [];
+models.push({url:&quot;./VIZCore/Model/Sample1_wh.vizw&quot;, key:&quot;sample1&quot;});
+vizcore.Model.AddHeader(models);
+//지정된 파일 하위 BodyID 목록 반환
+let bodyIds = vizcore.Object3D.GetBodyIdsByFile(&quot;sample1&quot;);
+</div><p id="36721271_13566"><span class="control" id="36721271_13567">Parameters</span></p><div class="table-wrapper" ><table class="wide" id="36721271_13568"  ><thead><tr class="ijRowHead" id="36721271_13569"><th id="36721271_13570"><p>Name</p></th><th id="36721271_13571"><p>Type</p></th><th id="36721271_13572"><p>Description</p></th></tr></thead><tbody ><tr id="36721271_13573"><td id="36721271_13574"><p>fileKey</p></td><td id="36721271_13575"><p>string</p></td><td id="36721271_13576"><p>fileKey</p></td></tr></tbody ></table ></div><p id="36721271_13577"><span class="control" id="36721271_13578">Returns</span></p><div class="table-wrapper" ><table class="wide" id="36721271_13579"  ><thead><tr class="ijRowHead" id="36721271_13580"><th id="36721271_13581"><p>Type</p></th><th id="36721271_13582"><p>Description</p></th></tr></thead><tbody ><tr id="36721271_13583"><td id="36721271_13584"><p><code class="code" id="36721271_13585">Array&lt;Number&gt;</code></p></td><td id="36721271_13586"><p>Body ID Array</p></td></tr></tbody ></table ></div><ol class="list _decimal"></ol></div ></div></section></section><section class="chapter"><h2 id="getbodyidsbynode" data-toc="getbodyidsbynode">GetBodyIdsByNode</h2><section class="procedure-steps"   > <div class="collapse" ><div class="collapse__title"  ><h3 id="36721271_13587" data-toc="36721271_13587">지정된 노드 하위 BodyID 목록 반환</h3 ></div><div class="collapse__content" ><aside class="prompt" data-type="note" data-title="" id="36721271_13588"><p id="36721271_13589">GetBodyIdsByNode(nodes) &rarr; <code class="code" id="36721271_13590">{Array&lt;Number&gt;}</code></p></aside><p id="36721271_13591"><span class="control" id="36721271_13592">Example</span></p><div class="code-block" data-lang="javascript"         >
+//노드 이름에 해당하는 노드 반환
+let nodes = vizcore.Object3D.Find.GetNodeByName(
+    'PIPE101'   // Keyword
+    , true      // Full Match
+);
+//지정된 노드 하위 BodyID 목록 반환
+let bodyIds = vizcore.Object3D.GetBodyIdsByNode(nodes);
+</div><p id="36721271_13594"><span class="control" id="36721271_13595">Parameters</span></p><div class="table-wrapper" ><table class="wide" id="36721271_13596"  ><thead><tr class="ijRowHead" id="36721271_13597"><th id="36721271_13598"><p>Name</p></th><th id="36721271_13599"><p>Type</p></th><th id="36721271_13600"><p>Description</p></th></tr></thead><tbody ><tr id="36721271_13601"><td id="36721271_13602"><p>nodes</p></td><td id="36721271_13603"><p><code class="code" id="36721271_13604">Array&lt;Object&gt;</code></p></td><td id="36721271_13605"><p>Node Object Array</p></td></tr></tbody ></table ></div><p id="36721271_13606"><span class="control" id="36721271_13607">Returns</span></p><div class="table-wrapper" ><table class="wide" id="36721271_13608"  ><thead><tr class="ijRowHead" id="36721271_13609"><th id="36721271_13610"><p>Type</p></th><th id="36721271_13611"><p>Description</p></th></tr></thead><tbody ><tr id="36721271_13612"><td id="36721271_13613"><p><code class="code" id="36721271_13614">Array&lt;Number&gt;</code></p></td><td id="36721271_13615"><p>Body ID Array</p></td></tr></tbody ></table ></div><ol class="list _decimal"></ol></div ></div></section></section><section class="chapter"><h2 id="getbodyidsbynodeid" data-toc="getbodyidsbynodeid">GetBodyIdsByNodeID</h2><section class="procedure-steps"   > <div class="collapse" ><div class="collapse__title"  ><h3 id="36721271_13616" data-toc="36721271_13616">지정된 Node ID 하위 BodyID 목록 반환</h3 ></div><div class="collapse__content" ><aside class="prompt" data-type="note" data-title="" id="36721271_13617"><p id="36721271_13618">GetBodyIdsByNodeID(ids) &rarr; <code class="code" id="36721271_13619">{Array&lt;Number&gt;}</code></p></aside><p id="36721271_13620"><span class="control" id="36721271_13621">Example</span></p><div class="code-block" data-lang="javascript"         >
+//노드 이름에 해당하는 노드 반환
+let nodes = vizcore.Object3D.Find.GetNodeByName(
+    'PIPE101'   // Keyword
+    , true      // Full Match
+);
+
+let nodeIds = [];                                       //Array&lt;Number&gt;
+for (let i = 0; i &lt; nodes.length; i++) {
+    nodeIds.push(nodes[i].id);
+}
+//지정된 Node ID 하위 BodyID 목록 반환
+let bodyIds = vizcore.Object3D.GetBodyIdsByNodeID(nodeIds);
+</div><p id="36721271_13623"><span class="control" id="36721271_13624">Parameters</span></p><div class="table-wrapper" ><table class="wide" id="36721271_13625"  ><thead><tr class="ijRowHead" id="36721271_13626"><th id="36721271_13627"><p>Name</p></th><th id="36721271_13628"><p>Type</p></th><th id="36721271_13629"><p>Description</p></th></tr></thead><tbody ><tr id="36721271_13630"><td id="36721271_13631"><p>ids</p></td><td id="36721271_13632"><p><code class="code" id="36721271_13633">Array&lt;Number&gt;</code></p></td><td id="36721271_13634"><p>Node ID Array</p></td></tr></tbody ></table ></div><p id="36721271_13635"><span class="control" id="36721271_13636">Returns</span></p><div class="table-wrapper" ><table class="wide" id="36721271_13637"  ><thead><tr class="ijRowHead" id="36721271_13638"><th id="36721271_13639"><p>Type</p></th><th id="36721271_13640"><p>Description</p></th></tr></thead><tbody ><tr id="36721271_13641"><td id="36721271_13642"><p><code class="code" id="36721271_13643">Array&lt;Number&gt;</code></p></td><td id="36721271_13644"><p>Body ID Array</p></td></tr></tbody ></table ></div><ol class="list _decimal"></ol></div ></div></section></section><section class="chapter"><h2 id="getbodyidsbynodeoriginid" data-toc="getbodyidsbynodeoriginid">GetBodyIdsByNodeOriginID</h2><section class="procedure-steps"   > <div class="collapse" ><div class="collapse__title"  ><h3 id="36721271_13645" data-toc="36721271_13645">지정된 NodeOriginID 하위 BodyID 목록 반환</h3 ></div><div class="collapse__content" ><aside class="prompt" data-type="note" data-title="" id="36721271_13646"><p id="36721271_13647">GetBodyIdsByNodeOriginID(fileKey, ids) &rarr; <code class="code" id="36721271_13648">{Array&lt;Number&gt;}</code></p></aside><p id="36721271_13649"><span class="control" id="36721271_13650">Example</span></p><div class="code-block" data-lang="javascript"         >
+//지정된 NodeOriginID 하위 BodyID 목록 반환
+let bodyIds = vizcore.Object3D.GetBodyIdsByNodeOriginID(&quot;sample1&quot;, [1]);
+</div><p id="36721271_13652"><span class="control" id="36721271_13653">Parameters</span></p><div class="table-wrapper" ><table class="wide" id="36721271_13654"  ><thead><tr class="ijRowHead" id="36721271_13655"><th id="36721271_13656"><p>Name</p></th><th id="36721271_13657"><p>Type</p></th><th id="36721271_13658"><p>Description</p></th></tr></thead><tbody ><tr id="36721271_13659"><td id="36721271_13660"><p>fileKey</p></td><td id="36721271_13661"><p>String</p></td><td id="36721271_13662"><p>fileKey</p></td></tr><tr id="36721271_13663"><td id="36721271_13664"><p>ids</p></td><td id="36721271_13665"><p><code class="code" id="36721271_13666">Array&lt;Number&gt;</code></p></td><td id="36721271_13667"><p>originIds</p></td></tr></tbody ></table ></div><p id="36721271_13668"><span class="control" id="36721271_13669">Returns</span></p><div class="table-wrapper" ><table class="wide" id="36721271_13670"  ><thead><tr class="ijRowHead" id="36721271_13671"><th id="36721271_13672"><p>Type</p></th><th id="36721271_13673"><p>Description</p></th></tr></thead><tbody ><tr id="36721271_13674"><td id="36721271_13675"><p><code class="code" id="36721271_13676">Array&lt;Number&gt;</code></p></td><td id="36721271_13677"><p>Body ID Array</p></td></tr></tbody ></table ></div><ol class="list _decimal"></ol></div ></div></section></section><section class="chapter"><h2 id="getboundbox" data-toc="getboundbox">GetBoundBox</h2><section class="procedure-steps"   > <div class="collapse" ><div class="collapse__title"  ><h3 id="36721271_13678" data-toc="36721271_13678">모델 전체 BoundBox 반환</h3 ></div><div class="collapse__content" ><aside class="prompt" data-type="note" data-title="" id="36721271_13679"><p>GetBoundBox() &rarr; {VIZCore.BBox}</p></aside><p id="36721271_13680"><span class="control" id="36721271_13681">Example</span></p><div class="code-block" data-lang="javascript"         >
+//모델 전체 BoundBox 반환
+let bbox = vizcore.Object3D.GetBoundBox();
+</div><p id="36721271_13683"><span class="control" id="36721271_13684">Returns</span></p><div class="table-wrapper" ><table class="wide" id="36721271_13685"  ><thead><tr class="ijRowHead" id="36721271_13686"><th id="36721271_13687"><p>Type</p></th><th id="36721271_13688"><p>Description</p></th></tr></thead><tbody ><tr id="36721271_13689"><td id="36721271_13690"><p>VIZCore.BBox</p></td><td id="36721271_13691"><p>BoundBox</p></td></tr></tbody ></table ></div><ol class="list _decimal"></ol></div ></div></section></section><section class="chapter"><h2 id="getboundboxbynode" data-toc="getboundboxbynode">GetBoundBoxByNode</h2><section class="procedure-steps"   > <div class="collapse" ><div class="collapse__title"  ><h3 id="36721271_13692" data-toc="36721271_13692">지정된 노드의 BoundBox 반환</h3 ></div><div class="collapse__content" ><aside class="prompt" data-type="note" data-title="" id="36721271_13693"><p>GetBoundBoxByNode(nodes) &rarr; {VIZCore.BBox}</p></aside><p id="36721271_13694"><span class="control" id="36721271_13695">Example</span></p><div class="code-block" data-lang="javascript"         >
+//노드 이름에 해당하는 노드 반환
+let nodes = vizcore.Object3D.Find.GetNodeByName(
+    'PIPE101'   // Keyword
+    , true      // Full Match
+);
+//지정된 노드의 BoundBox 반환
+let bbox = vizcore.Object3D.GetBoundBoxByNode(nodes);
+</div><p id="36721271_13697"><span class="control" id="36721271_13698">Parameters</span></p><div class="table-wrapper" ><table class="wide" id="36721271_13699"  ><thead><tr class="ijRowHead" id="36721271_13700"><th id="36721271_13701"><p>Name</p></th><th id="36721271_13702"><p>Type</p></th><th id="36721271_13703"><p>Description</p></th></tr></thead><tbody ><tr id="36721271_13704"><td id="36721271_13705"><p>nodes</p></td><td id="36721271_13706"><p><code class="code" id="36721271_13707">Array&lt;Object&gt;</code></p></td><td id="36721271_13708"><p>Node Object Array</p></td></tr></tbody ></table ></div><p id="36721271_13709"><span class="control" id="36721271_13710">Returns</span></p><div class="table-wrapper" ><table class="wide" id="36721271_13711"  ><thead><tr class="ijRowHead" id="36721271_13712"><th id="36721271_13713"><p>Type</p></th><th id="36721271_13714"><p>Description</p></th></tr></thead><tbody ><tr id="36721271_13715"><td id="36721271_13716"><p>VIZCore.BBox</p></td><td id="36721271_13717"><p>BoundBox</p></td></tr></tbody ></table ></div><ol class="list _decimal"></ol></div ></div></section></section><section class="chapter"><h2 id="getboundboxbynodeid" data-toc="getboundboxbynodeid">GetBoundBoxByNodeID</h2><section class="procedure-steps"   > <div class="collapse" ><div class="collapse__title"  ><h3 id="36721271_13718" data-toc="36721271_13718">지정된 Node ID의 BoundBox 반환</h3 ></div><div class="collapse__content" ><aside class="prompt" data-type="note" data-title="" id="36721271_13719"><p>GetBoundBoxByNodeID(nodeIds) &rarr; {VIZCore.BBox}</p></aside><p id="36721271_13720"><span class="control" id="36721271_13721">Example</span></p><div class="code-block" data-lang="javascript"         >
+//노드 이름에 해당하는 노드 반환
+let nodes = vizcore.Object3D.Find.GetNodeByName(
+    'PIPE101'   // Keyword
+    , true      // Full Match
+);
+        
+let nodeIds = [];                                       //Array&lt;Number&gt;
+for (let i = 0; i &lt; nodes.length; i++) {
+    nodeIds.push(nodes[i].id);
+}
+//지정된 Node ID의 BoundBox 반환
+let bbox = vizcore.Object3D.GetBoundBoxByNodeID(nodeIds);
+</div><p id="36721271_13723"><span class="control" id="36721271_13724">Parameters</span></p><div class="table-wrapper" ><table class="wide" id="36721271_13725"  ><thead><tr class="ijRowHead" id="36721271_13726"><th id="36721271_13727"><p>Name</p></th><th id="36721271_13728"><p>Type</p></th><th id="36721271_13729"><p>Description</p></th></tr></thead><tbody ><tr id="36721271_13730"><td id="36721271_13731"><p>nodeIds</p></td><td id="36721271_13732"><p><code class="code" id="36721271_13733">Array&lt;Number&gt;</code></p></td><td id="36721271_13734"><p>Node Object ID Array</p></td></tr></tbody ></table ></div><p id="36721271_13735"><span class="control" id="36721271_13736">Returns</span></p><div class="table-wrapper" ><table class="wide" id="36721271_13737"  ><thead><tr class="ijRowHead" id="36721271_13738"><th id="36721271_13739"><p>Type</p></th><th id="36721271_13740"><p>Description</p></th></tr></thead><tbody ><tr id="36721271_13741"><td id="36721271_13742"><p>VIZCore.BBox</p></td><td id="36721271_13743"><p>BoundBox</p></td></tr></tbody ></table ></div><ol class="list _decimal"></ol></div ></div></section></section><section class="chapter"><h2 id="getinnerobjects" data-toc="getinnerobjects">GetInnerObjects</h2><section class="procedure-steps"   > <div class="collapse" ><div class="collapse__title"  ><h3 id="36721271_13744" data-toc="36721271_13744">BBox 영역 내 노드 반환</h3 ></div><div class="collapse__content" ><aside class="prompt" data-type="note" data-title="" id="36721271_13745"><p>GetInnerObjects(bbox, union) &rarr; {Array}</p></aside><p id="36721271_13746"><span class="control" id="36721271_13747">Example</span></p><div class="code-block" data-lang="javascript"         >
+//모델 전체 BoundBox 반환
+let bbox = vizcore.Object3D.GetBoundBox();
+//BBox 영역 내 노드 반환
+let nodes = vizcore.Object3D.GetInnerObjects(bbox, true);
+</div><p id="36721271_13749"><span class="control" id="36721271_13750">Parameters</span></p><div class="table-wrapper" ><table class="wide" id="36721271_13751"  ><thead><tr class="ijRowHead" id="36721271_13752"><th id="36721271_13753"><p>Name</p></th><th id="36721271_13754"><p>Type</p></th><th id="36721271_13755"><p>Description</p></th></tr></thead><tbody ><tr id="36721271_13756"><td id="36721271_13757"><p>bbox</p></td><td id="36721271_13758"><p>VIZCore.BBox</p></td><td id="36721271_13759"><p>BoundBox</p></td></tr><tr id="36721271_13760"><td id="36721271_13761"><p>union</p></td><td id="36721271_13762"><p>Boolean</p></td><td id="36721271_13763"><p>전체 포함 여부</p></td></tr></tbody ></table ></div><p id="36721271_13764"><span class="control" id="36721271_13765">Returns</span></p><div class="table-wrapper" ><table class="wide" id="36721271_13766"  ><thead><tr class="ijRowHead" id="36721271_13767"><th id="36721271_13768"><p>Type</p></th><th id="36721271_13769"><p>Description</p></th></tr></thead><tbody ><tr id="36721271_13770"><td id="36721271_13771"><p>Array</p></td><td id="36721271_13772"><p>Node ID Array</p></td></tr></tbody ></table ></div><ol class="list _decimal"></ol></div ></div></section></section><section class="chapter"><h2 id="getnodestructure" data-toc="getnodestructure">GetNodeStructure</h2><section class="procedure-steps"   > <div class="collapse" ><div class="collapse__title"  ><h3 id="36721271_13773" data-toc="36721271_13773">Node ID의 Structure 정보 반환</h3 ></div><div class="collapse__content" ><aside class="prompt" data-type="note" data-title="" id="36721271_13774"><p>GetNodeStructure(id, topDown) &rarr; {Array}</p></aside><p id="36721271_13775"><span class="control" id="36721271_13776">Example</span></p><div class="code-block" data-lang="javascript"         >
+// Node ID의 Structure 정보 반환
+console.log(vizcore.Object3D.GetNodeStructure(9,false));
+</div><p id="36721271_13778"><span class="control" id="36721271_13779">Parameters</span></p><div class="table-wrapper" ><table class="wide" id="36721271_13780"  ><thead><tr class="ijRowHead" id="36721271_13781"><th id="36721271_13782"><p>Name</p></th><th id="36721271_13783"><p>Type</p></th><th id="36721271_13784"><p>Description</p></th></tr></thead><tbody ><tr id="36721271_13785"><td id="36721271_13786"><p>id</p></td><td id="36721271_13787"><p>Number</p></td><td id="36721271_13788"><p>Node ID</p></td></tr><tr id="36721271_13789"><td id="36721271_13790"><p>topDown</p></td><td id="36721271_13791"><p>Boolean</p></td><td id="36721271_13792"><p>True(TopDown), False(BottomUp)</p></td></tr></tbody ></table ></div><p id="36721271_13793"><span class="control" id="36721271_13794">Returns</span></p><div class="table-wrapper" ><table class="wide" id="36721271_13795"  ><thead><tr class="ijRowHead" id="36721271_13796"><th id="36721271_13797"><p>Type</p></th><th id="36721271_13798"><p>Description</p></th></tr></thead><tbody ><tr id="36721271_13799"><td id="36721271_13800"><p>Array</p></td><td id="36721271_13801"><p>Node Array</p></td></tr></tbody ></table ></div><ol class="list _decimal"></ol></div ></div></section></section><section class="chapter"><h2 id="getoriginboundbox" data-toc="getoriginboundbox">GetOriginBoundBox</h2><section class="procedure-steps"   > <div class="collapse" ><div class="collapse__title"  ><h3 id="36721271_13802" data-toc="36721271_13802">모델 Origin BoundBox 반환</h3 ></div><div class="collapse__content" ><aside class="prompt" data-type="note" data-title="" id="36721271_13803"><p>GetOriginBoundBox(nodes) &rarr; {VIZCore.BBox}</p></aside><p id="36721271_13804"><span class="control" id="36721271_13805">Example</span></p><div class="code-block" data-lang="javascript"         >
+//노드 이름에 해당하는 노드 반환
+let nodes = vizcore.Object3D.Find.GetNodeByName(
+    'PIPE101'   // Keyword
+    , true      // Full Match
+);
+//모델 Origin BoundBox 반환
+let bbox = vizcore.Object3D.GetOriginBoundBox(nodes);
+</div><p id="36721271_13807"><span class="control" id="36721271_13808">Parameters</span></p><div class="table-wrapper" ><table class="wide" id="36721271_13809"  ><thead><tr class="ijRowHead" id="36721271_13810"><th id="36721271_13811"><p>Name</p></th><th id="36721271_13812"><p>Type</p></th><th id="36721271_13813"><p>Description</p></th></tr></thead><tbody ><tr id="36721271_13814"><td id="36721271_13815"><p>nodes</p></td><td id="36721271_13816"><p><code class="code" id="36721271_13817">Array&lt;Object&gt;</code></p></td><td id="36721271_13818"><p>Node Object Array</p></td></tr></tbody ></table ></div><p id="36721271_13819"><span class="control" id="36721271_13820">Returns</span></p><div class="table-wrapper" ><table class="wide" id="36721271_13821"  ><thead><tr class="ijRowHead" id="36721271_13822"><th id="36721271_13823"><p>Type</p></th><th id="36721271_13824"><p>Description</p></th></tr></thead><tbody ><tr id="36721271_13825"><td id="36721271_13826"><p>VIZCore.BBox</p></td><td id="36721271_13827"><p>BoundBox</p></td></tr></tbody ></table ></div><ol class="list _decimal"></ol></div ></div></section></section><section class="chapter"><h2 id="getselectedobject3d" data-toc="getselectedobject3d">GetSelectedObject3D</h2><section class="procedure-steps"   > <div class="collapse" ><div class="collapse__title"  ><h3 id="36721271_13828" data-toc="36721271_13828">선택된 모델 반환</h3 ></div><div class="collapse__content" ><aside class="prompt" data-type="note" data-title="" id="36721271_13829"><p id="36721271_13830">GetSelectedObject3D() &rarr; {<code class="code" id="36721271_13831">Array&lt;Number&gt;</code>}</p></aside><p id="36721271_13832"><span class="control" id="36721271_13833">Example</span></p><div class="code-block" data-lang="javascript"         >
+//선택된 모델 반환
+let item = vizcore.Object3D.GetSelectedObject3D();
+</div><p id="36721271_13835"><span class="control" id="36721271_13836">Returns</span></p><div class="table-wrapper" ><table class="wide" id="36721271_13837"  ><thead><tr class="ijRowHead" id="36721271_13838"><th id="36721271_13839"><p>Type</p></th><th id="36721271_13840"><p>Description</p></th></tr></thead><tbody ><tr id="36721271_13841"><td id="36721271_13842"><p><code class="code" id="36721271_13843">Array&lt;Number&gt;</code></p></td><td id="36721271_13844"><p>Body ID Array</p></td></tr></tbody ></table ></div><ol class="list _decimal"></ol></div ></div></section></section><section class="chapter"><h2 id="hideunselectedobject" data-toc="hideunselectedobject">HideUnselectedObject</h2><section class="procedure-steps"   > <div class="collapse" ><div class="collapse__title"  ><h3 id="36721271_13845" data-toc="36721271_13845">비선택 개체 숨기기</h3 ></div><div class="collapse__content" ><aside class="prompt" data-type="note" data-title="" id="36721271_13846"><p>HideUnselectedObject()</p></aside><p id="36721271_13847"><span class="control" id="36721271_13848">Example</span></p><div class="code-block" data-lang="javascript"         >
+//비선택 개체 숨기기
+vizcore.Object3D.HideUnselectedObject();
+</div><ol class="list _decimal"></ol></div ></div></section></section><section class="chapter"><h2 id="invertselection" data-toc="invertselection">InvertSelection</h2><section class="procedure-steps"   > <div class="collapse" ><div class="collapse__title"  ><h3 id="36721271_13850" data-toc="36721271_13850">선택 반전</h3 ></div><div class="collapse__content" ><aside class="prompt" data-type="note" data-title="" id="36721271_13851"><p>InvertSelection()</p></aside><p id="36721271_13852"><span class="control" id="36721271_13853">Example</span></p><div class="code-block" data-lang="javascript"         >
+//선택 반전
+vizcore.Object3D.InvertSelection();
+</div><ol class="list _decimal"></ol></div ></div></section></section><section class="chapter"><h2 id="lockmeshcache" data-toc="lockmeshcache">LockMeshCache</h2><section class="procedure-steps"   > <div class="collapse" ><div class="collapse__title"  ><h3 id="36721271_13855" data-toc="36721271_13855">Mesh Cache 메모리 우선 사용</h3 ></div><div class="collapse__content" ><aside class="prompt" data-type="note" data-title="" id="36721271_13856"><p>LockMeshCache(fileKey)</p></aside><p id="36721271_13857"><span class="control" id="36721271_13858">Example</span></p><div class="code-block" data-lang="javascript"         >
+//VIZWide3D 용 VIZW 파일의 헤더 추가
+let models = [];
+models.push({url:&quot;./VIZCore/Model/Sample1_wh.vizw&quot;, key:&quot;sample1&quot;});
+vizcore.Model.AddHeader(models);
+//Mesh Cache 메모리 우선 사용
+vizcore.Object3D.LockMeshCache(&quot;sample1&quot;);
+</div><p id="36721271_13860"><span class="control" id="36721271_13861">Parameters</span></p><div class="table-wrapper" ><table class="wide" id="36721271_13862"  ><thead><tr class="ijRowHead" id="36721271_13863"><th id="36721271_13864"><p>Name</p></th><th id="36721271_13865"><p>Type</p></th><th id="36721271_13866"><p>Description</p></th></tr></thead><tbody ><tr id="36721271_13867"><td id="36721271_13868"><p>fileKey</p></td><td id="36721271_13869"><p>Object</p></td><td id="36721271_13870"><p>파일 ID</p></td></tr></tbody ></table ></div><ol class="list _decimal"></ol></div ></div></section></section><section class="chapter"><h2 id="refreshbbox" data-toc="refreshbbox">RefreshBBox</h2><section class="procedure-steps"   > <div class="collapse" ><div class="collapse__title"  ><h3 id="36721271_13871" data-toc="36721271_13871">모델 전체 BoundBox 재계산</h3 ></div><div class="collapse__content" ><aside class="prompt" data-type="note" data-title="" id="36721271_13872"><p>RefreshBBox()</p></aside><p id="36721271_13873"><span class="control" id="36721271_13874">Example</span></p><div class="code-block" data-lang="javascript"         >
+//모델 전체 BoundBox 재계산
+vizcore.Object3D.RefreshBBox();
+</div><ol class="list _decimal"></ol></div ></div></section></section><section class="chapter"><h2 id="selectall" data-toc="selectall">SelectAll</h2><section class="procedure-steps"   > <div class="collapse" ><div class="collapse__title"  ><h3 id="36721271_13876" data-toc="36721271_13876">전체 개체 선택 / 선택해제</h3 ></div><div class="collapse__content" ><aside class="prompt" data-type="note" data-title="" id="36721271_13877"><p>SelectAll(select)</p></aside><p id="36721271_13878"><span class="control" id="36721271_13879">Example</span></p><div class="code-block" data-lang="javascript"         >
+vizcore.Object3D.SelectAll(true);  // 전체 개체 선택
+vizcore.Object3D.SelectAll(false); // 전체 개체 선택해제
+</div><p id="36721271_13881"><span class="control" id="36721271_13882">Parameters</span></p><div class="table-wrapper" ><table class="wide" id="36721271_13883"  ><thead><tr class="ijRowHead" id="36721271_13884"><th id="36721271_13885"><p>Name</p></th><th id="36721271_13886"><p>Type</p></th><th id="36721271_13887"><p>Description</p></th></tr></thead><tbody ><tr id="36721271_13888"><td id="36721271_13889"><p>select</p></td><td id="36721271_13890"><p>Boolean</p></td><td id="36721271_13891"><p>True(전체 선택), False(전체 선택해제)</p></td></tr></tbody ></table ></div><ol class="list _decimal"></ol></div ></div></section></section><section class="chapter"><h2 id="selectbyfile" data-toc="selectbyfile">SelectByFile</h2><section class="procedure-steps"   > <div class="collapse" ><div class="collapse__title"  ><h3 id="36721271_13892" data-toc="36721271_13892">지정 파일로 모델 선택/해제 설정</h3 ></div><div class="collapse__content" ><aside class="prompt" data-type="note" data-title="" id="36721271_13893"><p>SelectByFile(fileIds, selection, append)</p></aside><p id="36721271_13894"><span class="control" id="36721271_13895">Example</span></p><div class="code-block" data-lang="javascript"         >
+//모델 선택/해제 설정
+let fileId = &quot;FileKey&quot;;                                         //FileID
+vizcore.Object3D.SelectByFile(fileId, true, true);
+
+let fileIds = [&quot;FileKey1&quot;, &quot;FileKey2&quot;];                         //FileID Array
+vizcore.Object3D.SelectByFile(fileIds, true, true);
+</div><p id="36721271_13897"><span class="control" id="36721271_13898">Parameters</span></p><div class="table-wrapper" ><table class="wide" id="36721271_13899"  ><thead><tr class="ijRowHead" id="36721271_13900"><th id="36721271_13901"><p>Name</p></th><th id="36721271_13902"><p>Type</p></th><th id="36721271_13903"><p>Description</p></th></tr></thead><tbody ><tr id="36721271_13904"><td id="36721271_13905"><p>fileIds</p></td><td id="36721271_13906"><p>Object</p></td><td id="36721271_13907"><p>FileID or FileID Array</p></td></tr><tr id="36721271_13908"><td id="36721271_13909"><p>selection</p></td><td id="36721271_13910"><p>Boolean</p></td><td id="36721271_13911"><p>true: 선택 / false: 선택해제</p></td></tr><tr id="36721271_13912"><td id="36721271_13913"><p>append</p></td><td id="36721271_13914"><p>Boolean</p></td><td id="36721271_13915"><p>true: 선택추가 / false: 해당 id 만 선택</p></td></tr></tbody ></table ></div><ol class="list _decimal"></ol></div ></div></section></section><section class="chapter"><h2 id="selectbynode" data-toc="selectbynode">SelectByNode</h2><section class="procedure-steps"   > <div class="collapse" ><div class="collapse__title"  ><h3 id="36721271_13916" data-toc="36721271_13916">지정 노드로 모델 선택/해제 설정</h3 ></div><div class="collapse__content" ><aside class="prompt" data-type="note" data-title="" id="36721271_13917"><p>SelectByNode(nodes, selection, append)</p></aside><p id="36721271_13918"><span class="control" id="36721271_13919">Example</span></p><div class="code-block" data-lang="javascript"         >
+//노드 이름에 해당하는 노드 반환
+let nodes = vizcore.Object3D.Find.GetNodeByName(
+    'PIPE101'   // Keyword
+    , true      // Full Match
+);
+//모델 선택/해제 설정
+vizcoreide3d.Object3D.SelectByNode(nodes, true, true);
+</div><p id="36721271_13921"><span class="control" id="36721271_13922">Parameters</span></p><div class="table-wrapper" ><table class="wide" id="36721271_13923"  ><thead><tr class="ijRowHead" id="36721271_13924"><th id="36721271_13925"><p>Name</p></th><th id="36721271_13926"><p>Type</p></th><th id="36721271_13927"><p>Description</p></th></tr></thead><tbody ><tr id="36721271_13928"><td id="36721271_13929"><p>nodes</p></td><td id="36721271_13930"><p>Array</p></td><td id="36721271_13931"><p>Node Array</p></td></tr><tr id="36721271_13932"><td id="36721271_13933"><p>selection</p></td><td id="36721271_13934"><p>Boolean</p></td><td id="36721271_13935"><p>true: 선택 / false: 선택해제</p></td></tr><tr id="36721271_13936"><td id="36721271_13937"><p>append</p></td><td id="36721271_13938"><p>Boolean</p></td><td id="36721271_13939"><p>true: 선택추가 / false: 해당 id 만 선택</p></td></tr></tbody ></table ></div><ol class="list _decimal"></ol></div ></div></section></section><section class="chapter"><h2 id="selectbynodeid" data-toc="selectbynodeid">SelectByNodeID</h2><section class="procedure-steps"   > <div class="collapse" ><div class="collapse__title"  ><h3 id="36721271_13940" data-toc="36721271_13940">지정 노드 아이디로 모델 선택/해제 설정</h3 ></div><div class="collapse__content" ><aside class="prompt" data-type="note" data-title="" id="36721271_13941"><p>SelectByNodeID(ids, selection, append)</p></aside><p id="36721271_13942"><span class="control" id="36721271_13943">Example</span></p><div class="code-block" data-lang="javascript"         >
+//노드 이름에 해당하는 노드 반환
+let nodes = vizcore.Object3D.Find.GetNodeByName(
+    'PIPE101'   // Keyword
+    , true      // Full Match
+);
+let ids = [];                                       //Node ID Array
+for (let i = 0; i &lt; nodes.length; i++) {
+ids.push(nodes[i].id);
+}
+//모델 선택/해제 설정
+vizcore.Object3D.SelectByNodeID(ids, true, true);
+</div><p id="36721271_13945">Parameters:</p><div class="table-wrapper" ><table class="wide" id="36721271_13946"  ><thead><tr class="ijRowHead" id="36721271_13947"><th id="36721271_13948"><p>Name</p></th><th id="36721271_13949"><p>Type</p></th><th id="36721271_13950"><p>Description</p></th></tr></thead><tbody ><tr id="36721271_13951"><td id="36721271_13952"><p>ids</p></td><td id="36721271_13953"><p>Array</p></td><td id="36721271_13954"><p>Node ID Array</p></td></tr><tr id="36721271_13955"><td id="36721271_13956"><p>selection</p></td><td id="36721271_13957"><p>Boolean</p></td><td id="36721271_13958"><p>true: 선택 / false: 선택해제</p></td></tr><tr id="36721271_13959"><td id="36721271_13960"><p>append</p></td><td id="36721271_13961"><p>Boolean</p></td><td id="36721271_13962"><p>true: 선택추가 / false: 해당 id 만 선택</p></td></tr></tbody ></table ></div><ol class="list _decimal"></ol></div ></div></section></section><section class="chapter"><h2 id="selectbyorigin" data-toc="selectbyorigin">SelectByOrigin</h2><section class="procedure-steps"   > <div class="collapse" ><div class="collapse__title"  ><h3 id="36721271_13963" data-toc="36721271_13963">지정 OriginID로 모델 선택/해제 설정</h3 ></div><div class="collapse__content" ><aside class="prompt" data-type="note" data-title="" id="36721271_13964"><p>SelectByOrigin(fileIds, originIds, selection, append, event)</p></aside><p id="36721271_13965"><span class="control" id="36721271_13966">Example</span></p><div class="code-block" data-lang="javascript"         >
+//노드 이름에 해당하는 노드 반환
+let nodes = vizcore.Object3D.Find.GetNodeByName(
+    'PIPE101'   // Keyword
+    , true      // Full Match
+);
+let fileIds = [];                                               //File ID Array
+let originIds = [];                                             //Origin ID Array
+for (let i = 0; i &lt; nodes.length; i++) {
+fileIds.push(nodes[i].fileId);
+originIds.push(nodes[i].originId);
+}
+//모델 선택/해제 설정
+vizcore.Object3D.SelectByOrigin(fileIds, originIds, true, true, true);
+</div><p id="36721271_13968"><span class="control" id="36721271_13969">Parameters</span></p><div class="table-wrapper" ><table class="wide" id="36721271_13970"  ><thead><tr class="ijRowHead" id="36721271_13971"><th id="36721271_13972"><p>Name</p></th><th id="36721271_13973"><p>Type</p></th><th id="36721271_13974"><p>Description</p></th></tr></thead><tbody ><tr id="36721271_13975"><td id="36721271_13976"><p>fileIds</p></td><td id="36721271_13977"><p>Array</p></td><td id="36721271_13978"><p>File ID Array</p></td></tr><tr id="36721271_13979"><td id="36721271_13980"><p>originIds</p></td><td id="36721271_13981"><p>Array</p></td><td id="36721271_13982"><p>Origin ID Array</p></td></tr><tr id="36721271_13983"><td id="36721271_13984"><p>selection</p></td><td id="36721271_13985"><p>Boolean</p></td><td id="36721271_13986"><p>true: 선택 / false: 선택해제</p></td></tr><tr id="36721271_13987"><td id="36721271_13988"><p>append</p></td><td id="36721271_13989"><p>Boolean</p></td><td id="36721271_13990"><p>true: 선택추가 / false: 해당 id 만 선택</p></td></tr><tr id="36721271_13991"><td id="36721271_13992"><p>event</p></td><td id="36721271_13993"><p>Boolean</p></td><td id="36721271_13994"><p>true: 선택 이벤트 활성화 / false: 선택 이벤트 비활성화</p></td></tr></tbody ></table ></div><ol class="list _decimal"></ol></div ></div></section></section><section class="chapter"><h2 id="setobjectdisableviewdistancebbox" data-toc="setobjectdisableviewdistancebbox">SetObjectDisableViewDistanceBBox</h2><section class="procedure-steps"   > <div class="collapse" ><div class="collapse__title"  ><h3 id="36721271_13995" data-toc="36721271_13995">지정한 개체 설정 거리보다 먼 경우 박스 표시 설정 미적용(SetViewDistanceBox로 지정한 파일 ID만 적용)</h3 ></div><div class="collapse__content" ><aside class="prompt" data-type="note" data-title="" id="36721271_13996"><p>SetObjectDisableViewDistanceBBox(fileKey, originId, disable)</p></aside><p id="36721271_13997"><span class="control" id="36721271_13998">Example</span></p><div class="code-block" data-lang="javascript"         >
+//VIZWide3D 용 VIZW 파일의 헤더 추가
+let models = [];
+models.push({url:&quot;./VIZCore/Model/Sample1_wh.vizw&quot;, key:&quot;sample1&quot;});
+vizcore.Model.AddHeader(models);
+
+function exampleButtonClick() {
+    //설정 거리보다 먼 경우 박스로 표시
+    vizcore.Object3D.SetViewDistanceBox(&quot;sample1&quot;, 100);  
+    //SetViewDistanceBox으로 지정한 파일 ID만 적용
+    vizcore.Object3D.SetObjectDisableViewDistanceBBox(&quot;sample1&quot;, 10, true);
+}
+</div><p id="36721271_14000"><span class="control" id="36721271_14001">Parameters</span></p><div class="table-wrapper" ><table class="wide" id="36721271_14002"  ><thead><tr class="ijRowHead" id="36721271_14003"><th id="36721271_14004"><p>Name</p></th><th id="36721271_14005"><p>Type</p></th><th id="36721271_14006"><p>Description</p></th></tr></thead><tbody ><tr id="36721271_14007"><td id="36721271_14008"><p>fileKey</p></td><td id="36721271_14009"><p>String</p></td><td id="36721271_14010"><p>파일 ID</p></td></tr><tr id="36721271_14011"><td id="36721271_14012"><p>originId</p></td><td id="36721271_14013"><p>Number</p></td><td id="36721271_14014"><p>Node ID</p></td></tr><tr id="36721271_14015"><td id="36721271_14016"><p>disable</p></td><td id="36721271_14017"><p>Boolean</p></td><td id="36721271_14018"><p>true : 미적용으로 설정 , false : 적용</p></td></tr></tbody ></table ></div><ol class="list _decimal"></ol></div ></div></section></section><section class="chapter"><h2 id="setobjectdisableviewdistancebboxbyarray" data-toc="setobjectdisableviewdistancebboxbyarray">SetObjectDisableViewDistanceBBoxByArray</h2><section class="procedure-steps"   > <div class="collapse" ><div class="collapse__title"  ><h3 id="36721271_14019" data-toc="36721271_14019">지정한 개체 설정 거리보다 먼 경우 박스 표시 설정 미적용(SetViewDistanceBox로 지정한 파일 ID만 적용)</h3 ></div><div class="collapse__content" ><aside class="prompt" data-type="note" data-title="" id="36721271_14020"><p>SetObjectDisableViewDistanceBBoxByArray(fileKey, arrayObjectID, disable)</p></aside><p id="36721271_14021"><span class="control" id="36721271_14022">Example</span></p><div class="code-block" data-lang="javascript"         >
+//VIZWide3D 용 VIZW 파일의 헤더 추가
+let models = [];
+models.push({url:&quot;./VIZCore/Model/Sample1_wh.vizw&quot;, key:&quot;sample1&quot;});
+vizcore.Model.AddHeader(models);
+
+function exampleButtonClick() {
+        let arrayObjectID = [10, 20];
+        //설정 거리보다 먼 경우 박스로 표시
+        vizcore.Object3D.SetViewDistanceBox(&quot;sample1&quot;, 100);
+        //지정한 개체 설정 거리보다 먼 경우 박스 표시 설정 미적용
+        vizcore.Object3D.SetObjectDisableViewDistanceBBoxByArray(&quot;sample1&quot;, arrayObjectID, true);
+}
+</div><p id="36721271_14024"><span class="control" id="36721271_14025">Parameters</span></p><div class="table-wrapper" ><table class="wide" id="36721271_14026"  ><thead><tr class="ijRowHead" id="36721271_14027"><th id="36721271_14028"><p>Name</p></th><th id="36721271_14029"><p>Type</p></th><th id="36721271_14030"><p>Description</p></th></tr></thead><tbody ><tr id="36721271_14031"><td id="36721271_14032"><p>fileKey</p></td><td id="36721271_14033"><p>String</p></td><td id="36721271_14034"><p>파일 ID</p></td></tr><tr id="36721271_14035"><td id="36721271_14036"><p>arrayObjectID</p></td><td id="36721271_14037"><p>Array</p></td><td id="36721271_14038"><p>Node ID Array</p></td></tr><tr id="36721271_14039"><td id="36721271_14040"><p>disable</p></td><td id="36721271_14041"><p>Boolean</p></td><td id="36721271_14042"><p>true : 미적용으로 설정 , false : 적용</p></td></tr></tbody ></table ></div><ol class="list _decimal"></ol></div ></div></section></section><section class="chapter"><h2 id="setselectioncolor" data-toc="setselectioncolor">SetSelectionColor</h2><section class="procedure-steps"   > <div class="collapse" ><div class="collapse__title"  ><h3 id="36721271_14043" data-toc="36721271_14043">선택 모델 하이라이트 색상 설정</h3 ></div><div class="collapse__content" ><aside class="prompt" data-type="note" data-title="" id="36721271_14044"><p>SetSelectionColor(color)</p></aside><p id="36721271_14045"><span class="control" id="36721271_14046">Example</span></p><div class="code-block" data-lang="javascript"         >
+let color = new VIZCore.Color(255, 0, 0, 255);                  //R, G, B, A
+//선택 모델 하이라이트 색상 설정
+vizcore.Object3D.SetSelectionColor(color);
+</div><p id="36721271_14048"><span class="control" id="36721271_14049">Parameters</span></p><div class="table-wrapper" ><table class="wide" id="36721271_14050"  ><thead><tr class="ijRowHead" id="36721271_14051"><th id="36721271_14052"><p>Name</p></th><th id="36721271_14053"><p>Type</p></th><th id="36721271_14054"><p>Description</p></th></tr></thead><tbody ><tr id="36721271_14055"><td id="36721271_14056"><p>color</p></td><td id="36721271_14057"><p>VIZCore.Color</p></td><td id="36721271_14058"><p>하이라이트 색상</p></td></tr></tbody ></table ></div><ol class="list _decimal"></ol></div ></div></section></section><section class="chapter"><h2 id="setviewdistancebox" data-toc="setviewdistancebox">SetViewDistanceBox</h2><section class="procedure-steps"   > <div class="collapse" ><div class="collapse__title"  ><h3 id="36721271_14059" data-toc="36721271_14059">설정 거리보다 먼 경우 박스 로 표시</h3 ></div><div class="collapse__content" ><aside class="prompt" data-type="note" data-title="" id="36721271_14060"><p>SetViewDistanceBox(fileKey, distance)</p></aside><p id="36721271_14061"><span class="control" id="36721271_14062">Example</span></p><div class="code-block" data-lang="javascript"         >
+//VIZWide3D 용 VIZW 파일의 헤더 추가
+let models = [];
+models.push({url:&quot;./VIZCore/Model/Sample1_wh.vizw&quot;, key:&quot;sample1&quot;});
+vizcore.Model.AddHeader(models);
+//설정 거리보다 먼 경우 박스 로 표시
+vizcore.Object3D.SetViewDistanceBox('sample1', 0.5);
+</div><p id="36721271_14064"><span class="control" id="36721271_14065">Parameters</span></p><div class="table-wrapper" ><table class="wide" id="36721271_14066"  ><thead><tr class="ijRowHead" id="36721271_14067"><th id="36721271_14068"><p>Name</p></th><th id="36721271_14069"><p>Type</p></th><th id="36721271_14070"><p>Description</p></th></tr></thead><tbody ><tr id="36721271_14071"><td id="36721271_14072"><p>fileKey</p></td><td id="36721271_14073"><p>Object</p></td><td id="36721271_14074"><p>파일 ID</p></td></tr><tr id="36721271_14075"><td id="36721271_14076"><p>distance</p></td><td id="36721271_14077"><p>Number</p></td><td id="36721271_14078"><p>거리</p></td></tr></tbody ></table ></div><ol class="list _decimal"></ol></div ></div></section></section><section class="chapter"><h2 id="showall" data-toc="showall">ShowAll</h2><section class="procedure-steps"   > <div class="collapse" ><div class="collapse__title"  ><h3 id="36721271_14079" data-toc="36721271_14079">모델 전체 보이기/숨기기 설정</h3 ></div><div class="collapse__content" ><aside class="prompt" data-type="note" data-title="" id="36721271_14080"><p>ShowAll(visible)</p></aside><p id="36721271_14081"><span class="control" id="36721271_14082">Example</span></p><div class="code-block" data-lang="javascript"         >
+//모델 전체 보이기/숨기기 설정
+vizcore.Object3D.ShowAll(true);
+</div><p id="36721271_14084"><span class="control" id="36721271_14085">Parameters</span></p><div class="table-wrapper" ><table class="wide" id="36721271_14086"  ><thead><tr class="ijRowHead" id="36721271_14087"><th id="36721271_14088"><p>Name</p></th><th id="36721271_14089"><p>Type</p></th><th id="36721271_14090"><p>Description</p></th></tr></thead><tbody ><tr id="36721271_14091"><td id="36721271_14092"><p>visible</p></td><td id="36721271_14093"><p>Boolean</p></td><td id="36721271_14094"><p>true: 보이기, false: 숨기기</p></td></tr></tbody ></table ></div><ol class="list _decimal"></ol></div ></div></section></section><section class="chapter"><h2 id="showbyfile" data-toc="showbyfile">ShowByFile</h2><section class="procedure-steps"   > <div class="collapse" ><div class="collapse__title"  ><h3 id="36721271_14095" data-toc="36721271_14095">파일 기준 모델 보이기/숨기기 설정</h3 ></div><div class="collapse__content" ><aside class="prompt" data-type="note" data-title="" id="36721271_14096"><p>ShowByFile(fileIds, visible)</p></aside><p id="36721271_14097"><span class="control" id="36721271_14098">Example</span></p><div class="code-block" data-lang="javascript"         >
+//모델 선택/해제 설정
+let fileId = &quot;FileKey&quot;;
+vizcore.Object3D.SelectByFile(fileId, true);
+//파일 기준 모델 보이기/숨기기 설정
+let fileIds = [&quot;FileKey1&quot;, &quot;FileKey2&quot;];
+vizcore.Object3D.ShowByFile(fileIds, true);
+</div><p id="36721271_14100"><span class="control" id="36721271_14101">Parameters</span></p><div class="table-wrapper" ><table class="wide" id="36721271_14102"  ><thead><tr class="ijRowHead" id="36721271_14103"><th id="36721271_14104"><p>Name</p></th><th id="36721271_14105"><p>Type</p></th><th id="36721271_14106"><p>Description</p></th></tr></thead><tbody ><tr id="36721271_14107"><td id="36721271_14108"><p>fileIds</p></td><td id="36721271_14109"><p>Object</p></td><td id="36721271_14110"><p>FileID or FileID Array</p></td></tr><tr id="36721271_14111"><td id="36721271_14112"><p>visible</p></td><td id="36721271_14113"><p>Boolean</p></td><td id="36721271_14114"><p>true: 보이기 / false: 숨기기</p></td></tr></tbody ></table ></div><ol class="list _decimal"></ol></div ></div></section></section><section class="chapter"><h2 id="showbynode" data-toc="showbynode">ShowByNode</h2><section class="procedure-steps"   > <div class="collapse" ><div class="collapse__title"  ><h3 id="36721271_14115" data-toc="36721271_14115">노드 기준 모델 보이기/숨기기 설정</h3 ></div><div class="collapse__content" ><aside class="prompt" data-type="note" data-title="" id="36721271_14116"><p>ShowByNode(nodes, visible)</p></aside><p id="36721271_14117"><span class="control" id="36721271_14118">Example</span></p><div class="code-block" data-lang="javascript"         >
+//노드 이름에 해당하는 노드 반환
+let nodes = vizcore.Object3D.Find.GetNodeByName(
+    'PIPE101'   // Keyword
+    , true      // Full Match
+);
+//모델 보이기/숨기기 설정
+vizcore.Object3D.ShowByNode(nodes, true);
+</div><p id="36721271_14120"><span class="control" id="36721271_14121">Parameters</span></p><div class="table-wrapper" ><table class="wide" id="36721271_14122"  ><thead><tr class="ijRowHead" id="36721271_14123"><th id="36721271_14124"><p>Name</p></th><th id="36721271_14125"><p>Type</p></th><th id="36721271_14126"><p>Description</p></th></tr></thead><tbody ><tr id="36721271_14127"><td id="36721271_14128"><p>nodes</p></td><td id="36721271_14129"><p>Array</p></td><td id="36721271_14130"><p>Node Array</p></td></tr><tr id="36721271_14131"><td id="36721271_14132"><p>visible</p></td><td id="36721271_14133"><p>Boolean</p></td><td id="36721271_14134"><p>true: 보이기 / false: 숨기기</p></td></tr></tbody ></table ></div><ol class="list _decimal"></ol></div ></div></section></section><section class="chapter"><h2 id="showbynodeid" data-toc="showbynodeid">ShowByNodeID</h2><section class="procedure-steps"   > <div class="collapse" ><div class="collapse__title"  ><h3 id="36721271_14135" data-toc="36721271_14135">Node ID 기준 모델 보이기/숨기기 설정</h3 ></div><div class="collapse__content" ><aside class="prompt" data-type="note" data-title="" id="36721271_14136"><p>ShowByNodeID(ids, visible)</p></aside><p id="36721271_14137"><span class="control" id="36721271_14138">Example</span></p><div class="code-block" data-lang="javascript"         >
+//노드 이름에 해당하는 노드 반환
+let nodes = vizcore.Object3D.Find.GetNodeByName(
+    'PIPE101'   // Keyword
+    , true      // Full Match
+);
+
+let ids = [];                                       //Node ID Array 
+for (let i = 0; i &lt; nodes.length; i++) {
+    ids.push(nodes[i].id);
+}
+//모델 보이기/숨기기 설정
+vizcore.Object3D.ShowByNodeID(ids, false);
+</div><p id="36721271_14140"><span class="control" id="36721271_14141">Parameters</span></p><div class="table-wrapper" ><table class="wide" id="36721271_14142"  ><thead><tr class="ijRowHead" id="36721271_14143"><th id="36721271_14144"><p>Name</p></th><th id="36721271_14145"><p>Type</p></th><th id="36721271_14146"><p>Description</p></th></tr></thead><tbody ><tr id="36721271_14147"><td id="36721271_14148"><p>ids</p></td><td id="36721271_14149"><p>Array</p></td><td id="36721271_14150"><p>Node ID Array</p></td></tr><tr id="36721271_14151"><td id="36721271_14152"><p>visible</p></td><td id="36721271_14153"><p>Boolean</p></td><td id="36721271_14154"><p>true: 보이기 / false: 숨기기</p></td></tr></tbody ></table ></div><ol class="list _decimal"></ol></div ></div></section></section><section class="chapter"><h2 id="showbyorigin" data-toc="showbyorigin">ShowByOrigin</h2><section class="procedure-steps"   > <div class="collapse" ><div class="collapse__title"  ><h3 id="36721271_14155" data-toc="36721271_14155">Origin  ID 기준 모델 보이기/숨기기 설정</h3 ></div><div class="collapse__content" ><aside class="prompt" data-type="note" data-title="" id="36721271_14156"><p>ShowByOrigin(fileIds, originIds, visible)</p></aside><p id="36721271_14157"><span class="control" id="36721271_14158">Example</span></p><div class="code-block" data-lang="javascript"         >
+//노드 이름에 해당하는 노드 반환
+let nodes = vizcore.Object3D.Find.GetNodeByName(
+    'PIPE101'   // Keyword
+    , true      // Full Match
+);
+//전체 개체 선택 / 선택해제
+vizcore.View.SelectAll(false);
+
+let fileIds = [];                                       //File ID Array
+let originIds = [];                                     //Origin  ID Array 
+for (let i = 0; i &lt; nodes.length; i++) {
+    fileIds.push(nodes[i].fileId);
+    originIds.push(nodes[i].originId);
+}
+//Origin  ID 기준 모델 보이기/숨기기 설정
+vizcore.Object3D.ShowByOrigin(fileIds, originIds, true);
+</div><p id="36721271_14160"><span class="control" id="36721271_14161">Parameters</span></p><div class="table-wrapper" ><table class="wide" id="36721271_14162"  ><thead><tr class="ijRowHead" id="36721271_14163"><th id="36721271_14164"><p>Name</p></th><th id="36721271_14165"><p>Type</p></th><th id="36721271_14166"><p>Description</p></th></tr></thead><tbody ><tr id="36721271_14167"><td id="36721271_14168"><p>fileIds</p></td><td id="36721271_14169"><p>Array</p></td><td id="36721271_14170"><p>File ID Array</p></td></tr><tr id="36721271_14171"><td id="36721271_14172"><p>originIds</p></td><td id="36721271_14173"><p>Array</p></td><td id="36721271_14174"><p>Origin ID Array</p></td></tr><tr id="36721271_14175"><td id="36721271_14176"><p>visible</p></td><td id="36721271_14177"><p>Boolean</p></td><td id="36721271_14178"><p>true: 보이기 / false: 숨기기</p></td></tr></tbody ></table ></div><ol class="list _decimal"></ol></div ></div></section></section><section class="chapter"><h2 id="showselectedobject" data-toc="showselectedobject">ShowSelectedObject</h2><section class="procedure-steps"   > <div class="collapse" ><div class="collapse__title"  ><h3 id="36721271_14179" data-toc="36721271_14179">선택 개체 보이기 / 숨기기</h3 ></div><div class="collapse__content" ><aside class="prompt" data-type="note" data-title="" id="36721271_14180"><p>ShowSelectedObject(visible)</p></aside><p id="36721271_14181"><span class="control" id="36721271_14182">Example</span></p><div class="code-block" data-lang="javascript"         >
+//선택 개체 보이기 / 숨기기
+vizcore.Object3D.ShowSelectedObject(true);
+</div><p id="36721271_14184"><span class="control" id="36721271_14185">Parameters</span></p><div class="table-wrapper" ><table class="wide" id="36721271_14186"  ><thead><tr class="ijRowHead" id="36721271_14187"><th id="36721271_14188"><p>Name</p></th><th id="36721271_14189"><p>Type</p></th><th id="36721271_14190"><p>Description</p></th></tr></thead><tbody ><tr id="36721271_14191"><td id="36721271_14192"><p>visible</p></td><td id="36721271_14193"><p>Boolean</p></td><td id="36721271_14194"><p>true: 보이기 / false: 숨기기</p></td></tr></tbody ></table ></div><ol class="list _decimal"></ol></div ></div></section></section><section class="chapter"><h2 id="unlockmeshcache" data-toc="unlockmeshcache">UnlockMeshCache</h2><section class="procedure-steps"   > <div class="collapse" ><div class="collapse__title"  ><h3 id="36721271_14195" data-toc="36721271_14195">Mesh Cache 메모리 우선 사용해제</h3 ></div><div class="collapse__content" ><aside class="prompt" data-type="note" data-title="" id="36721271_14196"><p>UnlockMeshCache(fileKey)</p></aside><p id="36721271_14197"><span class="control" id="36721271_14198">Example</span></p><div class="code-block" data-lang="javascript"         >
+//vizcore 용 VIZW 파일의 헤더 추가
+let models = [];
+models.push({url:&quot;./VIZCore/Model/Sample1_wh.vizw&quot;, key:&quot;sample1&quot;});
+vizcore.Model.AddHeader(models);
+//Mesh Cache 메모리 우선 사용해제
+vizcore.Object3D.UnlockMeshCache(&quot;sample1&quot;);
+</div><p id="36721271_14200"><span class="control" id="36721271_14201">Parameters</span></p><div class="table-wrapper" ><table class="wide" id="36721271_14202"  ><thead><tr class="ijRowHead" id="36721271_14203"><th id="36721271_14204"><p>Name</p></th><th id="36721271_14205"><p>Type</p></th><th id="36721271_14206"><p>Description</p></th></tr></thead><tbody ><tr id="36721271_14207"><td id="36721271_14208"><p>fileKey</p></td><td id="36721271_14209"><p>Object</p></td><td id="36721271_14210"><p>파일 ID</p></td></tr></tbody ></table ></div><ol class="list _decimal"></ol></div ></div></section></section><section class="chapter"><h2 id="event-listener" data-toc="event-listener">--- Event Listener ---</h2></section><section class="chapter"><h2 id="onboxselected" data-toc="onboxselected">OnBoxSelected</h2><section class="procedure-steps"   > <div class="collapse" ><div class="collapse__title"  ><h3 id="36721271_14211" data-toc="36721271_14211">선택상자 선택 이벤트 등록</h3 ></div><div class="collapse__content" ><aside class="prompt" data-type="note" data-title="" id="36721271_14212"><p>OnBoxSelected(listener)</p></aside><p id="36721271_14213"><span class="control" id="36721271_14214">Example</span></p><div class="code-block" data-lang="javascript"         >
+// Event : OnBoxSelectedEvent
+let OnBoxSelected = function (event) {
+    //event.data == Object ID List
+
+     if(event.data.length &lt;= 0) {
+         // 선택된 모델이 없음
+     }
+     else
+     {
+         //해당 노드 포커스
+         vizcore.View.Camera.FocusObject(event.data);
+     }
+}
+// Add Event Handler : Object SelectBox Selected Event (선택상자 선택 이벤트)
+vizcore.Object3D.OnBoxSelected(OnBoxSelected);
+</div><p id="36721271_14216"><span class="control" id="36721271_14217">Parameters</span></p><div class="table-wrapper" ><table class="wide" id="36721271_14218"  ><thead><tr class="ijRowHead" id="36721271_14219"><th id="36721271_14220"><p>Name</p></th><th id="36721271_14221"><p>Type</p></th><th id="36721271_14222"><p>Description</p></th></tr></thead><tbody ><tr id="36721271_14223"><td id="36721271_14224"><p>listener</p></td><td id="36721271_14225"><p>Object</p></td><td id="36721271_14226"><p>Event Listener</p></td></tr></tbody ></table ></div><ol class="list _decimal"></ol></div ></div></section></section><section class="chapter"><h2 id="onobject3dselected" data-toc="onobject3dselected">OnObject3DSelected</h2><section class="procedure-steps"   > <div class="collapse" ><div class="collapse__title"  ><h3 id="36721271_14227" data-toc="36721271_14227">개체 선택 이벤트 등록</h3 ></div><div class="collapse__content" ><aside class="prompt" data-type="note" data-title="" id="36721271_14228"><p>OnObject3DSelected(listener)</p></aside><p id="36721271_14229"><span class="control" id="36721271_14230">Example</span></p><div class="code-block" data-lang="javascript"         >
+// Event : OnObject3DSelectedEvent
+let OnObject3DSelected = function (event) {
+    // 선택된 모델이 없음
+    if (event.data.id == -1) {
+        //alert('선택된 모델이 없거나, 기존 선택상태가 해제됨.');
+    }
+    // 선택된 모델이 있음
+    else {
+        // 지정된 ID의 노드 정보 조회
+        let node = vizcore.Object3D.FromID(event.data.id);
+
+        let nodeId = node.id;
+        let nodeIndex = node.index;
+        let nodeKind = node.kind;
+        let nodeKindStr = node.kindStr;
+        let nodeParentId = node.parentId;
+        let nodeName = node.name;
+        let nodeLevel = node.level;
+        let selection = node.selection;
+        let visible = node.visible;
+        let nodeBoundBox = node.boundBox;
+    }
+}
+
+// Add Event Handler : Object Selected Event (개체 선택 이벤트)
+vizcore.Object3D.OnObject3DSelected(OnObject3DSelected);
+</div><p id="36721271_14232"><span class="control" id="36721271_14233">Parameters</span></p><div class="table-wrapper" ><table class="wide" id="36721271_14234"  ><thead><tr class="ijRowHead" id="36721271_14235"><th id="36721271_14236"><p>Name</p></th><th id="36721271_14237"><p>Type</p></th><th id="36721271_14238"><p>Description</p></th></tr></thead><tbody ><tr id="36721271_14239"><td id="36721271_14240"><p>listener</p></td><td id="36721271_14241"><p>Object</p></td><td id="36721271_14242"><p>Event Listener</p></td></tr></tbody ></table ></div><ol class="list _decimal"></ol></div ></div></section></section><div class="last-modified"> Last modified: 08 12월 2023</div><div data-feedback-placeholder="true"></div><div class="navigation-links _bottom">  <a class="navigation-links__prev" href="modeltree.html">ModelTree</a>   <a class="navigation-links__next" href="color.html">Color</a>  </div></article><div id="disqus_thread"></div></div></section></main></div>  <script src="https://resources.jetbrains.com/writerside/apidoc/6.1.5-b176/app.js"></script></body></html>

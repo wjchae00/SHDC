@@ -1,0 +1,114 @@
+<!DOCTYPE html SYSTEM "about:legacy-compat">
+<html lang="en-US" data-colors-preset="contrast" data-primary-color="#307FFF">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta charset="UTF-8">
+    <meta name="robots" content="noindex">
+    <meta name="built-on" content="2023-12-08T10:08:52.2311573">
+    <meta name="build-number" content="${buildNumber}">
+    <title>GeometryProperty | Softhills Documentation Center</title>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-563TQVGF4C"></script>
+    <script>window.dataLayer = window.dataLayer || []; function gtag() { dataLayer.push(arguments); } gtag('js', new Date()); gtag('config', 'G-563TQVGF4C');</script>
+    <script id="virtual-toc-data"
+        type="application/json">[{"id":"getboundboxbybody","level":0,"title":"GetBoundBoxByBody","anchor":"#getboundboxbybody"},{"id":"getboundboxbynode","level":0,"title":"GetBoundBoxByNode","anchor":"#getboundboxbynode"},{"id":"getboundboxbynodeid","level":0,"title":"GetBoundBoxByNodeID","anchor":"#getboundboxbynodeid"}]</script>
+    <script id="topic-shortcuts" type="application/json"></script>
+    <link href="https://resources.jetbrains.com/writerside/apidoc/6.1.5-b176/app.css" rel="stylesheet">
+    <link rel="apple-touch-icon" sizes="180x180" href="https://jetbrains.com/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="https://jetbrains.com/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="https://jetbrains.com/favicon-16x16.png">
+    <link rel="manifest" href="https://jetbrains.com/site.webmanifest">
+    <link rel="mask-icon" href="https://jetbrains.com/safari-pinned-tab.svg" color="#000000">
+    <meta name="msapplication-TileColor" content="#000000" />
+    <meta name="msapplication-TileImage"
+        content="https://resources.jetbrains.com/storage/ui/favicons/mstile-144x144.png" />
+    <meta name="msapplication-square70x70logo"
+        content="https://resources.jetbrains.com/storage/ui/favicons/mstile-70x70.png" />
+    <meta name="msapplication-square150x150logo"
+        content="https://resources.jetbrains.com/storage/ui/favicons/mstile-150x150.png" />
+    <meta name="msapplication-wide310x150logo"
+        content="https://resources.jetbrains.com/storage/ui/favicons/mstile-310x150.png" />
+    <meta name="msapplication-square310x310logo"
+        content="https://resources.jetbrains.com/storage/ui/favicons/mstile-310x310.png" />
+    <meta name="image" content=""><!-- Open Graph -->
+    <meta property="og:title" content="GeometryProperty | Softhills Documentation Center" />
+    <meta property="og:description" content="" />
+    <meta property="og:image" content="" />
+    <meta property="og:site_name" content="Softhills Documentation Center Help" />
+    <meta property="og:type" content="website" />
+    <meta property="og:locale" content="en_US" />
+    <meta property="og:url" content="geometryproperty.html" /><!-- End Open Graph --><!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:site" content="">
+    <meta name="twitter:title" content="GeometryProperty | Softhills Documentation Center">
+    <meta name="twitter:description" content="">
+    <meta name="twitter:creator" content="">
+    <meta name="twitter:image:src" content=""><!-- End Twitter Card --><!-- Schema.org WebPage -->
+    <script
+        type="application/ld+json"> { "@context": "http://schema.org", "@type": "WebPage", "@id": "geometryproperty.html#webpage", "url": "geometryproperty.html", "name": "GeometryProperty | Softhills Documentation Center", "description": "", "image": "", "inLanguage":"en-US" }</script>
+    <!-- End Schema.org --><!-- Schema.org WebSite -->
+    <script
+        type="application/ld+json"> { "@type": "WebSite", "@id": "/#website", "url": "/", "name": "Softhills Documentation Center Help" }</script>
+    <!-- End Schema.org --> <!-- Mermaid light/dark themes -->
+    <link rel="stylesheet" type="text/css" href="mermaid.css">
+</head>
+
+<body data-id="GeometryProperty" data-main-title="GeometryProperty"
+    data-article-props="{&quot;seeAlsoStyle&quot;:&quot;links&quot;}" data-template="article"
+    data-breadcrumbs="SHDC.topic|SHDC///제품///VIZWide3D-API-DOCUMENT.md|VIZWide3D///VIZWide3D API///Object3D.md|Object3D">
+    <div class="wrapper">
+        <main class="panel _main">
+            <header class="panel__header">
+                <div class="container">
+                    <h3>Softhills Documentation Center Help</h3>
+                    <div class="panel-trigger"></div>
+                </div>
+            </header>
+            <section class="panel__content">
+                <div class="container">
+                    <article class="article" data-shortcut-switcher="inactive">
+                        <h1 data-toc="GeometryProperty" id="GeometryProperty.md">GeometryProperty</h1>
+                        <section class="chapter">
+                            <h2 id="getboundboxbybody" data-toc="getboundboxbybody">GetBoundBoxByBody</h2>
+                            <section class="procedure-steps">
+                                <div class="collapse">
+                                    <div class="collapse__title">
+                                        <h3 id="8638ae02_1726" data-toc="8638ae02_1726">지정된 Body (Array) 의 BoundBox 반환
+                                        </h3>
+                                    </div>
+                                    <div class="collapse__content">
+                                        <aside class="prompt" data-type="note" data-title="" id="8638ae02_1727">
+                                            <p>GetBoundBoxByBody(bodies) &rarr; {VIZCore.BBox}</p>
+                                        </aside>
+                                        <p id="8638ae02_1728"><span class="control" id="8638ae02_1729">Example</span>
+                                        </p>
+                                        <div class="code-block" data-lang="javascript">
+//노드 이름에 해당하는 노드 반환
+let nodes = vizcore.Object3D.Find.GetNodeByName(
+    'PIPE101'   // Keyword
+    , true      // Full Match
+);
+
+let color = new VIZCore.Color(255, 125, 0, 255);              //R, G, B, A
+
+//지정된 노드의 하위 Body 목록 반환
+let bodies = vizcore.Object3D.GetBodiesByNode(nodes);
+//지정된 Body (Array) 의 BoundBox 반환
+vizcore.Object3D.GeometryProperty.GetBoundBoxByBody(bodies);
+</div><p id="8638ae02_1731"><span class="control" id="8638ae02_1732">Parameters</span></p><div class="table-wrapper" ><table class="wide" id="8638ae02_1733"  ><thead><tr class="ijRowHead" id="8638ae02_1734"><th id="8638ae02_1735"><p>Name</p></th><th id="8638ae02_1736"><p>Type</p></th><th id="8638ae02_1737"><p>Description</p></th></tr></thead><tbody ><tr id="8638ae02_1738"><td id="8638ae02_1739"><p>bodies</p></td><td id="8638ae02_1740"><p><code class="code" id="8638ae02_1741">Array&lt;Object&gt;</code></p></td><td id="8638ae02_1742"><p>Body Object Array</p></td></tr></tbody ></table ></div><p id="8638ae02_1743"><span class="control" id="8638ae02_1744">Returns</span></p><div class="table-wrapper" ><table class="wide" id="8638ae02_1745"  ><thead><tr class="ijRowHead" id="8638ae02_1746"><th id="8638ae02_1747"><p>Type</p></th><th id="8638ae02_1748"><p>Description</p></th></tr></thead><tbody ><tr id="8638ae02_1749"><td id="8638ae02_1750"><p>VIZCore.BBox</p></td><td id="8638ae02_1751"><p>Bound Box</p></td></tr></tbody ></table ></div><ol class="list _decimal"></ol></div ></div></section></section><section class="chapter"><h2 id="getboundboxbynode" data-toc="getboundboxbynode">GetBoundBoxByNode</h2><section class="procedure-steps"   > <div class="collapse" ><div class="collapse__title"  ><h3 id="8638ae02_1752" data-toc="8638ae02_1752">지정된 Nodes 의 BoundBox 반환</h3 ></div><div class="collapse__content" ><aside class="prompt" data-type="note" data-title="" id="8638ae02_1753"><p>GetBoundBoxByNode(nodes) &rarr; {VIZCore.BBox}</p></aside><p id="8638ae02_1754"><span class="control" id="8638ae02_1755">Example</span></p><div class="code-block" data-lang="javascript"         >
+//노드 이름에 해당하는 노드 반환
+let nodes = vizcore.Object3D.Find.GetNodeByName(
+    'PIPE101'   // Keyword
+    , true      // Full Match
+);
+//지정된 Nodes 의 BoundBox 반환
+let boundBox = vizcore.Object3D.GeometryProperty.GetBoundBoxByNode(nodes);
+</div><p id="8638ae02_1757"><span class="control" id="8638ae02_1758">Parameters</span></p><div class="table-wrapper" ><table class="wide" id="8638ae02_1759"  ><thead><tr class="ijRowHead" id="8638ae02_1760"><th id="8638ae02_1761"><p>Name</p></th><th id="8638ae02_1762"><p>Type</p></th><th id="8638ae02_1763"><p>Description</p></th></tr></thead><tbody ><tr id="8638ae02_1764"><td id="8638ae02_1765"><p>nodes</p></td><td id="8638ae02_1766"><p><code class="code" id="8638ae02_1767">Array&lt;Object&gt;</code></p></td><td id="8638ae02_1768"><p>Node Object Array</p></td></tr></tbody ></table ></div><p id="8638ae02_1769"><span class="control" id="8638ae02_1770">Returns</span></p><div class="table-wrapper" ><table class="wide" id="8638ae02_1771"  ><thead><tr class="ijRowHead" id="8638ae02_1772"><th id="8638ae02_1773"><p>Type</p></th><th id="8638ae02_1774"><p>Description</p></th></tr></thead><tbody ><tr id="8638ae02_1775"><td id="8638ae02_1776"><p>VIZCore.BBox</p></td><td id="8638ae02_1777"><p>Bound Box</p></td></tr></tbody ></table ></div><ol class="list _decimal"></ol></div ></div></section></section><section class="chapter"><h2 id="getboundboxbynodeid" data-toc="getboundboxbynodeid">GetBoundBoxByNodeID</h2><section class="procedure-steps"   > <div class="collapse" ><div class="collapse__title"  ><h3 id="8638ae02_1778" data-toc="8638ae02_1778">지정된 Node ID (Array) 의 BoundBox 반환</h3 ></div><div class="collapse__content" ><aside class="prompt" data-type="note" data-title="" id="8638ae02_1779"><p>GetBoundBoxByNodeID(ids) &rarr; {VIZCore.BBox}</p></aside><p id="8638ae02_1780"><span class="control" id="8638ae02_1781">Example</span></p><div class="code-block" data-lang="javascript"         >
+let ids = [];                   //Node ID Array
+ids.push(100);
+ids.push(200);
+ids.push(300);
+//지정된 Node ID (Array) 의 BoundBox 반환
+vizcore.Object3D.GeometryProperty.GetBoundBoxByNodeID(ids);
+</div><p id="8638ae02_1783"><span class="control" id="8638ae02_1784">Parameters</span></p><div class="table-wrapper" ><table class="wide" id="8638ae02_1785"  ><thead><tr class="ijRowHead" id="8638ae02_1786"><th id="8638ae02_1787"><p>Name</p></th><th id="8638ae02_1788"><p>Type</p></th><th id="8638ae02_1789"><p>Description</p></th></tr></thead><tbody ><tr id="8638ae02_1790"><td id="8638ae02_1791"><p>ids</p></td><td id="8638ae02_1792"><p><code class="code" id="8638ae02_1793">Array&lt;Object&gt;</code></p></td><td id="8638ae02_1794"><p>Node ID Array</p></td></tr></tbody ></table ></div><p id="8638ae02_1795"><span class="control" id="8638ae02_1796">Returns</span></p><div class="table-wrapper" ><table class="wide" id="8638ae02_1797"  ><thead><tr class="ijRowHead" id="8638ae02_1798"><th id="8638ae02_1799"><p>Type</p></th><th id="8638ae02_1800"><p>Description</p></th></tr></thead><tbody ><tr id="8638ae02_1801"><td id="8638ae02_1802"><p>VIZCore.BBox</p></td><td id="8638ae02_1803"><p>Bound Box</p></td></tr></tbody ></table ></div><ol class="list _decimal"></ol></div ></div></section></section><div class="last-modified"> Last modified: 08 12월 2023</div><div data-feedback-placeholder="true"></div><div class="navigation-links _bottom">  <a class="navigation-links__prev" href="find.html">Find</a>   <a class="navigation-links__next" href="transform.html">Transform</a>  </div></article><div id="disqus_thread"></div></div></section></main></div>  <script src="https://resources.jetbrains.com/writerside/apidoc/6.1.5-b176/app.js"></script></body></html>
