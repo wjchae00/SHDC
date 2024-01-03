@@ -1,3 +1,0 @@
-# VIZZARD
-
-Start typing here...

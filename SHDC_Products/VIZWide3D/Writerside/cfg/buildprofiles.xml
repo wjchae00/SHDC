@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<buildprofiles xsi:noNamespaceSchemaLocation="https://resources.jetbrains.com/writerside/1.0/build-profiles.xsd"
+               xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+
+    <variables>
+        <analytics-head-script-file>
+            gtag.js
+        </analytics-head-script-file>
+        <header-logo>SHDClogo.png</header-logo>
+        <product-web-url>https://www.softhills.net/SHDC</product-web-url>
+        <algolia-id>YYIQ03W9EQ</algolia-id>
+        <algolia-index>softhills</algolia-index>
+        <algolia-api-key>d39ad8c2f9df69f9ac35e0ed14136537</algolia-api-key>
+        <web-root>https://www.softhills.net/SHDC/VIZWide3D/vizwide3d-api-document.html</web-root>
+        <!--        <color-preset>Soft</color-preset>-->
+<!--                <primary-color>dracula</primary-color>-->
+
+    </variables>
+    <build-profile instance="VIZWide3D">
+
+    </build-profile>
+    <footer>
+        <social type="youtube" href="https://youtube.com/@softhillsco.ltd.8464?si=TnFCRt2nRnT3foEl"></social>
+        <link href="mailto:tech@softhills.net">Contact Us</link>
+        <copyright>SOFTHILLS Co.,Ltd. All right reserved.</copyright>
+    </footer>
+</buildprofiles>

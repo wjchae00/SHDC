@@ -1,3 +1,0 @@
-# VIZWed3D
-
-Start typing here...

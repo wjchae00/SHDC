@@ -1,3 +1,0 @@
-# VIZCLASH.NET
-
-Start typing here...

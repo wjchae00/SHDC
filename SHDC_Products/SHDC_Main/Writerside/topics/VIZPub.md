@@ -1,3 +1,0 @@
-# VIZPub
-
-Start typing here...
