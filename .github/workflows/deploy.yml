@@ -20,8 +20,8 @@ env:
 # Replace HI with the ID of the instance in capital letters
     ALGOLIA_ARTIFACT: algolia-indexes-VIZWIDE3D.zip
     
-    ALGOLIA_APP_NAME: YYIQ03W9EQ
-    ALGOLIA_INDEX_NAME: softhills2
+    ALGOLIA_APP_NAME: 646SQZ8Y4F
+    ALGOLIA_INDEX_NAME: PROD_SHDC
     ALGOLIA_KEY: ${{ secrets.ALGOLIA_KEY }}
     CONFIG_JSON_PRODUCT: VIZWide3D
     CONFIG_JSON_VERSION: 1.0
