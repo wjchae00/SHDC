@@ -1,3 +1,0 @@
-# VIZWing
-
-Start typing here...
