@@ -10,7 +10,7 @@
 vizcore.Review.DeleteAll();
 
 //[To Do] 화면 다시그리기 호출
-vizcore.Render();
+vizwide3d.Render();
 ```
 </procedure>
 
@@ -40,7 +40,7 @@ let ids = [10, 11];                         //Array
 vizcore.Review.DeleteByID(ids);
 
 //[To Do] 화면 다시그리기 호출
-vizcore.Render();
+vizwide3d.Render();
 ```
 **Parameters**
 

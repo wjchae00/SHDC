@@ -1,0 +1,169 @@
+<!DOCTYPE html SYSTEM "about:legacy-compat"><html lang="en-US" data-colors-preset="contrast" data-primary-color="#307FFF"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><meta charset="UTF-8"><meta name="robots" content="noindex">  <meta name="built-on" content="2024-01-02T14:29:14.4339368"><meta name="build-number" content="${buildNumber}">    <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-563TQVGF4C"></script>
+<script>window.dataLayer = window.dataLayer || []; function gtag() { dataLayer.push(arguments); } gtag('js', new Date()); gtag('config', 'G-563TQVGF4C');</script>
+
+<script>
+    window.addEventListener('load', () => {
+        const test = document.querySelector('.footer__powered')
+        console.log(test.innerText);
+        test.innerText = 'Powered by '
+    })
+</script>     <title>Note | VIZWide3D Document</title><script id="virtual-toc-data" type="application/json">[{"id":"addnote","level":0,"title":"AddNote","anchor":"#addnote"},{"id":"addnote2d","level":0,"title":"AddNote2D","anchor":"#addnote2d"},{"id":"addnote3d","level":0,"title":"AddNote3D","anchor":"#addnote3d"},{"id":"addnotesurface","level":0,"title":"AddNoteSurface","anchor":"#addnotesurface"},{"id":"deleteall","level":0,"title":"DeleteAll","anchor":"#deleteall"},{"id":"deletebyid","level":0,"title":"DeleteByID","anchor":"#deletebyid"},{"id":"newimagenote","level":0,"title":"NewImageNote","anchor":"#newimagenote"},{"id":"newnote3d","level":0,"title":"NewNote3D","anchor":"#newnote3d"},{"id":"newnotesurface","level":0,"title":"NewNoteSurface","anchor":"#newnotesurface"},{"id":"event-listener","level":0,"title":"--- Event Listener ---","anchor":"#event-listener"},{"id":"onselectedevent","level":0,"title":"OnSelectedEvent","anchor":"#onselectedevent"},{"id":"onselectedpositionevent","level":0,"title":"OnSelectedPositionEvent","anchor":"#onselectedpositionevent"}]</script><script id="topic-shortcuts" type="application/json"></script><link href="https://resources.jetbrains.com/writerside/apidoc/6.6.6-b205/app.css" rel="stylesheet">   <link rel="apple-touch-icon" sizes="180x180" href="https://jetbrains.com/apple-touch-icon.png"><link rel="icon" type="image/png" sizes="32x32" href="https://jetbrains.com/favicon-32x32.png"><link rel="icon" type="image/png" sizes="16x16" href="https://jetbrains.com/favicon-16x16.png"><link rel="manifest" href="https://jetbrains.com/site.webmanifest"><link rel="mask-icon" href="https://jetbrains.com/safari-pinned-tab.svg" color="#000000"><meta name="msapplication-TileColor" content="#000000"/><meta name="msapplication-TileImage" content="https://resources.jetbrains.com/storage/ui/favicons/mstile-144x144.png"/><meta name="msapplication-square70x70logo" content="https://resources.jetbrains.com/storage/ui/favicons/mstile-70x70.png"/><meta name="msapplication-square150x150logo" content="https://resources.jetbrains.com/storage/ui/favicons/mstile-150x150.png"/><meta name="msapplication-wide310x150logo" content="https://resources.jetbrains.com/storage/ui/favicons/mstile-310x150.png"/><meta name="msapplication-square310x310logo" content="https://resources.jetbrains.com/storage/ui/favicons/mstile-310x310.png"/>  <meta name="image" content=""><!-- Open Graph --><meta property="og:title" content="Note | VIZWide3D Document"/><meta property="og:description" content=""/><meta property="og:image" content=""/><meta property="og:site_name" content="VIZWide3D Document Help"/><meta property="og:type" content="website"/><meta property="og:locale" content="en_US"/><meta property="og:url" content="https://www.softhills.net/SHDC/VIZWide3D/vizwide3d-api-document.htmlnote.html"/><!-- End Open Graph --><!-- Twitter Card --><meta name="twitter:card" content="summary_large_image"><meta name="twitter:site" content=""><meta name="twitter:title" content="Note | VIZWide3D Document"><meta name="twitter:description" content=""><meta name="twitter:creator" content=""><meta name="twitter:image:src" content=""><!-- End Twitter Card --><!-- Schema.org WebPage --><script type="application/ld+json"> { "@context": "http://schema.org", "@type": "WebPage", "@id": "https://www.softhills.net/SHDC/VIZWide3D/vizwide3d-api-document.htmlnote.html#webpage", "url": "https://www.softhills.net/SHDC/VIZWide3D/vizwide3d-api-document.htmlnote.html", "name": "Note | VIZWide3D Document", "description": "", "image": "", "inLanguage":"en-US" }</script><!-- End Schema.org --><!-- Schema.org WebSite --><script type="application/ld+json"> { "@type": "WebSite", "@id": "https://www.softhills.net/SHDC/VIZWide3D/vizwide3d-api-document.html/#website", "url": "https://www.softhills.net/SHDC/VIZWide3D/vizwide3d-api-document.html/", "name": "VIZWide3D Document Help" }</script><!-- End Schema.org --></head>      <body data-id="Note" data-main-title="Note" data-article-props="{&quot;seeAlsoStyle&quot;:&quot;links&quot;}"  data-template="article"  data-breadcrumbs="VIZWide3D-API-DOCUMENT.md|VIZWide3D///Review.md|Review"  >   <div class="wrapper"><main class="panel _main"><header class="panel__header"><div class="container"><h3>VIZWide3D Document  Help</h3><div class="panel-trigger"></div></div></header><section class="panel__content"><div class="container"><article class="article" data-shortcut-switcher="inactive"><h1 data-toc="Note"   id="Note.md">Note</h1>  <section class="chapter"><h2 id="addnote" data-toc="addnote"   >AddNote</h2><section class="procedure-steps"   > <div class="collapse" ><div class="collapse__title"  ><h3 id="e52176b6_189" data-toc="e52176b6_189">3D 노트 추가</h3 ></div><div class="collapse__content" ><aside class="prompt" data-type="note" data-title="" id="e52176b6_190"><p>AddNote(note) &rarr; {String}</p></aside><p id="e52176b6_191"><span class="control" id="e52176b6_192">Example</span></p><div class="code-block" data-lang="javascript"         >
+//3D 노트 생성
+let note = vizcore.Review.Note.NewNote3D();
+
+let text = [];                  //Array&lt;String&gt;
+text.push('3D Note #1');
+text.push('3D Note #2');
+
+note.text.value = text;             //value
+note.text.position = new VIZCore.Vector3(1000, 2000, 3000);         //생성 위치
+
+note.style.font.size = 10;
+note.style.font.color.set(0, 56, 101, 255);          // R, G, B, A
+note.style.border.type = 1;                          // 0 (Rectangle), 1(Rounded Rectangle)
+note.style.border.color.set(41, 143, 194, 255);      // R, G, B, A
+note.style.background.color.set(255, 255, 255, 200); // R, G, B, A
+
+//3D 노트 추가
+let noteId = vizcore.Review.Note.AddNote(note);
+</div><p id="e52176b6_194"><span class="control" id="e52176b6_195">Parameters</span></p><div class="table-wrapper"><table class="wide" id="e52176b6_196"><thead><tr class="ijRowHead" id="e52176b6_197"><th id="e52176b6_198"><p>Name</p></th><th id="e52176b6_199"><p>Type</p></th><th id="e52176b6_200"><p>Description</p></th></tr></thead><tbody><tr id="e52176b6_201"><td id="e52176b6_202"><p>note</p></td><td id="e52176b6_203"><p>Object</p></td><td id="e52176b6_204"><p>Note Object</p></td></tr></tbody></table></div><p id="e52176b6_205"><span class="control" id="e52176b6_206">Returns</span></p><div class="table-wrapper"><table class="wide" id="e52176b6_207"><thead><tr class="ijRowHead" id="e52176b6_208"><th id="e52176b6_209"><p>Type</p></th><th id="e52176b6_210"><p>Description</p></th></tr></thead><tbody><tr id="e52176b6_211"><td id="e52176b6_212"><p>String</p></td><td id="e52176b6_213"><p>Note ID</p></td></tr></tbody></table></div><ol class="list _decimal"></ol></div ></div></section></section><section class="chapter"><h2 id="addnote2d" data-toc="addnote2d"   >AddNote2D</h2><section class="procedure-steps"   > <div class="collapse" ><div class="collapse__title"  ><h3 id="e52176b6_214" data-toc="e52176b6_214">2D 노트 추가</h3 ></div><div class="collapse__content" ><aside class="prompt" data-type="note" data-title="" id="e52176b6_215"><p>AddNote2D(text)</p></aside><p id="e52176b6_216"><span class="control" id="e52176b6_217">Example</span></p><div class="code-block" data-lang="javascript"         >
+let text = [];                  //Array&lt;String&gt;
+text.push('2D Note #1');
+text.push('2D Note #2');
+//2D 노트 추가
+vizcore.Review.Note.AddNote2D(text);
+</div><p id="e52176b6_219"><span class="control" id="e52176b6_220">Parameters</span></p><div class="table-wrapper"><table class="wide" id="e52176b6_221"><thead><tr class="ijRowHead" id="e52176b6_222"><th id="e52176b6_223"><p>Name</p></th><th id="e52176b6_224"><p>Type</p></th><th id="e52176b6_225"><p>Description</p></th></tr></thead><tbody><tr id="e52176b6_226"><td id="e52176b6_227"><p>text</p></td><td id="e52176b6_228"><p><code class="code" id="e52176b6_229">Array&lt;String&gt;</code></p></td><td id="e52176b6_230"><p>노트 텍스트</p></td></tr></tbody></table></div><ol class="list _decimal"></ol></div ></div></section></section><section class="chapter"><h2 id="addnote3d" data-toc="addnote3d"   >AddNote3D</h2><section class="procedure-steps"   > <div class="collapse" ><div class="collapse__title"  ><h3 id="e52176b6_231" data-toc="e52176b6_231">3D 노트 추가</h3 ></div><div class="collapse__content" ><aside class="prompt" data-type="note" data-title="" id="e52176b6_232"><p>AddNote3D(text)</p></aside><p id="e52176b6_233"><span class="control" id="e52176b6_234">Example</span></p><div class="code-block" data-lang="javascript"         >
+let text = [];                  //Array&lt;String&gt;
+text.push('3D Note #1');
+text.push('3D Note #2');
+//3D 노트 추가
+vizcore.Review.Note.AddNote3D(text);
+</div><p id="e52176b6_236"><span class="control" id="e52176b6_237">Parameters</span></p><div class="table-wrapper"><table class="wide" id="e52176b6_238"><thead><tr class="ijRowHead" id="e52176b6_239"><th id="e52176b6_240"><p>Name</p></th><th id="e52176b6_241"><p>Type</p></th><th id="e52176b6_242"><p>Description</p></th></tr></thead><tbody><tr id="e52176b6_243"><td id="e52176b6_244"><p>text</p></td><td id="e52176b6_245"><p><code class="code" id="e52176b6_246">Array&lt;String&gt;</code></p></td><td id="e52176b6_247"><p>노트 텍스트</p></td></tr></tbody></table></div><ol class="list _decimal"></ol></div ></div></section></section><section class="chapter"><h2 id="addnotesurface" data-toc="addnotesurface"   >AddNoteSurface</h2><section class="procedure-steps"   > <div class="collapse" ><div class="collapse__title"  ><h3 id="e52176b6_248" data-toc="e52176b6_248">표면 노트 추가</h3 ></div><div class="collapse__content" ><aside class="prompt" data-type="note" data-title="" id="e52176b6_249"><p>AddNoteSurface(text)</p></aside><p id="e52176b6_250"><span class="control" id="e52176b6_251">Example</span></p><div class="code-block" data-lang="javascript"         >
+let text = [];                //Array&lt;String&gt;
+text.push('Surface Note #1');
+text.push('Surface Note #2');
+//표면 노트 추가
+vizcore.Review.Note.AddNoteSurface(text);
+</div><p id="e52176b6_253"><span class="control" id="e52176b6_254">Parameters</span></p><div class="table-wrapper"><table class="wide" id="e52176b6_255"><thead><tr class="ijRowHead" id="e52176b6_256"><th id="e52176b6_257"><p>Name</p></th><th id="e52176b6_258"><p>Type</p></th><th id="e52176b6_259"><p>Description</p></th></tr></thead><tbody><tr id="e52176b6_260"><td id="e52176b6_261"><p>text</p></td><td id="e52176b6_262"><p><code class="code" id="e52176b6_263">Array&lt;String&gt;</code></p></td><td id="e52176b6_264"><p>노트 텍스트 (== undefined or [] 일경우 Body 이름으로 생성)</p></td></tr></tbody></table></div><ol class="list _decimal"></ol></div ></div></section></section><section class="chapter"><h2 id="deleteall" data-toc="deleteall"   >DeleteAll</h2><section class="procedure-steps"   > <div class="collapse" ><div class="collapse__title"  ><h3 id="e52176b6_265" data-toc="e52176b6_265">노트 전체 삭제</h3 ></div><div class="collapse__content" ><aside class="prompt" data-type="note" data-title="" id="e52176b6_266"><p>DeleteAll()</p></aside><p id="e52176b6_267"><span class="control" id="e52176b6_268">Example</span></p><div class="code-block" data-lang="javascript"         >
+//노트 전체 삭제
+vizcore.Review.Note.DeleteAll();
+
+//[To Do] 화면 다시그리기 호출
+vizwide3d.Render();
+</div><ol class="list _decimal"></ol></div ></div></section></section><section class="chapter"><h2 id="deletebyid" data-toc="deletebyid"   >DeleteByID</h2><section class="procedure-steps"   > <div class="collapse" ><div class="collapse__title"  ><h3 id="e52176b6_270" data-toc="e52176b6_270">노트 정보 삭제</h3 ></div><div class="collapse__content" ><aside class="prompt" data-type="note" data-title="" id="e52176b6_271"><p>DeleteByID(id)</p></aside><ol class="list _decimal" id="e52176b6_272" type="1"><li class="list__item" id="e52176b6_273"><p>Examples</p></li></ol><div class="code-block" data-lang="javascript"         >
+//3D 노트 생성
+let note = vizcore.Review.Note.NewNote3D();
+
+let text = [];                           //Array&lt;String&gt;
+text.push('3D Note #1');
+text.push('3D Note #2');
+
+note.text.value = text;                     //value
+note.text.position = new VIZCore.Vector3(1000, 2000, 3000);             //생성 위치
+note.id = 2                             // noteID 지정
+
+//3D 노트 추가
+let noteId = vizcore.Review.Note.AddNote(note);
+//노트 정보 삭제
+vizcore.Review.Note.DeleteByID(2);           //Number
+
+let ids = [10, 11];
+vizcore.Review.Note.DeleteByID(ids);          //Array
+
+//[To Do] 화면 다시그리기 호출
+vizwide3d.Render();
+</div><p id="e52176b6_275"><span class="control" id="e52176b6_276">Parameters</span></p><div class="table-wrapper"><table class="wide" id="e52176b6_277"><thead><tr class="ijRowHead" id="e52176b6_278"><th id="e52176b6_279"><p>Name</p></th><th id="e52176b6_280"><p>Type</p></th><th id="e52176b6_281"><p>Description</p></th></tr></thead><tbody><tr id="e52176b6_282"><td id="e52176b6_283"><p>id</p></td><td id="e52176b6_284"><p>Object</p></td><td id="e52176b6_285"><p>개체 아이디(Number or Array)</p></td></tr></tbody></table></div><ol class="list _decimal"></ol></div ></div></section></section><section class="chapter"><h2 id="newimagenote" data-toc="newimagenote"   >NewImageNote</h2><section class="procedure-steps"   > <div class="collapse" ><div class="collapse__title"  ><h3 id="e52176b6_286" data-toc="e52176b6_286">이미지 노트 추가</h3 ></div><div class="collapse__content" ><aside class="prompt" data-type="note" data-title="" id="e52176b6_287"><p>NewImageNote(image, size) &rarr; {Object}</p></aside><p id="e52176b6_288"><span class="control" id="e52176b6_289">Example</span></p><div class="code-block" data-lang="javascript"         >
+//Image 생성
+let img = new Image();
+img.src = 'image.jpg';
+img.onload = function () {
+let note = vizcore.Review.Note.NewImageNote(img); //image src size
+//let note = vizcore.Review.Note.NewImageNote(img, new VIZCore.Vector2(128, 128)); //set image Size
+
+     let text = [];                                       //Array&lt;String&gt;
+     text.push('Image Note #1');
+     text.push('Image Note #2');
+
+     note.text.value = text;
+     note.text.position = new VIZCore.Vector3(0, 0, 0);          // Text
+     note.drawitem.position.push(new VIZCore.Vector3(1000, 6000, 6000));  // Image Postion
+
+     note.style.font.size = 10;
+     note.style.font.color.set(0, 56, 101, 255);          // R, G, B, A
+
+     note.style.border.enable = false;
+     note.style.border.type = 1;                          // 0 (Rectangle), 1(Rounded Rectangle)
+     note.style.border.color.set(41, 143, 194, 255);      // R, G, B, A
+
+     note.style.background.enable = false;
+     note.style.background.color.set(255, 255, 255, 200); // R, G, B, A
+
+     note.style.arrow.color.set(255, 0, 0, 255);          // R, G, B, A
+     note.style.arrow.size = 10;
+
+     note.style.line.color.set(0, 0, 0, 255);             // R, G, B, A
+     note.style.line.thickness = 4;
+
+     let noteId = vizcore.Review.Note.AddNote(note);
+};
+</div><p id="e52176b6_291"><span class="control" id="e52176b6_292">Parameters</span></p><div class="table-wrapper"><table class="wide" id="e52176b6_293"><thead><tr class="ijRowHead" id="e52176b6_294"><th id="e52176b6_295"><p>Name</p></th><th id="e52176b6_296"><p>Type</p></th><th id="e52176b6_297"><p>Description</p></th></tr></thead><tbody><tr id="e52176b6_298"><td id="e52176b6_299"><p>image</p></td><td id="e52176b6_300"><p>Object</p></td><td id="e52176b6_301"><p>Image Object</p></td></tr><tr id="e52176b6_302"><td id="e52176b6_303"><p>size</p></td><td id="e52176b6_304"><p>VIZCore.Vector2</p></td><td id="e52176b6_305"><p>image size (기본값 : 이미지 원본 사이즈)</p></td></tr></tbody></table></div><p id="e52176b6_306"><span class="control" id="e52176b6_307">Returns</span></p><div class="table-wrapper"><table class="wide" id="e52176b6_308"><thead><tr class="ijRowHead" id="e52176b6_309"><th id="e52176b6_310"><p>Type</p></th><th id="e52176b6_311"><p>Description</p></th></tr></thead><tbody><tr id="e52176b6_312"><td id="e52176b6_313"><p>Object</p></td><td id="e52176b6_314"><p>Note Object</p></td></tr></tbody></table></div><ol class="list _decimal"></ol></div ></div></section></section><section class="chapter"><h2 id="newnote3d" data-toc="newnote3d"   >NewNote3D</h2><section class="procedure-steps"   > <div class="collapse" ><div class="collapse__title"  ><h3 id="e52176b6_315" data-toc="e52176b6_315">3D 노트 추가</h3 ></div><div class="collapse__content" ><aside class="prompt" data-type="note" data-title="" id="e52176b6_316"><p>NewNote3D() &rarr; {Object}</p></aside><p id="e52176b6_317"><span class="control" id="e52176b6_318">Example</span></p><div class="code-block" data-lang="javascript"         >
+//3D 노트 생성
+let note = vizcore.Review.Note.NewNote3D();
+
+let text = [];                           //Array&lt;String&gt;
+text.push('3D Note #1');
+text.push('3D Note #2');
+
+note.text.value = text;                     //value
+note.text.position = new VIZCore.Vector3(1000, 2000, 3000);             //생성 위치
+
+note.style.font.size = 10;
+note.style.font.color.set(0, 56, 101, 255);          // R, G, B, A
+note.style.border.type = 1;                          // 0 (Rectangle), 1(Rounded Rectangle)
+note.style.border.color.set(41, 143, 194, 255);      // R, G, B, A
+note.style.background.color.set(255, 255, 255, 200); // R, G, B, A
+//3D 노트 추가
+let noteId = vizcore.Review.Note.AddNote(note);
+</div><p id="e52176b6_320"><span class="control" id="e52176b6_321">Returns</span></p><div class="table-wrapper"><table class="wide" id="e52176b6_322"><thead><tr class="ijRowHead" id="e52176b6_323"><th id="e52176b6_324"><p>Type</p></th><th id="e52176b6_325"><p>Description</p></th></tr></thead><tbody><tr id="e52176b6_326"><td id="e52176b6_327"><p>Object</p></td><td id="e52176b6_328"><p>Note Object</p></td></tr></tbody></table></div><ol class="list _decimal"></ol></div ></div></section></section><section class="chapter"><h2 id="newnotesurface" data-toc="newnotesurface"   >NewNoteSurface</h2><section class="procedure-steps"   > <div class="collapse" ><div class="collapse__title"  ><h3 id="e52176b6_329" data-toc="e52176b6_329">표면 노트 추가</h3 ></div><div class="collapse__content" ><aside class="prompt" data-type="note" data-title="" id="e52176b6_330"><p>NewNoteSurface() &rarr; {Object}</p></aside><p id="e52176b6_331"><span class="control" id="e52176b6_332">Example</span></p><div class="code-block" data-lang="javascript"         >
+//표면 노트 추가
+let note = vizcore.Review.Note.NewNoteSurface();
+
+let text = [];                                  //Array&lt;String&gt;
+text.push('Surface Note #1');
+text.push('Surface Note #2');
+
+note.text.value = text;                         //value
+note.text.position = new VIZCore.Vector3(1000, 2000, 3000);          // Text
+note.drawitem.position.push(new VIZCore.Vector3(1000, 6000, 6000));  // Arrow
+
+note.style.font.size = 10;
+note.style.font.color.set(0, 56, 101, 255);          // R, G, B, A
+note.style.border.type = 1;                          // 0 (Rectangle), 1(Rounded Rectangle)
+note.style.border.color.set(41, 143, 194, 255);      // R, G, B, A
+note.style.background.color.set(255, 255, 255, 200); // R, G, B, A
+
+note.style.arrow.color.set(255, 0, 0, 255);          // R, G, B, A
+note.style.arrow.size = 10;
+
+note.style.line.color.set(0, 0, 0, 255);             // R, G, B, A
+note.style.line.thickness = 4;
+//노트 정보 추가
+let noteId = vizcore.Review.Note.AddNote(note);
+</div><p id="e52176b6_334"><span class="control" id="e52176b6_335">Returns</span></p><div class="table-wrapper"><table class="wide" id="e52176b6_336"><thead><tr class="ijRowHead" id="e52176b6_337"><th id="e52176b6_338"><p>Type</p></th><th id="e52176b6_339"><p>Description</p></th></tr></thead><tbody><tr id="e52176b6_340"><td id="e52176b6_341"><p>Object</p></td><td id="e52176b6_342"><p>Note Object</p></td></tr></tbody></table></div><ol class="list _decimal"></ol></div ></div></section></section><section class="chapter"><h2 id="event-listener" data-toc="event-listener"   >--- Event Listener ---</h2></section><section class="chapter"><h2 id="onselectedevent" data-toc="onselectedevent"   >OnSelectedEvent</h2><section class="procedure-steps"   > <div class="collapse" ><div class="collapse__title"  ><h3 id="e52176b6_343" data-toc="e52176b6_343">노트 선택 이벤트 등록</h3 ></div><div class="collapse__content" ><aside class="prompt" data-type="note" data-title="" id="e52176b6_344"><p>OnSelectedEvent(listener)</p></aside><p id="e52176b6_345"><span class="control" id="e52176b6_346">Example</span></p><div class="code-block" data-lang="javascript"         >
+// Event : OnSelectedEvent
+let onSelected = function (event) {
+    console.log(event);
+}
+
+// Add Event Handler : Note Selected Event (노트 선택 이벤트)
+vizcore.Review.Note.OnSelectedEvent(onSelected);
+</div><p id="e52176b6_348"><span class="control" id="e52176b6_349">Parameters</span></p><div class="table-wrapper"><table class="wide" id="e52176b6_350"><thead><tr class="ijRowHead" id="e52176b6_351"><th id="e52176b6_352"><p>Name</p></th><th id="e52176b6_353"><p>Type</p></th><th id="e52176b6_354"><p>Description</p></th></tr></thead><tbody><tr id="e52176b6_355"><td id="e52176b6_356"><p>listener</p></td><td id="e52176b6_357"><p>Object</p></td><td id="e52176b6_358"><p>Event Listener</p></td></tr></tbody></table></div><ol class="list _decimal"></ol></div ></div></section></section><section class="chapter"><h2 id="onselectedpositionevent" data-toc="onselectedpositionevent"   >OnSelectedPositionEvent</h2><section class="procedure-steps"   > <div class="collapse" ><div class="collapse__title"  ><h3 id="e52176b6_359" data-toc="e52176b6_359">노트 선택 위치 반환 이벤트 등록</h3 ></div><div class="collapse__content" ><aside class="prompt" data-type="note" data-title="" id="e52176b6_360"><p>OnSelectedPositionEvent(listener)</p></aside><p id="e52176b6_361"><span class="control" id="e52176b6_362">Example</span></p><div class="code-block" data-lang="javascript"         >
+// Event : OnSelectedPositionEvent
+let onSelectedPosition = function (event) {
+    console.log(event); 
+}
+
+// Add Event Handler : Note Selected Position Event (노트 선택 위치 반환 이벤트)
+vizcore.Review.Note.OnSelectedPositionEvent(onSelectedPosition);
+</div><p id="e52176b6_364"><span class="control" id="e52176b6_365">Parameters</span></p><div class="table-wrapper"><table class="wide" id="e52176b6_366"><thead><tr class="ijRowHead" id="e52176b6_367"><th id="e52176b6_368"><p>Name</p></th><th id="e52176b6_369"><p>Type</p></th><th id="e52176b6_370"><p>Description</p></th></tr></thead><tbody><tr id="e52176b6_371"><td id="e52176b6_372"><p>listener</p></td><td id="e52176b6_373"><p>Object</p></td><td id="e52176b6_374"><p>Event Listener</p></td></tr></tbody></table></div><ol class="list _decimal"></ol></div ></div></section></section><div class="last-modified"> Last modified: 02 1월 2024</div><div data-feedback-placeholder="true"></div><div class="navigation-links _bottom">  <a class="navigation-links__prev" href="measure.html">Measure</a>   <a class="navigation-links__next" href="section.html">Section</a>  </div></article><div id="disqus_thread"></div></div></section></main></div>  <script src="https://resources.jetbrains.com/writerside/apidoc/6.6.6-b205/app.js"></script></body></html>

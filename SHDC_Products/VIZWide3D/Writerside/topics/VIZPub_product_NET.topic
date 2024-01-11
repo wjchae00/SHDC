@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic
+        SYSTEM "https://resources.jetbrains.com/writerside/1.0/xhtml-entities.dtd">
+<topic xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:noNamespaceSchemaLocation="https://resources.jetbrains.com/writerside/1.0/topic.v2.xsd"
+       title="VIZPub.NET" id="VIZPub_product_NET">
+
+    <p>
+        VIZPub.NET은 Microsoft .NET Framework 4.0 기반의 Class Library 이며, 내부 코어 모듈은 C/C++/MFC 등의 언어로 개발이 되어 있습니다.
+    </p>
+
+    <img src="VIZPub_NET_pic1.png" alt="VIZPub Img"></img>
+
+    <chapter title="라이선스" id="VIZPub-license">
+        <p>
+            VIZPub.NET 라이브러리는 SERVER 라이선스만 제공되며, 지정된 장비에서 무제한 실행 권한이 포함됩니다.
+        </p>
+    </chapter>
+    
+    <chapter title="주요 기능" id="VIZPub_NET_Func">
+        <table>
+            <tr>
+                <td>기능</td>
+                <td>설명</td>
+                <td>*</td>
+            </tr>
+            <tr>
+                <td>CAD to VIZ</td>
+                <td>3D CAD 모델 및 VIZXML을 경량 파일 형식(*.VIZ)으로 변환</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>VIZ to VIZM</td>
+                <td>모바일 지원 파일 형식으로 변환</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>VIZ to VIZW</td>
+                <td>웹 지원 파일 형식으로 변환</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>Metadata 추출</td>
+                <td>경량 파일(*.VIZ)에서 메타데이터를 추출</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>파일 병합</td>
+                <td>복수 개의 파일 혹은 지정된 노드를 하나의 모델 파일로 병합</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>미리보기 이미지 추출</td>
+                <td>경량 파일(*.VIZ)에서 파일 별 혹은 노드 별 미리보기 이미지 추출</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>Attribute 추출</td>
+                <td>경량 파일(*.VIZ)에 포함되어 있는 Attribute 추출</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>Attribute 제거</td>
+                <td>경량 파일(*.VIZ)에 포함되어 있는 Attribute 제거</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>형상 노드 병합</td>
+                <td>지정된 규칙에 맞는 노드를 병합한 모델 변환</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>노드 추출</td>
+                <td>경량 파일(*.VIZ)의 노드를 별도 파일로 저장</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>간소화 모델 생성</td>
+                <td>경량 파일(*.VIZ)을 최소한의 간략한 형상으로 생성</td>
+                <td></td>
+            </tr>
+        </table>
+    </chapter>
+
+    <chapter title="지원 포맷" id="VIZPubNET_Format">
+        <include from="VIZPub_Format.topic" element-id="VIZPub-Format-Read_Ship"></include>
+    </chapter>
+
+</topic>

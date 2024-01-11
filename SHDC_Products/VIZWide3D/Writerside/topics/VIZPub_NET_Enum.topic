@@ -1,0 +1,353 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic
+        SYSTEM "https://resources.jetbrains.com/writerside/1.0/xhtml-entities.dtd">
+<topic xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:noNamespaceSchemaLocation="https://resources.jetbrains.com/writerside/1.0/topic.v2.xsd"
+       title="Enumeration" id="VIZPub_NET_Enum">
+
+    <chapter title="VIZPub.NET Enumeration" id="VIZPub_NET_enum">
+        <deflist id="VIZPub_NET_enum_def" style="full">
+            <def title="EntityKind" collapsible="true" id="VIZPub_NET_Enum_EntityKind">
+                <code-block lang="c#">
+                    public enum EntityKind
+                </code-block>
+                <table>
+                    <tr>
+                        <td>이름</td>
+                        <td>값</td>
+                        <td>설명</td>
+                    </tr>
+                    <tr>
+                        <td>Assembly</td>
+                        <td>500</td>
+                        <td>Assembly</td>
+                    </tr>
+                    <tr>
+                        <td>Part</td>
+                        <td>501</td>
+                        <td>Part</td>
+                    </tr>
+                    <tr>
+                        <td>Body</td>
+                        <td>507</td>
+                        <td>Body</td>
+                    </tr>
+                </table>
+            </def>
+            <def title="ExportFileFormats" collapsible="true" id="VIZPub_NET_Enum_ExportFileFormats">
+                <code-block lang="c#">
+                    public enum ExportFileFormats
+                </code-block>
+                <table>
+                    <tr>
+                        <td>이름</td>
+                        <td>값</td>
+                        <td>설명</td>
+                    </tr>
+                    <tr>
+                        <td>VIZ</td>
+                        <td>0</td>
+                        <td>VIZ</td>
+                    </tr>
+                    <tr>
+                        <td>VIZM</td>
+                        <td>1</td>
+                        <td>VIZM</td>
+                    </tr>
+                    <tr>
+                        <td>VIZW</td>
+                        <td>2</td>
+                        <td>VIZW</td>
+                    </tr>
+                </table>
+            </def>
+            <def title="ExportNameFormats" collapsible="true" id="VIZPub_NET_Enum_ExportNameFormats">
+                <code-block lang="c#">
+                    public enum ExportNameFormats
+                </code-block>
+                <table>
+                    <tr>
+                        <td>이름</td>
+                        <td>값</td>
+                        <td>설명</td>
+                    </tr>
+                    <tr>
+                        <td>NODE_NAME</td>
+                        <td>0</td>
+                        <td>노드 이름</td>
+                    </tr>
+                    <tr>
+                        <td>NODE_ID</td>
+                        <td>1</td>
+                        <td>노드 아이디</td>
+                    </tr>
+                    <tr>
+                        <td>NODE_ID_AND_NODE_NAME</td>
+                        <td>2</td>
+                        <td>노드 아이디 + "." + 노드 이름</td>
+                    </tr>
+                    <tr>
+                        <td>NONE</td>
+                        <td>3</td>
+                        <td>미지정</td>
+                    </tr>
+                </table>
+            </def>
+            <def title="ExportNodeKind" collapsible="true" id="VIZPub_NET_Enum_ExportNodeKind">
+                <code-block lang="c#">
+                    public enum ExportNodeKind
+                </code-block>
+                <table>
+                    <tr>
+                        <td>이름</td>
+                        <td>값</td>
+                        <td>설명</td>
+                    </tr>
+                    <tr>
+                        <td>ALL</td>
+                        <td>0</td>
+                        <td>All Node Type</td>
+                    </tr>
+                    <tr>
+                        <td>ASSEMBLY_ONLY</td>
+                        <td>1</td>
+                        <td>Assembly Node Only (Except Part Node)</td>
+                    </tr>
+                    <tr>
+                        <td>PART_ONLY</td>
+                        <td>2</td>
+                        <td>Part Node Only (Except Assembly Node)</td>
+                    </tr>
+                </table>
+            </def>
+            <def title="FileVersion" collapsible="true" id="VIZPub_NET_Enum_FileVersion">
+                <code-block lang="c#">
+                    public enum FileVersion
+                </code-block>
+                <table>
+                    <tr>
+                        <td>이름</td>
+                        <td>값</td>
+                        <td>설명</td>
+                    </tr>
+                    <tr>
+                        <td>303</td>
+                        <td>303</td>
+                        <td>V.3.0.3</td>
+                    </tr>
+                    <tr>
+                        <td>304</td>
+                        <td>304</td>
+                        <td>V.3.0.4</td>
+                    </tr>
+                </table>
+            </def>
+            <def title="ImageFormats" collapsible="true" id="VIZPub_NET_Enum_ImageFormats">
+                <code-block lang="c#">
+                    public enum ImageFormats
+                </code-block>
+                <table>
+                    <tr>
+                        <td>이름</td>
+                        <td>값</td>
+                        <td>설명</td>
+                    </tr>
+                    <tr>
+                        <td>JPG</td>
+                        <td>0</td>
+                        <td>JPG</td>
+                    </tr>
+                    <tr>
+                        <td>PNG</td>
+                        <td>1</td>
+                        <td>PNG</td>
+                    </tr>
+                </table>
+            </def>
+            <def title="ImageNodeUnit" collapsible="true" id="VIZPub_NET_Enum_ImageNodeUnit">
+                <code-block lang="c#">
+                    public enum ImageNodeUnit
+                </code-block>
+                <table>
+                    <tr>
+                        <td>이름</td>
+                        <td>값</td>
+                        <td>설명</td>
+                    </tr>
+                    <tr>
+                        <td>ALL_MODEL</td>
+                        <td>0</td>
+                        <td>전체 모델</td>
+                    </tr>
+                    <tr>
+                        <td>NODE_UNIT</td>
+                        <td>1</td>
+                        <td>노드 단위</td>
+                    </tr>
+                </table>
+            </def>
+            <def title="ModulePlatform" collapsible="true" id="VIZPub_NET_Enum_ModulePlatform">
+                <code-block lang="c#">
+                    public enum ModulePlatform
+                </code-block>
+                <table>
+                    <tr>
+                        <td>이름</td>
+                        <td>값</td>
+                        <td>설명</td>
+                    </tr>
+                    <tr>
+                        <td>OS</td>
+                        <td>0</td>
+                        <td>운영체제 종속</td>
+                    </tr>
+                    <tr>
+                        <td>X86</td>
+                        <td>1</td>
+                        <td>X86</td>
+                    </tr>
+                    <tr>
+                        <td>X64</td>
+                        <td>2</td>
+                        <td>X64</td>
+                    </tr>
+                </table>
+            </def>
+            <def title="ProgressModes" collapsible="true" id="VIZPub_NET_Enum_ProgressModes">
+                <code-block lang="c#">
+                    public enum ProgressModes
+                </code-block>
+                <table>
+                    <tr>
+                        <td>이름</td>
+                        <td>값</td>
+                        <td>설명</td>
+                    </tr>
+                    <tr>
+                        <td>READ</td>
+                        <td>0</td>
+                        <td>운영체제 종속</td>
+                    </tr>
+                    <tr>
+                        <td>WRITE</td>
+                        <td>1</td>
+                        <td>WRITE</td>
+                    </tr>
+                    <tr>
+                        <td>MERGE</td>
+                        <td>2</td>
+                        <td>MERGE</td>
+                    </tr>
+                    <tr>
+                        <td>PROCESSING</td>
+                        <td>3</td>
+                        <td>PROCESSING</td>
+                    </tr>
+                </table>
+            </def>
+            <def title="SimplifiedUnit" collapsible="true" id="VIZPub_NET_Enum_SimplifiedUnit">
+                <code-block lang="c#">
+                    public enum SimplifiedUnit
+                </code-block>
+                <table>
+                    <tr>
+                        <td>이름</td>
+                        <td>값</td>
+                        <td>설명</td>
+                    </tr>
+                    <tr>
+                        <td>TRIANGLE_MESH</td>
+                        <td>0</td>
+                        <td>TRIANGLE MESH</td>
+                    </tr>
+                    <tr>
+                        <td>TRIANGLE_SET_MESH</td>
+                        <td>1</td>
+                        <td>TRIANGLE SET MESH</td>
+                    </tr>
+                </table>
+            </def>
+            <def title="StructureMergeOptions" collapsible="true" id="VIZPub_NET_Enum_StructureMergeOptions">
+                <code-block lang="c#">
+                    public enum StructureMergeOptions
+                </code-block>
+                <table>
+                    <tr>
+                        <td>이름</td>
+                        <td>값</td>
+                        <td>설명</td>
+                    </tr>
+                    <tr>
+                        <td>AsIs</td>
+                        <td>0</td>
+                        <td>As-Is</td>
+                    </tr>
+                    <tr>
+                        <td>LeafAssemblyToPart</td>
+                        <td>1</td>
+                        <td>Leaf Assembly To Part</td>
+                    </tr>
+                    <tr>
+                        <td>AllToPart</td>
+                        <td>2</td>
+                        <td>All To Part</td>
+                    </tr>
+                </table>
+            </def>
+            <def title="ViewDirections" collapsible="true" id="VIZPub_NET_Enum_ViewDirections">
+                <code-block lang="c#">
+                    public enum ViewDirections
+                </code-block>
+                <table>
+                    <tr>
+                        <td>이름</td>
+                        <td>값</td>
+                        <td>설명</td>
+                    </tr>
+                    <tr>
+                        <td>ISO_PLUS</td>
+                        <td>0</td>
+                        <td>ISO +</td>
+                    </tr>
+                    <tr>
+                        <td>ISO_MINUS</td>
+                        <td>1</td>
+                        <td>ISO -</td>
+                    </tr>
+                    <tr>
+                        <td>FRONT</td>
+                        <td>2</td>
+                        <td>FRONT</td>
+                    </tr>
+                    <tr>
+                        <td>BACK</td>
+                        <td>3</td>
+                        <td>BACK</td>
+                    </tr>
+                    <tr>
+                        <td>LEFT</td>
+                        <td>4</td>
+                        <td>LEFT</td>
+                    </tr>
+                    <tr>
+                        <td>RIGHT</td>
+                        <td>5</td>
+                        <td>RIGHT</td>
+                    </tr>
+                    <tr>
+                        <td>TOP</td>
+                        <td>6</td>
+                        <td>TOP</td>
+                    </tr>
+                    <tr>
+                        <td>BOTTOM</td>
+                        <td>7</td>
+                        <td>BOTTOM</td>
+                    </tr>
+                </table>
+            </def>
+        </deflist>
+    </chapter>
+
+
+</topic>

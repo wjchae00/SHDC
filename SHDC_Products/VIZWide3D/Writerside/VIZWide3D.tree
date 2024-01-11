@@ -4,13 +4,9 @@
 
 <instance-profile id="VIZWide3D"
                  name="VIZWide3D Document"
-                 start-page="VIZWide3D.md">
+                 start-page="VIZWide3D-API-DOCUMENT.md">
 
-    <toc-element topic="VIZWide3D.md">
-        <toc-element topic="Getting-Started.md"/>
-        <toc-element topic="Initialization.md"/>
-        <toc-element toc-title="Github" target-for-accept-web-file-names="https://github.com/softhills3d/VIZWide3D"/>
-        <toc-element toc-title="VIZWide3D API">
+    <toc-element topic="VIZWide3D-API-DOCUMENT.md">
             <toc-element topic="Animation.md"/>
             <toc-element topic="ContextMenu.md"/>
             <toc-element topic="Disassembly.md"/>
@@ -44,6 +40,4 @@
             </toc-element>
             <toc-element topic="VIZWeb.md"/>
         </toc-element>
-    </toc-element>
-
 </instance-profile>

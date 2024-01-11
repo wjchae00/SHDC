@@ -1,0 +1,1308 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic
+        SYSTEM "https://resources.jetbrains.com/writerside/1.0/xhtml-entities.dtd">
+<topic xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:noNamespaceSchemaLocation="https://resources.jetbrains.com/writerside/1.0/topic.v2.xsd"
+       title="&#51648;&#50896; &#54252;&#47607;" id="VIZPub_Format">
+
+    <chapter title="Read File Format - Hoops" id="VIZPub-Format-HoopsRead" collapsible="true">
+        <table>
+            <tr>
+                <td>
+                    <p>Format</p>
+                </td>
+                <td>
+                    <p>Version</p>
+                </td>
+                <td>
+                    <p>Extensions</p>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <p>
+                        3MF
+                    </p>
+                </td>
+                <td>
+                    <p>1.2.3</p>
+                </td>
+                <td>
+                    <p>3MF</p>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <p>
+                        ACIS
+                    </p>
+                </td>
+                <td>
+                    <p>Up to 2023</p>
+                </td>
+                <td>
+                    <p>SAT, SAB</p>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <p>
+                        AutoCAD - 3D
+                    </p>
+                </td>
+                <td>
+                    <p>Up to AutoCAD 2019</p>
+                </td>
+                <td>
+                    <p>DWG, DXF</p>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <p>
+                        Autodesk 3DS
+                    </p>
+                </td>
+                <td>
+                    <p>Any</p>
+                </td>
+                <td>
+                    <p>3DS</p>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <p>
+                        Autodesk DWF
+                    </p>
+                </td>
+                <td>
+                    <p>Any</p>
+                </td>
+                <td>
+                    <p>DWF, DWFX</p>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <p>
+                        Autodesk Inventor
+                    </p>
+                </td>
+                <td>
+                    <p>Up to 2024</p>
+                </td>
+                <td>
+                    <p>IPT, IAM</p>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <p>
+                        Catia V4
+                    </p>
+                </td>
+                <td>
+                    <p>Up to 4.2.5</p>
+                </td>
+                <td>
+                    <p>MODEL, SESSION, DLV, EXP</p>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <p>
+                        Catia V5
+                    </p>
+                </td>
+                <td>
+                    <p>Up to V5_6R2023</p>
+                </td>
+                <td>
+                    <p>CATDrawing, CATPart, CATProduct, CATShape, CGR</p>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <p>
+                        Catia V6 / 3DExperience
+                    </p>
+                </td>
+                <td>
+                    <p>Up to V5-6 R2019 (R29)</p>
+                </td>
+                <td>
+                    <p>3DXML</p>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <p>
+                        COLLADA
+                    </p>
+                </td>
+                <td>
+                    <p>Any</p>
+                </td>
+                <td>
+                    <p>DAE</p>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <p>
+                        Creo - Pro/E
+                    </p>
+                </td>
+                <td>
+                    <p>Pro/Engineer 19.0 to Creo 10.0</p>
+                </td>
+                <td>
+                    <p>ASM, NEU, PRT, XAS, XPR</p>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <p>
+                        DGN
+                    </p>
+                </td>
+                <td>
+                    <p>7</p>
+                </td>
+                <td>
+                    <p>DGN</p>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <p>
+                        FBX
+                    </p>
+                </td>
+                <td>
+                    <p>ASCII: from 7100 to 7500, Binary: All</p>
+                </td>
+                <td>
+                    <p>FBX</p>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <p>
+                        GL Transmission Format
+                    </p>
+                </td>
+                <td>
+                    <p>Version 2.0 only</p>
+                </td>
+                <td>
+                    <p>GLTF, GLB</p>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <p>
+                        I-deas
+                    </p>
+                </td>
+                <td>
+                    <p>Up to 13.x (NX 5), NX I-deas 6</p>
+                </td>
+                <td>
+                    <p>MF1, ARC, UNV, PKG</p>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <p>
+                        IGES
+                    </p>
+                </td>
+                <td>
+                    <p>5.1, 5.2, 5.3</p>
+                </td>
+                <td>
+                    <p>IGS, IGES</p>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <p>
+                        JT
+                    </p>
+                </td>
+                <td>
+                    <p>Up to v10.9</p>
+                </td>
+                <td>
+                    <p>JT</p>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <p>
+                        NX - Unigraphics
+                    </p>
+                </td>
+                <td>
+                    <p>UG11 to UG18, UG NX, NX5 to NX12, NX1847 to NX2306</p>
+                </td>
+                <td>
+                    <p>PRT</p>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <p>
+                        Parasolid
+                    </p>
+                </td>
+                <td>
+                    <p>Up to 35.1</p>
+                </td>
+                <td>
+                    <p>X_B, X_T, XMT, XMT_TXT</p>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <p>
+                        PDF
+                    </p>
+                </td>
+                <td>
+                    <p>All Versions</p>
+                </td>
+                <td>
+                    <p>PDF</p>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <p>
+                        PRC
+                    </p>
+                </td>
+                <td>
+                    <p>All Versions</p>
+                </td>
+                <td>
+                    <p>PRC</p>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <p>
+                        Rhino3D
+                    </p>
+                </td>
+                <td>
+                    <p>From 4 to 7</p>
+                </td>
+                <td>
+                    <p>3DM</p>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <p>
+                        Solid Edge
+                    </p>
+                </td>
+                <td>
+                    <p>1 to 20, ST1 to ST10, 2019 to 2023</p>
+                </td>
+                <td>
+                    <p>ASM, PAR, PWD, PSM</p>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <p>
+                        SolidWorks
+                    </p>
+                </td>
+                <td>
+                    <p>From 97 up to 2023</p>
+                </td>
+                <td>
+                    <p>SLDASM, SLDPRT</p>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <p>
+                        STEP
+                    </p>
+                </td>
+                <td>
+                    <p>AP 203 E1/E2, AP 214, AP 242</p>
+                </td>
+                <td>
+                    <p>STP, STEP, STPZ</p>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <p>
+                        STEP/XML
+                    </p>
+                </td>
+                <td>
+                    <p>Any</p>
+                </td>
+                <td>
+                    <p>STPX, STPXZ</p>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <p>
+                        Stereo Litdography (STL)
+                    </p>
+                </td>
+                <td>
+                    <p>All Versions</p>
+                </td>
+                <td>
+                    <p>STL</p>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <p>
+                        U3D
+                    </p>
+                </td>
+                <td>
+                    <p>ECMA-363</p>
+                </td>
+                <td>
+                    <p>U3D</p>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <p>
+                        VDA-FS
+                    </p>
+                </td>
+                <td>
+                    <p>Version 1.0 and 2.0</p>
+                </td>
+                <td>
+                    <p>VDA</p>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <p>
+                        VRML
+                    </p>
+                </td>
+                <td>
+                    <p>V1.0 and V2.0</p>
+                </td>
+                <td>
+                    <p>WRL, VRML</p>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <p>
+                        Wavefront OBJ
+                    </p>
+                </td>
+                <td>
+                    <p>Any</p>
+                </td>
+                <td>
+                    <p>OBJ</p>
+                </td>
+            </tr>
+        </table>
+    </chapter>
+
+    <chapter title="Read File Format - InterOP" id="VIZPub-Format-IopRead" collapsible="true">
+        <table>
+            <tr>
+                <td>
+                    <p>Format</p>
+                </td>
+                <td>
+                    <p>Version</p>
+                </td>
+                <td>
+                    <p>Extensions</p>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <p>
+                        3D XML
+                    </p>
+                </td>
+                <td>
+                    <p>4.0 to 4.3</p>
+                </td>
+                <td>
+                    <p>3DXML</p>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <p>
+                        3MF
+                    </p>
+                </td>
+                <td>
+                    <p>1.1</p>
+                </td>
+                <td>
+                    <p>3MF</p>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <p>
+                        ACIS
+                    </p>
+                </td>
+                <td>
+                    <p>R1 – 2024 1.0</p>
+                </td>
+                <td>
+                    <p>SAT, SAB, ASAT, ASAB</p>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <p>
+                        Autodesk Inventor
+                    </p>
+                </td>
+                <td>
+                    <p>V7 – 2024</p>
+                </td>
+                <td>
+                    <p>IPT, IAM</p>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <p>
+                        Catia Drawing
+                    </p>
+                </td>
+                <td>
+                    <p>V5 R8 to V5–6 R2024 or Exported from 3DExperience up to V6 R2024x</p>
+                </td>
+                <td>
+                    <p>CATDrawing</p>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <p>
+                        Catia V4
+                    </p>
+                </td>
+                <td>
+                    <p>Up to 4.2.5</p>
+                </td>
+                <td>
+                    <p>MODEL, SESSION, EXP</p>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <p>
+                        Catia V5
+                    </p>
+                </td>
+                <td>
+                    <p>Up to V5_6R2023</p>
+                </td>
+                <td>
+                    <p>CATPart, CATProduct, CGR</p>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <p>
+                        Catia V6 / 3DExperience
+                    </p>
+                </td>
+                <td>
+                    <p>Up to V5-6 R2019 (R29)</p>
+                </td>
+                <td>
+                    <p>CATPart, CATProduct, CGR</p>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <p>
+                        COLLADA
+                    </p>
+                </td>
+                <td>
+                    <p>1.4.1</p>
+                </td>
+                <td>
+                    <p>DAE, ZAE</p>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <p>
+                        Creo - Pro/E
+                    </p>
+                </td>
+                <td>
+                    <p>Creo 4.0 – Creo 10.0</p>
+                    <p>WF3 – Creo 3.0</p>
+                    <p>16 – WF2</p>
+                </td>
+                <td>
+                    <p>ASM, PRT</p>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <p>
+                        DGN
+                    </p>
+                </td>
+                <td>
+                    <p>V7 – V8</p>
+                </td>
+                <td>
+                    <p>DGN</p>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <p>
+                        DXF / DWG Drawing
+                    </p>
+                </td>
+                <td>
+                    <p>2.5 – 2024</p>
+                </td>
+                <td>
+                    <p>DXF, DWG</p>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <p>
+                        DXF / DWG
+                    </p>
+                </td>
+                <td>
+                    <p>2.5 – 2024</p>
+                </td>
+                <td>
+                    <p>DXF, DWG</p>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <p>
+                        FBX
+                    </p>
+                </td>
+                <td>
+                    <p>2.0 – 7.5</p>
+                </td>
+                <td>
+                    <p>FBX</p>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <p>
+                        IGES
+                    </p>
+                </td>
+                <td>
+                    <p>Up to 5.3</p>
+                </td>
+                <td>
+                    <p>IGS, IGES</p>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <p>
+                        JT
+                    </p>
+                </td>
+                <td>
+                    <p>JT 8.x, 9.x, 10, 10.1, 10.2, 10.3, 10.5, 10.6, and 10.7</p>
+                </td>
+                <td>
+                    <p>JT</p>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <p>
+                        NX - Unigraphics
+                    </p>
+                </td>
+                <td>
+                    <p>NX 6 – NX 2306</p>
+                    <p>11 – NX 5</p>
+                </td>
+                <td>
+                    <p>PRT</p>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <p>
+                        Parasolid
+                    </p>
+                </td>
+                <td>
+                    <p>9.0 – 36.0.169</p>
+                </td>
+                <td>
+                    <p>X_B, X_T, P_B, P_T, XMT_TXT, XMT_BIN, XMP_TXT, XMP_BIN</p>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <p>
+                        Rhino
+                    </p>
+                </td>
+                <td>
+                    <p>2 to 7</p>
+                </td>
+                <td>
+                    <p>3DM</p>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <p>
+                        Solid Edge
+                    </p>
+                </td>
+                <td>
+                    <p>ST– SE 2023</p>
+                    <p>V18 – V20</p>
+                </td>
+                <td>
+                    <p>ASM, PAR, PSM</p>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <p>
+                        SolidWorks
+                    </p>
+                </td>
+                <td>
+                    <p>	98 – 2024</p>
+                </td>
+                <td>
+                    <p>SLDASM, SLDPRT</p>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <p>
+                        STEP
+                    </p>
+                </td>
+                <td>
+                    <p>AP 203, AP 214, AP 242</p>
+                </td>
+                <td>
+                    <p>STP, STEP, STPZ, STEPX</p>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <p>
+                        Stereo Litdography (STL)
+                    </p>
+                </td>
+                <td>
+                    <p>All Versions</p>
+                </td>
+                <td>
+                    <p>STL</p>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <p>
+                        VDA-FS
+                    </p>
+                </td>
+                <td>
+                    <p>Version 1.0 and 2.0</p>
+                </td>
+                <td>
+                    <p>VDA</p>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <p>
+                        XCGM
+                    </p>
+                </td>
+                <td>
+                    <p>R2012 – 2024 1.0</p>
+                </td>
+                <td>
+                    <p>XCGM</p>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <p>
+                        Wavefront OBJ
+                    </p>
+                </td>
+                <td>
+                    <p>Any</p>
+                </td>
+                <td>
+                    <p>OBJ</p>
+                </td>
+            </tr>
+        </table>
+    </chapter>
+
+    <chapter title="Read File Format - BIM" id="VIZPub-Format-Read_BIM" collapsible="true">
+        <table>
+            <tr>
+                <td>
+                    <p>Format</p>
+                </td>
+                <td>
+                    <p>Version</p>
+                </td>
+                <td>
+                    <p>Extensions</p>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <p>Autodesk Navisworks</p>
+                </td>
+                <td>
+                    <p>From 2012 to 2024</p>
+                </td>
+                <td>
+                    <p>NWD</p>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <p>
+                        IFC
+                    </p>
+                </td>
+                <td>
+                    <p>IFC2x Editions 2, 3 and 4</p>
+                </td>
+                <td>
+                    <p>IFC, IFCZIP</p>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <p>
+                        Revit
+                    </p>
+                </td>
+                <td>
+                    <p>2015 to 2024</p>
+                </td>
+                <td>
+                    <p>RVT, RFA</p>
+                </td>
+            </tr>
+        </table>
+    </chapter>
+
+    <chapter title="Read File Format - Shipbuild" id="VIZPub-Format-Read_Ship" collapsible="true">
+        <table>
+            <tr>
+                <td>
+                    <p>Format</p>
+                </td>
+                <td>
+                    <p>Version</p>
+                </td>
+                <td>
+                    <p>Extensions</p>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <p>RVM</p>
+                </td>
+                <td>
+                    <p></p>
+                </td>
+                <td>
+                    <p>RVM</p>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <p>
+                        REV
+                    </p>
+                </td>
+                <td>
+                    <p></p>
+                </td>
+                <td>
+                    <p>REV</p>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <p>
+                        DGN
+                    </p>
+                </td>
+                <td>
+                    <p></p>
+                </td>
+                <td>
+                    <p>DGN</p>
+                </td>
+            </tr>
+        </table>
+    </chapter>
+
+    <chapter title="Write File Format - Hoops" id="VIZPub-Format-HoopsWrite" collapsible="true">
+        <table>
+            <tr>
+                <td>
+                    <p>Format</p>
+                </td>
+                <td>
+                    <p>Version</p>
+                </td>
+                <td>
+                    <p>Extensions</p>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <p>
+                        3MF
+                    </p>
+                </td>
+                <td>
+                    <p>1.2.3</p>
+                </td>
+                <td>
+                    <p>3MF</p>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <p>
+                        ACIS
+                    </p>
+                </td>
+                <td>
+                    <p>5.0</p>
+                </td>
+                <td>
+                    <p>SAT, SAB</p>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <p>
+                        IGES
+                    </p>
+                </td>
+                <td>
+                    <p>5.1</p>
+                </td>
+                <td>
+                    <p>IGS, IGES</p>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <p>
+                        FBX
+                    </p>
+                </td>
+                <td>
+                    <p>7400, ASCII or Binary</p>
+                </td>
+                <td>
+                    <p>FBX</p>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <p>
+                        GLTF
+                    </p>
+                </td>
+                <td>
+                    <p>2.0</p>
+                </td>
+                <td>
+                    <p>GLTF, GLB</p>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <p>
+                        JT
+                    </p>
+                </td>
+                <td>
+                    <p>8.1, 9.5, 10.0</p>
+                </td>
+                <td>
+                    <p>JT</p>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <p>
+                        Parasolid
+                    </p>
+                </td>
+                <td>
+                    <p>12.1</p>
+                </td>
+                <td>
+                    <p>X_T</p>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <p>
+                        PRC
+                    </p>
+                </td>
+                <td>
+                    <p>Latest</p>
+                </td>
+                <td>
+                    <p>PRC</p>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <p>
+                        STEP
+                    </p>
+                </td>
+                <td>
+                    <p>AP 203 E2, AP 214 E1, AP 242 E1</p>
+                </td>
+                <td>
+                    <p>STP, STEP, STPZ</p>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <p>
+                        Stereo Litdography (STL)
+                    </p>
+                </td>
+                <td>
+                    <p>Any</p>
+                </td>
+                <td>
+                    <p>STL</p>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <p>U3D</p>
+                </td>
+                <td>
+                    <p>ECMA-363</p>
+                </td>
+                <td>
+                    <p>U3D</p>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <p>
+                        VRML
+                    </p>
+                </td>
+                <td>
+                    <p>1.0 and 2.0</p>
+                </td>
+                <td>
+                    <p>VRML</p>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <p>
+                        Wavefront OBJ
+                    </p>
+                </td>
+                <td>
+                    <p>Any</p>
+                </td>
+                <td>
+                    <p>OBJ</p>
+                </td>
+            </tr>
+        </table>
+    </chapter>
+
+    <chapter title="Write File Format - InterOP" id="VIZPub-Format-IopWrite" collapsible="true">
+        <table>
+            <tr>
+                <td>
+                    <p>Format</p>
+                </td>
+                <td>
+                    <p>Version</p>
+                </td>
+                <td>
+                    <p>Extensions</p>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <p>
+                        3D PDF
+                    </p>
+                </td>
+                <td>
+                    <p>1.7</p>
+                </td>
+                <td>
+                    <p>PDF</p>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <p>
+                        3D XML
+                    </p>
+                </td>
+                <td>
+                    <p>4.3</p>
+                </td>
+                <td>
+                    <p>3DXML</p>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <p>
+                        3MF
+                    </p>
+                </td>
+                <td>
+                    <p>1.1</p>
+                </td>
+                <td>
+                    <p>3MF</p>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <p>
+                        ACIS
+                    </p>
+                </td>
+                <td>
+                    <p>R18 – 2024 1.0</p>
+                </td>
+                <td>
+                    <p>SAT, SAB, ASAT, ASAB</p>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <p>
+                        CATIA V4
+                    </p>
+                </td>
+                <td>
+                    <p>4.1.9 – 4.2.4</p>
+                </td>
+                <td>
+                    <p>MODEL</p>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <p>
+                        CATIA V5
+                    </p>
+                </td>
+                <td>
+                    <p>V5 R15 – V5–6 R2024</p>
+                </td>
+                <td>
+                    <p>CATProduct, CATPart, CGR</p>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <p>
+                        COLLADA
+                    </p>
+                </td>
+                <td>
+                    <p>1.4.1</p>
+                </td>
+                <td>
+                    <p>DAE</p>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <p>
+                        FBX
+                    </p>
+                </td>
+                <td>
+                    <p>7.7.0</p>
+                </td>
+                <td>
+                    <p>FBX</p>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <p>
+                        GLTF
+                    </p>
+                </td>
+                <td>
+                    <p>2.0</p>
+                </td>
+                <td>
+                    <p>GLTF, GLB</p>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <p>
+                        IGES
+                    </p>
+                </td>
+                <td>
+                    <p>5.3</p>
+                </td>
+                <td>
+                    <p>IGES, IGS</p>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <p>
+                        Parasolid
+                    </p>
+                </td>
+                <td>
+                    <p>12 – 36.0.169</p>
+                </td>
+                <td>
+                    <p>X_T, XMT_TXT, X_B, XMT_BIN</p>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <p>
+                        REVIT
+                    </p>
+                </td>
+                <td>
+                    <p>2023</p>
+                </td>
+                <td>
+                    <p>RFA</p>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <p>
+                        STEP
+                    </p>
+                </td>
+                <td>
+                    <p>AP 203 E2, AP 214 E1, AP 242 E1</p>
+                </td>
+                <td>
+                    <p>STP, STEP, STPZ</p>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <p>
+                        Stereo Litdography (STL)
+                    </p>
+                </td>
+                <td>
+                    <p>Any</p>
+                </td>
+                <td>
+                    <p>STL</p>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <p>VDA-FS</p>
+                </td>
+                <td>
+                    <p>2.0</p>
+                </td>
+                <td>
+                    <p>VDA</p>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <p>
+                        XCGM
+                    </p>
+                </td>
+                <td>
+                    <p>R2012 – 2024 1.0</p>
+                </td>
+                <td>
+                    <p>XCGM</p>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <p>
+                        Wavefront OBJ
+                    </p>
+                </td>
+                <td>
+                    <p>Any</p>
+                </td>
+                <td>
+                    <p>OBJ</p>
+                </td>
+            </tr>
+        </table>
+    </chapter>
+</topic>

@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic
+        SYSTEM "https://resources.jetbrains.com/writerside/1.0/xhtml-entities.dtd">
+<topic xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:noNamespaceSchemaLocation="https://resources.jetbrains.com/writerside/1.0/topic.v2.xsd"
+       title="VIZPub Mechanical" id="VIZPub_product_MCAD">
+
+    <p>
+        VIZPub Mechanical은 CAD to VIZ / VIZM / VIZW에 특화된 변환기입니다.
+    </p>
+
+    <img src="VIZPub_MCAD_pic1.png" alt="VIZPub Img"></img>
+
+    <chapter title="기능" id="VIZPub-MCAD-API">
+        <table>
+            <tr>
+                <td>기능</td>
+                <td>기능 설명</td>
+                <td>기능 Mode</td>
+            </tr>
+            <tr>
+                <td>Export XML</td>
+                <td>XML 추출</td>
+                <td>XML</td>
+            </tr>
+            <tr>
+                <td>Export Image</td>
+                <td>이미지 추출 (JPG, PNG)</td>
+                <td>IMG</td>
+            </tr>
+            <tr>
+                <td>Convert VIZ</td>
+                <td>CAD to VIZ / VIZM / VIZW 변환</td>
+                <td>VIZ</td>
+            </tr>
+            <tr>
+                <td>Export Structure</td>
+                <td>메쉬를 제외한 Structure 추출</td>
+                <td>STRUCT</td>
+            </tr>
+            <tr>
+                <td>Export Metadata</td>
+                <td>메타데이터 추출</td>
+                <td>META</td>
+            </tr>
+            <tr>
+                <td>Export Attribute</td>
+                <td>텍스트 형식의 속성 추출</td>
+                <td>EXPATT</td>
+            </tr>
+            <tr>
+                <td>Import Attribute</td>
+                <td>속성 가져오기 후 VIZ 추출</td>
+                <td>IMPATT</td>
+            </tr>
+            <tr>
+                <td>Remove Attribute</td>
+                <td>모델 내 속성 전체 삭제</td>
+                <td>DELATT</td>
+            </tr>
+        </table>
+
+        <chapter title="기능 콘솔 INPUT" id="VIZPub_MCAD_param" collapsible="true">
+            <include from="VIZPub_Function.topic" element-id="VIZPub_mode_XML"></include>
+            <include from="VIZPub_Function.topic" element-id="VIZPub_mode_IMG"></include>
+            <include from="VIZPub_Function.topic" element-id="VIZPub_mode_VIZ"></include>
+            <include from="VIZPub_Function.topic" element-id="VIZPub_mode_STRUCT"></include>
+            <include from="VIZPub_Function.topic" element-id="VIZPub_mode_META"></include>
+            <include from="VIZPub_Function.topic" element-id="VIZPub_mode_EXPATT"></include>
+            <include from="VIZPub_Function.topic" element-id="VIZPub_mode_IMPATT"></include>
+            <include from="VIZPub_Function.topic" element-id="VIZPub_mode_DELATT"></include>
+            <include from="VIZPub_Function.topic" element-id="VIZPub_mode_EDITATTR"></include>
+        </chapter>
+
+        <a href="VIZPub_Parameter.topic">API Parameter List</a>
+    </chapter>
+
+    <chapter title="지원 포맷" id="VIZPubMCAD_Format">
+        <include from="VIZPub_Format.topic" element-id="VIZPub-Format-HoopsRead"></include>
+    </chapter>
+</topic>

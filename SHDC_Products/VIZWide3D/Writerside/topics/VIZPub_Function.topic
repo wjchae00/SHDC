@@ -1,0 +1,229 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic
+        SYSTEM "https://resources.jetbrains.com/writerside/1.0/xhtml-entities.dtd">
+<topic xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:noNamespaceSchemaLocation="https://resources.jetbrains.com/writerside/1.0/topic.v2.xsd"
+       title="기능" id="VIZPub_Function">
+
+    <p>VIZPub에 포함되는 전체 기능 리스트입니다.</p>
+
+    <procedure title="Export XML" id="VIZPub_mode_XML" style="choices">
+        <step>
+            CAD to XML 추출
+            <code-block lang="console">
+                -mode XML -i "INPUT FILE PATH" -o "OUTPUT FILE PATH (*.xml)"
+            </code-block>
+        </step>
+    </procedure>
+
+    <procedure title="Export Image" id="VIZPub_mode_IMG" style="choices">
+        <step>
+            CAD to Image 추출
+            <code-block lang="console">
+                -mode IMG -i "INPUT FILE PATH" -o "OUTPUT FILE PATH (*.jpg, *.png)" -img_format 0
+                -mode IMG -i "INPUT FILE PATH" -o "OUTPUT FILE PATH (*.jpg, *.png)"
+            </code-block>
+        </step>
+    </procedure>
+
+    <procedure title="Convert VIZ" id="VIZPub_mode_VIZ" style="choices">
+        <step>
+            CAD to VIZ 변환
+            <code-block lang="console">
+                -mode VIZ -i "INPUT FILE PATH" -o "OUTPUT FILE PATH (*.viz)" -export_viz_type 0
+                -mode VIZ -i "INPUT FILE PATH" -o "OUTPUT FILE PATH (*.viz)"
+            </code-block>
+        </step>
+
+        <step>
+            CAD to VIZM 변환
+            <code-block lang="console">
+                -mode VIZ -i "INPUT FILE PATH" -o "OUTPUT FILE PATH (*.vizm)" -export_viz_type 1
+                -mode VIZ -i "INPUT FILE PATH" -o "OUTPUT FILE PATH (*.vizm)"
+            </code-block>
+        </step>
+
+        <step>
+            CAD to VIZW 변환
+            <code-block lang="console">
+                -mode VIZ -i "INPUT FILE PATH" -o "OUTPUT FILE PATH (*.vizw)" -export_viz_type 2 -use_web_assembly t -export_vizw_for_vizwide3d t
+                -mode VIZ -i "INPUT FILE PATH" -o "OUTPUT FILE PATH (*.vizw)" -use_web_assembly t -export_vizw_for_vizwide3d t
+            </code-block>
+        </step>
+    </procedure>
+
+    <procedure title="Convert CAD" id="VIZPub_mode_CAD" style="choices">
+        <step>
+            CAD to CAD 변환
+            <code-block lang="console">
+                -mode C2C -i "INPUT FILE PATH" -o "OUTPUT FILE PATH"
+            </code-block>
+        </step>
+    </procedure>
+
+    <procedure title="Export Structure" id="VIZPub_mode_STRUCT" style="choices">
+        <step>
+            형상 없이 모델 트리만 내보내기
+            <code-block lang="console">
+                -mode STRUCT -i "INPUT FILE PATH" -o "OUTPUT FILE PATH (VIZ, CAD)"
+            </code-block>
+        </step>
+    </procedure>
+
+    <procedure title="Export Metadata" id="VIZPub_mode_META" style="choices">
+        <step>
+            CAD to Metadata 추출
+            <code-block lang="console">
+                -mode META-i "INPUT FILE PATH" -o "OUTPUT FILE PATH (*.metadata)"
+            </code-block>
+        </step>
+    </procedure>
+
+    <procedure title="Export Attribute" id="VIZPub_mode_EXPATT" style="choices">
+        <step>
+            CAD to 속성 TXT 추출
+            <code-block lang="console">
+                -mode EXPATT -i "INPUT FILE PATH" -o "OUTPUT FILE PATH (*.txt)"
+            </code-block>
+        </step>
+    </procedure>
+
+    <procedure title="Import Attribute" id="VIZPub_mode_IMPATT" style="choices">
+        <step>
+            VIZ에 속성 TXT 가져오기
+            <code-block lang="console">
+                -mode IMPATT -i "INPUT FILE PATH (*.viz)" -o "OUTPUT FILE PATH (*.viz)" -attribute_file_path "ATTR TEXT FILE PATH (*.txt)"
+            </code-block>
+        </step>
+    </procedure>
+
+    <procedure title="Remove Attribute" id="VIZPub_mode_DELATT" style="choices">
+        <step>
+            VIZ에서 속성 전체 삭제
+            <code-block lang="console">
+                -mode DELATT -i "INPUT FILE PATH (*.viz)" -o "OUTPUT FILE PATH (*.viz)"
+            </code-block>
+        </step>
+    </procedure>
+
+    <procedure title="Edit Attribute" id="VIZPub_mode_EDITATTR" style="choices">
+        <step>
+            VIZ 내 속성 편집
+            <code-block lang="console">
+                -mode EDITATTR -i "INPUT FILE PATH (*.viz, *.rvt, *.nwd)" -o "OUTPUT FILE PATH (*.viz)" -rule_file_path "C:\RULE.xml"
+            </code-block>
+        </step>
+    </procedure>
+
+    <procedure title="Model Rotate" id="VIZPub_mode_ROTATE" style="choices">
+        <step>
+            VIZ 모델 회전
+            <code-block lang="console">
+                -mode ROTATE -i "INPUT FILE PATH (*.viz, *.rvt, *.nwd)" -o "OUTPUT FILE PATH (*.viz)" -use_rotate_x 0 -use_rotate_y 0 -use_rotate_z 0
+            </code-block>
+        </step>
+    </procedure>
+
+    <procedure title="Model Color" id="VIZPub_mode_COLOR" style="choices">
+        <step>
+            VIZ 모델 색상 편집
+            <code-block lang="console">
+                -mode COLOR -i "INPUT FILE PATH (*.viz, *.rvt, *.nwd)" -o "OUTPUT FILE PATH (*.viz)" -use_color_r 0 -use_color_g 0 -use_color_b 0 -use_color_a 0
+                -mode COLOR -i "INPUT FILE PATH (*.viz, *.rvt, *.nwd)" -o "OUTPUT FILE PATH (*.viz)" -color_xml_file_path "C:\COLOR.xml"
+            </code-block>
+        </step>
+    </procedure>
+
+    <procedure title="Export Model Boundbox Information" id="VIZPub_mode_BBINFO" style="choices">
+        <step>
+            모델 바운드 박스 정보 추출
+            <code-block lang="console">
+                -mode BBINFO -i "INPUT FILE PATH (*.viz, *.rvt, *.nwd)" -o "OUTPUT FILE PATH (*.txt)"
+            </code-block>
+        </step>
+    </procedure>
+
+    <procedure title="Export Boundbox Inner Model" id="VIZPub_mode_INNER" style="choices">
+        <step>
+            바운드 박스 내부 오브젝트 추출
+            <code-block lang="console">
+                -mode INNER -i "INPUT FILE PATH (*.viz, *.rvt, *.nwd)" -o "OUTPUT FILE PATH (*.viz)" -use_boundbox_search_option 0 -use_boundbox_min_x 0 -use_boundbox_min_y 0 -use_boundbox_min_z 0 -use_boundbox_max_x 100 -use_boundbox_max_y 100 -use_boundbox_max_z 100
+            </code-block>
+        </step>
+        <step>
+            모델 구조를 유지한 채, 바운드 박스 내부 오브젝트 추출
+            <code-block lang="console">
+                -mode INNER -i "INPUT FILE PATH (*.viz, *.rvt, *.nwd)" -o "OUTPUT FILE PATH (*.viz)" -export_remain_structure_boundbox t -use_boundbox_min_x 0 -use_boundbox_min_y 0 -use_boundbox_min_z 0 -use_boundbox_max_x 100 -use_boundbox_max_y 100 -use_boundbox_max_z 100
+            </code-block>
+        </step>
+        <step>
+            바운드 박스에 걸친 오브젝트 절단하여 추출
+            <code-block lang="console">
+                -mode INNER -i "INPUT FILE PATH (*.viz, *.rvt, *.nwd)" -o "OUTPUT FILE PATH (*.viz)" -use_boundbox_cut_object t
+            </code-block>
+        </step>
+    </procedure>
+
+    <procedure title="Export Exterior" id="VIZPub_mode_EXPEXT" style="choices">
+        <step>
+            모델 외곽 추출
+            <code-block lang="console">
+                -mode EXPEXT -i "INPUT FILE PATH (*.viz, *.rvt, *.nwd)" -o "OUTPUT FILE PATH (*.viz)"
+            </code-block>
+        </step>
+    </procedure>
+
+    <procedure title="Export Simplified Model" id="VIZPub_mode_SIMPLE" style="choices">
+        <step>
+            기본 간소화 모델 변환
+            <code-block lang="console">
+                -mode SIMPLE -i "INPUT FILE PATH (*.viz, *.rvt, *.nwd)" -o "OUTPUT FILE PATH (*.viz)"
+            </code-block>
+        </step>
+        <step>
+            숨기기 필터(*.txt)를 활용한 간소화 모델 변환
+            <code-block lang="console">
+                -mode SIMPLE -i "INPUT FILE PATH (*.viz, *.rvt, *.nwd)" -o "OUTPUT FILE PATH (*.viz)" -hide_filter_object_file_path "C:\HIDE_FILTER.txt" -export_remain_structure_boundbox t -export_exclude_hidden_object_type 0
+            </code-block>
+        </step>
+    </procedure>
+
+    <procedure title="Merge Model" id="VIZPub_mode_MERGE" style="choices">
+        <step>
+            모델 병합 (*.metadata)
+            <code-block lang="console">
+                -mode MERGE -i "INPUT FILE PATH (*.metadata)" -o "OUTPUT FILE PATH (*.viz)"
+            </code-block>
+        </step>
+    </procedure>
+
+    <procedure title="Merge Node" id="VIZPub_mode_MNODE" style="choices">
+        <step>
+            노드 병합 (*.xml)
+            <code-block lang="console">
+                -mode MNODE -i "INPUT FILE PATH (*.viz, *.rvt, *.nwd)" -o "OUTPUT FILE PATH (*.viz)" -rule_file_path "C:\RULE.xml"
+            </code-block>
+        </step>
+    </procedure>
+
+    <procedure title="Export Node" id="VIZPub_mode_NODE" style="choices">
+        <step>
+            모든 노드 추출
+            <code-block lang="console">
+                -mode NODE -i "INPUT FILE PATH (*.viz, *.rvt, *.nwd)" -o "OUTPUT FOLDER PATH" -export_file_node_type 0
+            </code-block>
+        </step>
+        <step>
+            파트 노드 추출
+            <code-block lang="console">
+                -mode NODE -i "INPUT FILE PATH (*.viz, *.rvt, *.nwd)" -o "OUTPUT FOLDER PATH" -export_file_node_type 1
+            </code-block>
+        </step>
+        <step>
+            바디 노드 추출
+            <code-block lang="console">
+                -mode NODE -i "INPUT FILE PATH (*.viz, *.rvt, *.nwd)" -o "OUTPUT FOLDER PATH" -export_file_node_type 2
+            </code-block>
+        </step>
+    </procedure>
+</topic>

@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic
+        SYSTEM "https://resources.jetbrains.com/writerside/1.0/xhtml-entities.dtd">
+<topic xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:noNamespaceSchemaLocation="https://resources.jetbrains.com/writerside/1.0/topic.v2.xsd"
+       title="VIZPub" id="VIZPub-Start">
+
+    <p>
+        VIZPub은 3D CAD 모델을 SOFTHILLS Co., Ltd. (주)소프트힐스에서 제공하는 경량 파일 형식(*.VIZ)의 파일을 생성하고,
+        또한 생성된 경량 파일 형식을 활용하여 재활용 가능한 부가정보(혹은 Metadata)를 추출할 수 있는 변환기 소프트웨어 입니다.
+    </p>
+
+    <img src="VIZPub_product_pic1.png" alt="VIZpub Information"></img>
+
+    <chapter title="VIZPub 제품군" id="VIZPub-Products-table">
+
+        <p>
+            VIZPub은 BOM / Mechanical / SPC 제품군으로 나뉘며 각 제품군 별 하위 제품들이 나누어져 있습니다.
+            제품 종류는 아래 표와 같습니다.
+        </p>
+
+        <table>
+            <tr>
+                <td>분류</td>
+                <td>제품명</td>
+                <td>VIZ</td>
+                <td>CAD</td>
+                <td>XML</td>
+                <td>IMAGE</td>
+                <td>PDF</td>
+                <td>METADATA</td>
+            </tr>
+            <tr>
+                <td>BOM</td>
+                <td><a href="VIZPub_product_BOM.topic">VIZPub BOM</a></td>
+                <td></td>
+                <td></td>
+                <td>●</td>
+                <td>●</td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td rowspan="4">Mechanical</td>
+                <td><a href="VIZPub_product_MCAD.topic">VIZPub Mechanical</a></td>
+                <td>●</td>
+                <td></td>
+                <td>●</td>
+                <td>●</td>
+                <td></td>
+                <td>●</td>
+            </tr>
+            <tr>
+                <td><a href="VIZPub_product_MCADIop.topic">VIZPub Mechanical IOP</a></td>
+                <td>●</td>
+                <td></td>
+                <td>●</td>
+                <td>●</td>
+                <td></td>
+                <td>●</td>
+            </tr>
+            <tr>
+                <td><a href="VIZPub_product_Tran.topic">VIZTran</a></td>
+                <td></td>
+                <td>●</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>VIZPub 2D</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td>●</td>
+                <td>●</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td rowspan="3">SPC</td>
+                <td><a href="VIZPub_product_BIM.topic">VIZPub BIM</a></td>
+                <td>●</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td>●</td>
+            </tr>
+            <tr>
+                <td><a href="VIZPub_product_Manager.topic">VIZPub Manager</a></td>
+                <td>●</td>
+                <td></td>
+                <td></td>
+                <td>●</td>
+                <td></td>
+                <td>●</td>
+            </tr>
+            <tr>
+                <td><a href="VIZPub_product_NET.topic">VIZPub.NET</a></td>
+                <td>●</td>
+                <td></td>
+                <td></td>
+                <td>●</td>
+                <td></td>
+                <td>●</td>
+            </tr>
+        </table>
+
+        <note>
+            <p>
+                각 제품 별 지원 포맷 및 상세 기능은 해당 제품 페이지에서 확인 가능합니다.
+            </p>
+        </note>
+    </chapter>
+
+    <chapter title="사용 전 설치" id="VIZPub-install">
+        <p>
+            VIZPub을 사용하기 위해서는 Microsoft Visual C++ 재배포 패키지를 설치해야 합니다.
+        </p>
+        <p>
+            설치가 필요한 버전은 아래와 같습니다.
+        </p>
+
+        <list>
+            <li>Visual Studio 2010 (VC++ 10.0) SP1</li>
+            <li>Visual Studio 2012 (VC++ 11.0)</li>
+            <li>Visual Studio 2015 (VC++ 14.0)</li>
+        </list>
+
+        <note>
+            <p>
+                최신 Windows Service Pack이 설치되지 않은 경우, 재배포 패키지 설치가 실패할 수 있습니다.
+            </p>
+            <p>
+                설치하는 운영체제의 플랫폼(Win32/x64)과 VIZPub 플랫폼에 맞는 재배포 패키지를 설치해야 합니다.
+            </p>
+        </note>
+
+        <a href="https://support.microsoft.com/ko-kr/help/2977003/the-latest-supported-visual-c-downloads">
+            Visual C++ 재배포 패키지 최신버전 다운로드 사이트
+        </a>
+    </chapter>
+
+    <chapter title="라이선스" id="VIZPub-license">
+        <p>
+            VIZPub 제품의 라이선스는 파일 형태로 제공되며, Node-Locked 종류만 지원하고 있습니다. (VIZPub.NET 제외)
+        </p>
+        <p>
+            라이선스 발행을 위해 사용하고자 하는 PC의 MAC ADDRESS 정보가 필요합니다.
+        </p>
+        <tip>
+            <p>[윈도우] -> [검색/실행] -> [명령프롬프트 / CMD.exe] -> "IPCONFIG /ALL" 을 입력</p>
+            <p>출력되는 정보 중 인터넷이 연결된 "이더넷 어댑터" 혹은 "무선 LAN 어댑터 Wi-Fi" 항목에서 "물리적 주소" 의 값</p>
+        </tip>
+        <p>
+            제공된 라이선스 파일은 VIZPub.exe 파일이 있는 동일 폴더 내에 제공된 VIZPub 제품 명과 동일한 파일 이름으로 존재해야 합니다.
+        </p>
+        <tip>
+            <p>
+                EX) 제품명 : VIZPub BOM.exe
+            </p>
+            <p>
+                라이선스명 : VIZPub BOM.lic
+            </p>
+        </tip>
+    </chapter>
+
+
+    <chapter title="VIZPub.Config" id="VIZPub-Config">
+        <p>
+            VIZPub.Config.exe는 VIZPub 변환기에서 사용하는 변환 옵션을 쉽게 파악하고 설정할 수 있도록 합니다.
+            설정된 옵션 파일은 “VIZPub.Config.ini”로 저장되며 VIZPub 상에서 해당 파일에 저장된 옵션들을
+            자동으로 적용하여 사용합니다.
+        </p>
+        <p>
+            VIZPub.Config.exe에서 설정 가능한 옵션 리스트는 콘솔 파라미터와 공유하고 있습니다. <a href="VIZPub_Parameter.topic">이 곳에서 확인</a> 가능합니다.
+        </p>
+
+        <note>
+            <p>
+                VIZPub.Config.ini는 VIZPub.exe와 동일한 경로 내에 존재해야 사용하실 수 있습니다.
+            </p>
+        </note>
+    </chapter>
+
+</topic>

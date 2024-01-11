@@ -6,12 +6,116 @@
         <accepts>page.html</accepts>
     </rule>
     -->
-    <rule id="3496808b">
-        <description>Created after removal of "IIS에서 Import" from VIZWide3D Document</description>
-        <accepts>IIS.html</accepts>
+    <rule id="4686447e">
+        <description>Created after removal of "This is the first topic" from VIZWide3D Document</description>
+        <accepts>Default-topic.html</accepts>
     </rule>
-    <rule id="50953f98">
-        <description>Created after removal of "How To" from VIZWide3D Document</description>
-        <accepts>How-To.html</accepts>
+    <rule id="3a2c6c1f">
+        <description>Created after removal of "Animation2" from VIZWide3D Document</description>
+        <accepts>Animation2.html</accepts>
+    </rule>
+    <rule id="68bdaeb5">
+        <description>Created after removal of "Method" from VIZWide3D Document</description>
+        <accepts>Method.html</accepts>
+    </rule>
+    <rule id="7bf37bec">
+        <description>Created after removal of "AnimationEvent" from VIZWide3D Document</description>
+        <accepts>AnimationEvent.html</accepts>
+    </rule>
+    <rule id="1d153696">
+        <description>Created after removal of "Event" from VIZWide3D Document</description>
+        <accepts>Event.html</accepts>
+    </rule>
+    <rule id="6200779a">
+        <description>Created after removal of "Event2" from VIZWide3D Document</description>
+        <accepts>Event2.html</accepts>
+    </rule>
+    <rule id="74fbda44">
+        <description>Created after removal of "test2" from VIZWide3D Document</description>
+        <accepts>Test.html</accepts>
+    </rule>
+    <rule id="26f5c3de">
+        <description>Created after removal of "test3" from VIZWide3D Document</description>
+        <accepts>test3.html</accepts>
+    </rule>
+    <rule id="d2db40c">
+        <description>Created after removal of "Starter" from VIZWide3D Document</description>
+        <accepts>Starter.html</accepts>
+    </rule>
+    <rule id="472385db">
+        <description>Created after removal of "Reference" from VIZWide3D Document</description>
+        <accepts>Reference.html</accepts>
+    </rule>
+    <rule id="52268ec6">
+        <description>Created after removal of "Tutorial" from VIZWide3D Document</description>
+        <accepts>Tutorial.html</accepts>
+    </rule>
+    <rule id="3da038c">
+        <description>Created after removal of "Overview" from VIZWide3D Document</description>
+        <accepts>Overview.html</accepts>
+    </rule>
+    <rule id="7eb3c5a0">
+        <description>Created after removal of "How to" from VIZWide3D Document</description>
+        <accepts>How-to.html</accepts>
+    </rule>
+    <rule id="54ef8dad">
+        <description>Created after removal of "Configuration" from VIZWide3D Document</description>
+        <accepts>Configuration.html</accepts>
+    </rule>
+    <rule id="18c4a431">
+        <description>Created after removal of "UserView" from VIZWide3D Document</description>
+        <accepts>UserView.html</accepts>
+    </rule>
+    <rule id="73af428f">
+        <description>Created after removal of "SHDC" from VIZWide3D Document</description>
+        <accepts>Section-Starting-Page.html</accepts>
+    </rule>
+    <rule id="7b5a989a">
+        <description>Created after removal of "VIZWide3D" from VIZWide3D Document</description>
+        <accepts>VIZWide3D-살펴보기.html</accepts>
+    </rule>
+    <rule id="166927fc">
+        <description>Created after removal of "VIZPub.NET" from VIZWide3D Document</description>
+        <accepts>VIZPub-NET.html</accepts>
+    </rule>
+    <rule id="12a26818">
+        <description>Created after removal of "VIZPub" from VIZWide3D Document</description>
+        <accepts>VIZPub.html</accepts>
+    </rule>
+    <rule id="5672af76">
+        <description>Created after removal of "VIZWing" from VIZWide3D Document</description>
+        <accepts>VIZWing.html</accepts>
+    </rule>
+    <rule id="2908d764">
+        <description>Created after removal of "VIZWeb3D" from VIZWide3D Document</description>
+        <accepts>VIZWeb3D.html</accepts>
+    </rule>
+    <rule id="73799b37">
+        <description>Created after removal of "VIZZARD" from VIZWide3D Document</description>
+        <accepts>VIZZARD.html</accepts>
+    </rule>
+    <rule id="3fb38439">
+        <description>Created after removal of "VIZCore3D" from VIZWide3D Document</description>
+        <accepts>VIZCore3D.html</accepts>
+    </rule>
+    <rule id="711f7fbf">
+        <description>Created after removal of "VIZCLASH.NET" from VIZWide3D Document</description>
+        <accepts>VIZCLASH-NET.html</accepts>
+    </rule>
+    <rule id="1646050a">
+        <description>Created after removal of "VIZCore3D.NET" from VIZWide3D Document</description>
+        <accepts>VIZCore3D-NET.html</accepts>
+    </rule>
+    <rule id="3e1a74ec">
+        <description>Created after removal of "SHDC" from VIZWide3D Document</description>
+        <accepts>SHDC.html</accepts>
+    </rule>
+    <rule id="1472afe1">
+        <description>Created after removal of "Empty MD Topic" from Softhills Documentation Center</description>
+        <accepts>Empty-MD-Topic.html</accepts>
+    </rule>
+    <rule id="73214a66">
+        <description>Created after removal of "VIZPub" from Softhills Documentation Center</description>
+        <accepts>VIZPub.html</accepts>
     </rule>
 </rules>

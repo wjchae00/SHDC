@@ -252,6 +252,6 @@ vizcore.Review.Measure.AddZXAxisDistance();
 vizcore.Review.Measure.DeleteAll();
 
 //[To Do] 화면 다시그리기 호출
-vizcore.Render();
+vizwide3d.Render();
 ```
 </procedure>

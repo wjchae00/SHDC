@@ -1,0 +1,145 @@
+<!DOCTYPE html SYSTEM "about:legacy-compat"><html lang="en-US" data-colors-preset="contrast" data-primary-color="#307FFF"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><meta charset="UTF-8"><meta name="robots" content="noindex">  <meta name="built-on" content="2024-01-02T14:29:14.3615978"><meta name="build-number" content="${buildNumber}">    <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-563TQVGF4C"></script>
+<script>window.dataLayer = window.dataLayer || []; function gtag() { dataLayer.push(arguments); } gtag('js', new Date()); gtag('config', 'G-563TQVGF4C');</script>
+
+<script>
+    window.addEventListener('load', () => {
+        const test = document.querySelector('.footer__powered')
+        console.log(test.innerText);
+        test.innerText = 'Powered by '
+    })
+</script>     <title>Model | VIZWide3D Document</title><script id="virtual-toc-data" type="application/json">[{"id":"add","level":0,"title":"Add","anchor":"#add"},{"id":"addheader","level":0,"title":"AddHeader","anchor":"#addheader"},{"id":"close","level":0,"title":"Close","anchor":"#close"},{"id":"closefile","level":0,"title":"CloseFile","anchor":"#closefile"},{"id":"getboundbox","level":0,"title":"GetBoundBox","anchor":"#getboundbox"},{"id":"getopenfiles","level":0,"title":"GetOpenFiles","anchor":"#getopenfiles"},{"id":"open","level":0,"title":"Open","anchor":"#open"},{"id":"openheader","level":0,"title":"OpenHeader","anchor":"#openheader"},{"id":"event-listener","level":0,"title":"--- Event Listener ---","anchor":"#event-listener"},{"id":"onmodelopenedevent","level":0,"title":"OnModelOpenedEvent","anchor":"#onmodelopenedevent"},{"id":"onpropertycompletedevent","level":0,"title":"OnPropertyCompletedEvent","anchor":"#onpropertycompletedevent"},{"id":"onstreamprogresschangedevent","level":0,"title":"OnStreamProgressChangedEvent","anchor":"#onstreamprogresschangedevent"},{"id":"onstructurecompletedevent","level":0,"title":"OnStructureCompletedEvent","anchor":"#onstructurecompletedevent"}]</script><script id="topic-shortcuts" type="application/json"></script><link href="https://resources.jetbrains.com/writerside/apidoc/6.6.6-b205/app.css" rel="stylesheet">   <link rel="apple-touch-icon" sizes="180x180" href="https://jetbrains.com/apple-touch-icon.png"><link rel="icon" type="image/png" sizes="32x32" href="https://jetbrains.com/favicon-32x32.png"><link rel="icon" type="image/png" sizes="16x16" href="https://jetbrains.com/favicon-16x16.png"><link rel="manifest" href="https://jetbrains.com/site.webmanifest"><link rel="mask-icon" href="https://jetbrains.com/safari-pinned-tab.svg" color="#000000"><meta name="msapplication-TileColor" content="#000000"/><meta name="msapplication-TileImage" content="https://resources.jetbrains.com/storage/ui/favicons/mstile-144x144.png"/><meta name="msapplication-square70x70logo" content="https://resources.jetbrains.com/storage/ui/favicons/mstile-70x70.png"/><meta name="msapplication-square150x150logo" content="https://resources.jetbrains.com/storage/ui/favicons/mstile-150x150.png"/><meta name="msapplication-wide310x150logo" content="https://resources.jetbrains.com/storage/ui/favicons/mstile-310x150.png"/><meta name="msapplication-square310x310logo" content="https://resources.jetbrains.com/storage/ui/favicons/mstile-310x310.png"/>  <meta name="image" content=""><!-- Open Graph --><meta property="og:title" content="Model | VIZWide3D Document"/><meta property="og:description" content=""/><meta property="og:image" content=""/><meta property="og:site_name" content="VIZWide3D Document Help"/><meta property="og:type" content="website"/><meta property="og:locale" content="en_US"/><meta property="og:url" content="https://www.softhills.net/SHDC/VIZWide3D/vizwide3d-api-document.htmlmodel.html"/><!-- End Open Graph --><!-- Twitter Card --><meta name="twitter:card" content="summary_large_image"><meta name="twitter:site" content=""><meta name="twitter:title" content="Model | VIZWide3D Document"><meta name="twitter:description" content=""><meta name="twitter:creator" content=""><meta name="twitter:image:src" content=""><!-- End Twitter Card --><!-- Schema.org WebPage --><script type="application/ld+json"> { "@context": "http://schema.org", "@type": "WebPage", "@id": "https://www.softhills.net/SHDC/VIZWide3D/vizwide3d-api-document.htmlmodel.html#webpage", "url": "https://www.softhills.net/SHDC/VIZWide3D/vizwide3d-api-document.htmlmodel.html", "name": "Model | VIZWide3D Document", "description": "", "image": "", "inLanguage":"en-US" }</script><!-- End Schema.org --><!-- Schema.org WebSite --><script type="application/ld+json"> { "@type": "WebSite", "@id": "https://www.softhills.net/SHDC/VIZWide3D/vizwide3d-api-document.html/#website", "url": "https://www.softhills.net/SHDC/VIZWide3D/vizwide3d-api-document.html/", "name": "VIZWide3D Document Help" }</script><!-- End Schema.org --></head>      <body data-id="Model" data-main-title="Model" data-article-props="{&quot;seeAlsoStyle&quot;:&quot;links&quot;}"  data-template="article"  data-breadcrumbs="VIZWide3D-API-DOCUMENT.md|VIZWide3D"  >   <div class="wrapper"><main class="panel _main"><header class="panel__header"><div class="container"><h3>VIZWide3D Document  Help</h3><div class="panel-trigger"></div></div></header><section class="panel__content"><div class="container"><article class="article" data-shortcut-switcher="inactive"><h1 data-toc="Model"   id="Model.md">Model</h1>  <section class="chapter"><h2 id="add" data-toc="add"   >Add</h2><section class="procedure-steps"   > <div class="collapse" ><div class="collapse__title"  ><h3 id="1bdb7b28_189" data-toc="1bdb7b28_189">복수개의 VIZWeb3D 용 VIZW 모델 파일 추가</h3 ></div><div class="collapse__content" ><aside class="prompt" data-type="note" data-title="" id="1bdb7b28_190"><p>Add(models)</p></aside><p id="1bdb7b28_191"><span class="control" id="1bdb7b28_192">Example</span></p><div class="code-block" data-lang="javascript"         >
+let models = [];                //URI Array
+models.push(&quot;./VIZCore/Model/Sample1.vizw&quot;);
+models.push(&quot;./VIZCore/Model/Sample2.vizw&quot;);
+//복수개의 VIZWeb3D 용 VIZW 모델 파일 추가
+vizcore.Model.Add(models);
+</div><p id="1bdb7b28_194"><span class="control" id="1bdb7b28_195">Parameters</span></p><div class="table-wrapper"><table class="wide" id="1bdb7b28_196"><thead><tr class="ijRowHead" id="1bdb7b28_197"><th id="1bdb7b28_198"><p>Name</p></th><th id="1bdb7b28_199"><p>Type</p></th><th id="1bdb7b28_200"><p>Description</p></th></tr></thead><tbody><tr id="1bdb7b28_201"><td id="1bdb7b28_202"><p>models</p></td><td id="1bdb7b28_203"><p>Array</p></td><td id="1bdb7b28_204"><p>URI Array</p></td></tr></tbody></table></div><ol class="list _decimal"></ol></div ></div></section></section><section class="chapter"><h2 id="addheader" data-toc="addheader"   >AddHeader</h2><section class="procedure-steps"   > <div class="collapse" ><div class="collapse__title"  ><h3 id="1bdb7b28_205" data-toc="1bdb7b28_205">VIZWide3D 용 VIZW 파일의 헤더 추가</h3 ></div><div class="collapse__content" ><aside class="prompt" data-type="note" data-title="" id="1bdb7b28_206"><p>AddHeader(models)</p></aside><p id="1bdb7b28_207"><span class="control" id="1bdb7b28_208">Example</span></p><div class="code-block" data-lang="javascript"         >
+function example1 () {
+//모델 닫기
+vizcore.Model.Close();
+
+     let models = [];                       //URI Array
+     models.push(&quot;./VIZCore/Model/Sample1_wh.vizw&quot;);
+     models.push(&quot;./VIZCore/Model/Sample2_wh.vizw&quot;);
+     models.push(&quot;./VIZCore/Model/Sample3_wh.vizw&quot;);
+     models.push(&quot;./VIZCore/Model/Sample4_wh.vizw&quot;);
+//VIZWide3D 용 VIZW 파일의 헤더 추가
+     vizcore.Model.AddHeader(models);
+}
+
+//AddHeader Model Key example
+function example2 () {
+//모델 닫기
+     vizcore.Model.Close();
+// 파일 로딩 완료 시점 확인
+     function onLoadModelSample1(key, loadType) {
+// 구조정보 로딩 완료
+         if(loadType === VIZCore.Enum.CONFIG_KEY.LOADER.COMPLETEDTIME.STRUCTURE)
+             console.log(&quot;onLoad Structure&quot;);
+//속성정보 로딩 완료            
+         if(loadType === VIZCore.Enum.CONFIG_KEY.LOADER.COMPLETEDTIME.PROPERTY)
+             console.log(&quot;onLoad Property&quot;);
+//MATERIAL정보 로딩 완료
+         if(loadType === VIZCore.Enum.CONFIG_KEY.LOADER.COMPLETEDTIME.MATERIAL)
+             console.log(&quot;onLoad Material&quot;);
+//모델정보 로딩 완료          
+         if(loadType === VIZCore.Enum.CONFIG_KEY.LOADER.COMPLETEDTIME.MESH)
+             console.log(&quot;onLoad Mesh&quot;);
+     }
+
+     let models = [];                        //URI Array
+     models.push({url:&quot;./VIZCore/Model/Sample1_wh.vizw&quot;, key:&quot;sample1&quot;, onload : onLoadModelSample1});
+     models.push({url:&quot;./VIZCore/Model/Sample2_wh.vizw&quot;, key:&quot;sample2&quot;});
+     models.push({url:&quot;./VIZCore/Model/Sample3_wh.vizw&quot;, key:&quot;sample3&quot;});
+     models.push({url:&quot;./VIZCore/Model/Sample4_wh.vizw&quot;, key:&quot;sample4&quot;});
+//VIZWide3D 용 VIZW 파일의 헤더 추가
+     vizcore.Model.AddHeader(models);
+}
+</div><p id="1bdb7b28_210"><span class="control" id="1bdb7b28_211">Parameters</span></p><div class="table-wrapper"><table class="wide" id="1bdb7b28_212"><thead><tr class="ijRowHead" id="1bdb7b28_213"><th id="1bdb7b28_214"><p>Name</p></th><th id="1bdb7b28_215"><p>Type</p></th><th id="1bdb7b28_216"><p>Description</p></th></tr></thead><tbody><tr id="1bdb7b28_217"><td id="1bdb7b28_218"><p>models</p></td><td id="1bdb7b28_219"><p>Array</p></td><td id="1bdb7b28_220"><p>URI Array</p></td></tr></tbody></table></div><ol class="list _decimal"></ol></div ></div></section></section><section class="chapter"><h2 id="close" data-toc="close"   >Close</h2><section class="procedure-steps"   > <div class="collapse" ><div class="collapse__title"  ><h3 id="1bdb7b28_221" data-toc="1bdb7b28_221">모델 닫기</h3 ></div><div class="collapse__content" ><aside class="prompt" data-type="note" data-title="" id="1bdb7b28_222"><p>Close()</p></aside><p id="1bdb7b28_223"><span class="control" id="1bdb7b28_224">Example</span></p><div class="code-block" data-lang="javascript"         >
+//모델 닫기
+vizcore.Model.Close();
+//단일 VIZWide3D 용 VIZW 파일의 헤더 열기
+vizcore.Model.OpenHeader(&quot;./VIZCore/Model/Sample_wh.vizw&quot;);
+</div><ol class="list _decimal"></ol></div ></div></section></section><section class="chapter"><h2 id="closefile" data-toc="closefile"   >CloseFile</h2><section class="procedure-steps"   > <div class="collapse" ><div class="collapse__title"  ><h3 id="1bdb7b28_226" data-toc="1bdb7b28_226">특정 모델 닫기</h3 ></div><div class="collapse__content" ><aside class="prompt" data-type="note" data-title="" id="1bdb7b28_227"><p>CloseFile(fileKeys)</p></aside><p id="1bdb7b28_228"><span class="control" id="1bdb7b28_229">Example</span></p><div class="code-block" data-lang="javascript"         >
+let models = [];                         //URI Array
+models.push({url:&quot;./VIZCore/Model/Sample1_wh.vizw&quot;, key:&quot;sample1&quot;});
+models.push({url:&quot;./VIZCore/Model/Sample2_wh.vizw&quot;, key:&quot;sample2&quot;});
+models.push({url:&quot;./VIZCore/Model/Sample3_wh.vizw&quot;, key:&quot;sample3&quot;});
+//VIZWide3D 용 VIZW 파일의 헤더 추가
+vizcore.Model.AddHeader(models);
+
+let fileKeys = [&quot;sample1&quot;, &quot;sample2&quot;];          //Array&lt;String&gt;
+
+//특정 모델 닫기
+vizcore.Model.CloseFile(fileKeys);
+</div><p id="1bdb7b28_231"><span class="control" id="1bdb7b28_232">Parameters</span></p><div class="table-wrapper"><table class="wide" id="1bdb7b28_233"><thead><tr class="ijRowHead" id="1bdb7b28_234"><th id="1bdb7b28_235"><p>Name</p></th><th id="1bdb7b28_236"><p>Type</p></th><th id="1bdb7b28_237"><p>Description</p></th></tr></thead><tbody><tr id="1bdb7b28_238"><td id="1bdb7b28_239"><p>fileKeys</p></td><td id="1bdb7b28_240"><p><code class="code" id="1bdb7b28_241">Array&lt;String&gt;</code></p></td><td id="1bdb7b28_242"><p>File Key</p></td></tr></tbody></table></div><ol class="list _decimal"></ol></div ></div></section></section><section class="chapter"><h2 id="getboundbox" data-toc="getboundbox"   >GetBoundBox</h2><section class="procedure-steps"   > <div class="collapse" ><div class="collapse__title"  ><h3 id="1bdb7b28_243" data-toc="1bdb7b28_243">로딩된 모델의 BoundBox 반환</h3 ></div><div class="collapse__content" ><aside class="prompt" data-type="note" data-title="" id="1bdb7b28_244"><p>GetBoundBox() &rarr; {VIZCore.BBox}</p></aside><p id="1bdb7b28_245"><span class="control" id="1bdb7b28_246">Example</span></p><div class="code-block" data-lang="javascript"         >
+//로딩된 모델의 BoundBox 반환
+vizcore.Model.GetBoundBox();
+</div><p id="1bdb7b28_248"><span class="control" id="1bdb7b28_249">Returns</span></p><div class="table-wrapper"><table class="wide" id="1bdb7b28_250"><thead><tr class="ijRowHead" id="1bdb7b28_251"><th id="1bdb7b28_252"><p>Type</p></th><th id="1bdb7b28_253"><p>Description</p></th></tr></thead><tbody><tr id="1bdb7b28_254"><td id="1bdb7b28_255"><p>VIZCore.BBox</p></td><td id="1bdb7b28_256"><p>BoundBox</p></td></tr></tbody></table></div><ol class="list _decimal"></ol></div ></div></section></section><section class="chapter"><h2 id="getopenfiles" data-toc="getopenfiles"   >GetOpenFiles</h2><section class="procedure-steps"   > <div class="collapse" ><div class="collapse__title"  ><h3 id="1bdb7b28_257" data-toc="1bdb7b28_257">파일 목록 반환</h3 ></div><div class="collapse__content" ><aside class="prompt" data-type="note" data-title="" id="1bdb7b28_258"><p>GetOpenFiles() &rarr; {Array}</p></aside><p id="1bdb7b28_259"><span class="control" id="1bdb7b28_260">Example</span></p><div class="code-block" data-lang="javascript"         >
+//파일 목록 반환
+let files = vizcore.Model.GetOpenFiles();
+console.log(files);
+</div><p id="1bdb7b28_262"><span class="control" id="1bdb7b28_263">Returns</span></p><div class="table-wrapper"><table class="wide" id="1bdb7b28_264"><thead><tr class="ijRowHead" id="1bdb7b28_265"><th id="1bdb7b28_266"><p>Type</p></th><th id="1bdb7b28_267"><p>Description</p></th></tr></thead><tbody><tr id="1bdb7b28_268"><td id="1bdb7b28_269"><p>Array</p></td><td id="1bdb7b28_270"><p>Open File Keys</p></td></tr></tbody></table></div><ol class="list _decimal"></ol></div ></div></section></section><section class="chapter"><h2 id="open" data-toc="open"   >Open</h2><section class="procedure-steps"   > <div class="collapse" ><div class="collapse__title"  ><h3 id="1bdb7b28_271" data-toc="1bdb7b28_271">단일 VIZWeb3D 용 VIZW 모델 파일 열기</h3 ></div><div class="collapse__content" ><aside class="prompt" data-type="note" data-title="" id="1bdb7b28_272"><p>Open(model)</p></aside><p id="1bdb7b28_273"><span class="control" id="1bdb7b28_274">Example</span></p><div class="code-block" data-lang="javascript"         >
+//모델 닫기
+vizcore.Model.Close();
+//단일 VIZWeb3D 용 VIZW 모델 파일 열기
+vizcore.Model.Open(&quot;./VIZCore/Model/Sample.vizw&quot;);
+</div><p id="1bdb7b28_276"><span class="control" id="1bdb7b28_277">Parameters</span></p><div class="table-wrapper"><table class="wide" id="1bdb7b28_278"><thead><tr class="ijRowHead" id="1bdb7b28_279"><th id="1bdb7b28_280"><p>Name</p></th><th id="1bdb7b28_281"><p>Type</p></th><th id="1bdb7b28_282"><p>Description</p></th></tr></thead><tbody><tr id="1bdb7b28_283"><td id="1bdb7b28_284"><p>model</p></td><td id="1bdb7b28_285"><p>string</p></td><td id="1bdb7b28_286"><p>URI String</p></td></tr></tbody></table></div><ol class="list _decimal"></ol></div ></div></section></section><section class="chapter"><h2 id="openheader" data-toc="openheader"   >OpenHeader</h2><section class="procedure-steps"   > <div class="collapse" ><div class="collapse__title"  ><h3 id="1bdb7b28_287" data-toc="1bdb7b28_287">단일 VIZWide3D 용 VIZW 파일의 헤더 열기</h3 ></div><div class="collapse__content" ><aside class="prompt" data-type="note" data-title="" id="1bdb7b28_288"><p>OpenHeader(model, key, onLoad)</p></aside><p id="1bdb7b28_289"><span class="control" id="1bdb7b28_290">Example</span></p><div class="code-block" data-lang="javascript"         >
+// 파일 로딩 완료 시점 확인
+function onLoadModelSample1(key, loadType) {
+//HEADER정보 로딩 완료
+         if(loadType === VIZCore.Enum.CONFIG_KEY.LOADER.COMPLETEDTIME.HEADER)
+                console.log(&quot;onLoad Header&quot;);
+//구조정보 로딩 완료
+         if(loadType === VIZCore.Enum.CONFIG_KEY.LOADER.COMPLETEDTIME.STRUCTURE)
+             console.log(&quot;onLoad Structure&quot;);
+//속성정보 로딩 완료            
+         if(loadType === VIZCore.Enum.CONFIG_KEY.LOADER.COMPLETEDTIME.PROPERTY)
+             console.log(&quot;onLoad Property&quot;);
+//MATERIAL정보 로딩 완료
+         if(loadType === VIZCore.Enum.CONFIG_KEY.LOADER.COMPLETEDTIME.MATERIAL)
+             console.log(&quot;onLoad Material&quot;);
+//모델정보 로딩 완료          
+         if(loadType === VIZCore.Enum.CONFIG_KEY.LOADER.COMPLETEDTIME.MESH)
+             console.log(&quot;onLoad Mesh&quot;);
+}
+    
+//모델 닫기
+vizcore.Model.Close();
+//단일 VIZWide3D 용 VIZW 파일의 헤더 열기
+vizcore.Model.OpenHeader(&quot;./VIZCore/Model/Sample_wh.vizw&quot;, &quot;FileID123&quot;, onLoadModelSample1);
+</div><p id="1bdb7b28_292"><span class="control" id="1bdb7b28_293">Parameters</span></p><div class="table-wrapper"><table class="wide" id="1bdb7b28_294"><thead><tr class="ijRowHead" id="1bdb7b28_295"><th id="1bdb7b28_296"><p>Name</p></th><th id="1bdb7b28_297"><p>Type</p></th><th id="1bdb7b28_298"><p>Description</p></th></tr></thead><tbody><tr id="1bdb7b28_299"><td id="1bdb7b28_300"><p>model</p></td><td id="1bdb7b28_301"><p>String</p></td><td id="1bdb7b28_302"><p>URI</p></td></tr><tr id="1bdb7b28_303"><td id="1bdb7b28_304"><p>key</p></td><td id="1bdb7b28_305"><p>String</p></td><td id="1bdb7b28_306"><p>File Key(지정하지 않으면 Guid 생성)</p></td></tr><tr id="1bdb7b28_307"><td id="1bdb7b28_308"><p>onLoad</p></td><td id="1bdb7b28_309"><p>function</p></td><td id="1bdb7b28_310"><p>개별 다운로드 이벤트 (Key) - 지정하지 않는 경우 OnModelOpenedEvent() 호출</p></td></tr></tbody></table></div><ol class="list _decimal"></ol></div ></div></section></section><section class="chapter"><h2 id="event-listener" data-toc="event-listener"   >--- Event Listener ---</h2></section><section class="chapter"><h2 id="onmodelopenedevent" data-toc="onmodelopenedevent"   >OnModelOpenedEvent</h2><section class="procedure-steps"   > <div class="collapse" ><div class="collapse__title"  ><h3 id="1bdb7b28_311" data-toc="1bdb7b28_311">모델 열기 이벤트 등록</h3 ></div><div class="collapse__content" ><aside class="prompt" data-type="note" data-title="" id="1bdb7b28_312"><p>OnModelOpenedEvent(listener)</p></aside><p id="1bdb7b28_313"><span class="control" id="1bdb7b28_314">Example</span></p><div class="code-block" data-lang="javascript"         >
+// Event : OnModelOpenedEvent
+let OnModelOpenedEvent = function (event) {
+    // Enable Xray
+    vizcore.View.Xray.Enable(true);
+}
+
+// Add Event Handler : Loading Completed Event (로딩 완료 이벤트)
+vizcore.Model.OnModelOpenedEvent(OnModelOpenedEvent);
+</div><p id="1bdb7b28_316"><span class="control" id="1bdb7b28_317">Parameters</span></p><div class="table-wrapper"><table class="wide" id="1bdb7b28_318"><thead><tr class="ijRowHead" id="1bdb7b28_319"><th id="1bdb7b28_320"><p>Name</p></th><th id="1bdb7b28_321"><p>Type</p></th><th id="1bdb7b28_322"><p>Description</p></th></tr></thead><tbody><tr id="1bdb7b28_323"><td id="1bdb7b28_324"><p>listener</p></td><td id="1bdb7b28_325"><p>Object</p></td><td id="1bdb7b28_326"><p>Event Listener</p></td></tr></tbody></table></div><ol class="list _decimal"></ol></div ></div></section></section><section class="chapter"><h2 id="onpropertycompletedevent" data-toc="onpropertycompletedevent"   >OnPropertyCompletedEvent</h2><section class="procedure-steps"   > <div class="collapse" ><div class="collapse__title"  ><h3 id="1bdb7b28_327" data-toc="1bdb7b28_327">속성정보 로딩 완료 이벤트 등록</h3 ></div><div class="collapse__content" ><aside class="prompt" data-type="note" data-title="" id="1bdb7b28_328"><p>OnPropertyCompletedEvent(listener)</p></aside><p id="1bdb7b28_329"><span class="control" id="1bdb7b28_330">Example</span></p><div class="code-block" data-lang="javascript"         >
+// Event : OnPropertyCompletedEvent
+let OnPropertyCompletedEvent = function (event) {
+    console.log(event);
+}
+
+// Add Event Handler : Property Completed Event (구조정보 로딩 완료 이벤트)
+vizcore.Model.OnPropertyCompletedEvent(OnPropertyCompletedEvent);
+</div><p id="1bdb7b28_332"><span class="control" id="1bdb7b28_333">Parameters</span></p><div class="table-wrapper"><table class="wide" id="1bdb7b28_334"><thead><tr class="ijRowHead" id="1bdb7b28_335"><th id="1bdb7b28_336"><p>Name</p></th><th id="1bdb7b28_337"><p>Type</p></th><th id="1bdb7b28_338"><p>Description</p></th></tr></thead><tbody><tr id="1bdb7b28_339"><td id="1bdb7b28_340"><p>listener</p></td><td id="1bdb7b28_341"><p>Object</p></td><td id="1bdb7b28_342"><p>Event Listener</p></td></tr></tbody></table></div><ol class="list _decimal"></ol></div ></div></section></section><section class="chapter"><h2 id="onstreamprogresschangedevent" data-toc="onstreamprogresschangedevent"   >OnStreamProgressChangedEvent</h2><section class="procedure-steps"   > <div class="collapse" ><div class="collapse__title"  ><h3 id="1bdb7b28_343" data-toc="1bdb7b28_343">모델 로딩 프로그레스 이벤트 등록</h3 ></div><div class="collapse__content" ><aside class="prompt" data-type="note" data-title="" id="1bdb7b28_344"><p>OnStreamProgressChangedEvent(listener)</p></aside><p id="1bdb7b28_345"><span class="control" id="1bdb7b28_346">Example</span></p><div class="code-block" data-lang="javascript"         >
+// Event :: OnProgressEvent
+let OnProgressEvent = function (event) {
+    console.log(&quot;Total : &quot;,  event.data.total, &quot;Current : &quot;, event.data.current, &quot;Percentage : &quot;, event.data.percentage);
+}
+
+// Add Event Handler : Progress Event (로딩 이벤트)
+vizcore.Model.OnStreamProgressChangedEvent(OnProgressEvent);
+</div><p id="1bdb7b28_348"><span class="control" id="1bdb7b28_349">Parameters</span></p><div class="table-wrapper"><table class="wide" id="1bdb7b28_350"><thead><tr class="ijRowHead" id="1bdb7b28_351"><th id="1bdb7b28_352"><p>Name</p></th><th id="1bdb7b28_353"><p>Type</p></th><th id="1bdb7b28_354"><p>Description</p></th></tr></thead><tbody><tr id="1bdb7b28_355"><td id="1bdb7b28_356"><p>listener</p></td><td id="1bdb7b28_357"><p>Object</p></td><td id="1bdb7b28_358"><p>Event Listener</p></td></tr></tbody></table></div><ol class="list _decimal"></ol></div ></div></section></section><section class="chapter"><h2 id="onstructurecompletedevent" data-toc="onstructurecompletedevent"   >OnStructureCompletedEvent</h2><section class="procedure-steps"   > <div class="collapse" ><div class="collapse__title"  ><h3 id="1bdb7b28_359" data-toc="1bdb7b28_359">구조정보 로딩 완료 이벤트 등록</h3 ></div><div class="collapse__content" ><aside class="prompt" data-type="note" data-title="" id="1bdb7b28_360"><p>OnStructureCompletedEvent(listener)</p></aside><p id="1bdb7b28_361"><span class="control" id="1bdb7b28_362">Example</span></p><div class="code-block" data-lang="javascript"         >
+// Event :: OnStructureCompletedEvent
+let OnStructureCompletedEvent = function (event) {
+    console.log(event);
+}
+
+// Add Event Handler : Structure Completed Event (구조정보 로딩 완료 이벤트)
+vizcore.Model.OnStructureCompletedEvent(OnStructureCompletedEvent);
+</div><p id="1bdb7b28_364"><span class="control" id="1bdb7b28_365">Parameters</span></p><div class="table-wrapper"><table class="wide" id="1bdb7b28_366"><thead><tr class="ijRowHead" id="1bdb7b28_367"><th id="1bdb7b28_368"><p>Name</p></th><th id="1bdb7b28_369"><p>Type</p></th><th id="1bdb7b28_370"><p>Description</p></th></tr></thead><tbody><tr id="1bdb7b28_371"><td id="1bdb7b28_372"><p>listener</p></td><td id="1bdb7b28_373"><p>Object</p></td><td id="1bdb7b28_374"><p>Event Listener</p></td></tr></tbody></table></div><ol class="list _decimal"></ol></div ></div></section></section><div class="last-modified"> Last modified: 02 1월 2024</div><div data-feedback-placeholder="true"></div><div class="navigation-links _bottom">  <a class="navigation-links__prev" href="geometryutility.html">GeometryUtility</a>   <a class="navigation-links__next" href="modeltree.html">ModelTree</a>  </div></article><div id="disqus_thread"></div></div></section></main></div>  <script src="https://resources.jetbrains.com/writerside/apidoc/6.6.6-b205/app.js"></script></body></html>

@@ -106,7 +106,7 @@ vizcore.Review.Note.AddNoteSurface(text);
 vizcore.Review.Note.DeleteAll();
 
 //[To Do] 화면 다시그리기 호출
-vizcore.Render();
+vizwide3d.Render();
 ```
 </procedure>
 
@@ -136,7 +136,7 @@ let ids = [10, 11];
 vizcore.Review.Note.DeleteByID(ids);          //Array
 
 //[To Do] 화면 다시그리기 호출
-vizcore.Render();
+vizwide3d.Render();
 ```
 **Parameters**
 
