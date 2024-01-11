@@ -9,9 +9,9 @@
         <header-logo>Softhills_48px.png</header-logo>
         <product-web-url>https://www.softhills.net/SHDC</product-web-url>
         <custom-favicons>Softhills_48px.png</custom-favicons>
-        <algolia-id>646SQZ8Y4F</algolia-id>
-        <algolia-index>PROD_SHDC</algolia-index>
-        <algolia-api-key>f6ba34065661ef49d3214b661ce4559c</algolia-api-key>
+        <algolia-id>YYIQ03W9EQ</algolia-id>
+        <algolia-index>softhills2</algolia-index>
+        <algolia-api-key>d39ad8c2f9df69f9ac35e0ed14136537</algolia-api-key>
         <web-root>https://some.domain/</web-root>
         <!--        <color-preset>Soft</color-preset>-->
 <!--                <primary-color>dracula</primary-color>-->
