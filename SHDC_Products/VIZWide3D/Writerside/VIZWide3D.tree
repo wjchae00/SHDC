@@ -7,37 +7,43 @@
                  start-page="VIZWide3D.md">
 
     <toc-element topic="VIZWide3D.md">
-        <toc-element topic="Animation.md"/>
-        <toc-element topic="ContextMenu.md"/>
-        <toc-element topic="Disassembly.md"/>
-        <toc-element topic="Frame.md"/>
-        <toc-element topic="GeometryUtility.md"/>
-        <toc-element topic="Model.md"/>
-        <toc-element topic="ModelTree.md"/>
-        <toc-element topic="Object3D.md" >
-            <toc-element topic="Color.md"/>
-            <toc-element topic="CustomEdge.md"/>
-            <toc-element topic="Find.md"/>
-            <toc-element topic="GeometryProperty.md"/>
-            <toc-element topic="Transform.md"/>
-            <toc-element topic="UDA.md"/>
+        <toc-element topic="Getting-Started.md"/>
+        <toc-element topic="Initialization.md"/>
+        <toc-element toc-title="Github" target-for-accept-web-file-names="https://github.com/softhills3d/VIZWide3D"/>
+        <toc-element toc-title="VIZWide3D API">
+            <toc-element topic="Animation.md"/>
+            <toc-element topic="ContextMenu.md"/>
+            <toc-element topic="Disassembly.md"/>
+            <toc-element topic="Frame.md"/>
+            <toc-element topic="GeometryUtility.md"/>
+            <toc-element topic="Model.md"/>
+            <toc-element topic="ModelTree.md"/>
+            <toc-element topic="Object3D.md" >
+                <toc-element topic="Color.md"/>
+                <toc-element topic="CustomEdge.md"/>
+                <toc-element topic="Find.md"/>
+                <toc-element topic="GeometryProperty.md"/>
+                <toc-element topic="Transform.md"/>
+                <toc-element topic="UDA.md"/>
+            </toc-element>
+            <toc-element topic="Panel.md"/>
+            <toc-element topic="Player.md"/>
+            <toc-element topic="Review.md">
+                <toc-element topic="Measure.md"/>
+                <toc-element topic="Note.md"/>
+            </toc-element>
+            <toc-element topic="Section.md"/>
+            <toc-element topic="ShapeDrawing.md"/>
+            <toc-element topic="Toolbar.md"/>
+            <toc-element topic="View.md">
+                <toc-element topic="Control.md"/>
+                <toc-element topic="ViewCube.md"/>
+                <toc-element topic="Walkthrough.md"/>
+                <toc-element topic="Weather.md"/>
+                <toc-element topic="Xray.md"/>
+            </toc-element>
+            <toc-element topic="VIZWeb.md"/>
         </toc-element>
-        <toc-element topic="Panel.md"/>
-        <toc-element topic="Player.md"/>
-        <toc-element topic="Review.md">
-            <toc-element topic="Measure.md"/>
-            <toc-element topic="Note.md"/>
-        </toc-element>
-        <toc-element topic="Section.md"/>
-        <toc-element topic="ShapeDrawing.md"/>
-        <toc-element topic="Toolbar.md"/>
-        <toc-element topic="View.md">
-            <toc-element topic="Control.md"/>
-            <toc-element topic="ViewCube.md"/>
-            <toc-element topic="Walkthrough.md"/>
-            <toc-element topic="Weather.md"/>
-            <toc-element topic="Xray.md"/>
-        </toc-element>
-        <toc-element topic="VIZWeb.md"/>
     </toc-element>
+
 </instance-profile>

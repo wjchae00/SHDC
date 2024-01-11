@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE rules SYSTEM "https://resources.jetbrains.com/writerside/1.0/redirection-rules.dtd">
+<rules>
+    <!-- format is as follows
+    <rule id="<unique id>">
+        <accepts>page.html</accepts>
+    </rule>
+    -->
+    <rule id="3496808b">
+        <description>Created after removal of "IIS에서 Import" from VIZWide3D Document</description>
+        <accepts>IIS.html</accepts>
+    </rule>
+    <rule id="50953f98">
+        <description>Created after removal of "How To" from VIZWide3D Document</description>
+        <accepts>How-To.html</accepts>
+    </rule>
+</rules>

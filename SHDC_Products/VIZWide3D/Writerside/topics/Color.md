@@ -60,6 +60,10 @@ let bodyID = 3000;      //bodyID
 let ids = [nodeID , bodyID];        //Array<Number>
 //개체 색상 및 투명도 초기화
 vizcore.Object3D.Color.ClearColor(ids);
+
+//[To Do] 화면 다시그리기 호출
+vizcore.Main.Renderer.MainFBClear();
+vizcore.Main.Renderer.Render();
 ```
 **Parameters**
 
