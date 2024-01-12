@@ -1,0 +1,144 @@
+<!DOCTYPE html SYSTEM "about:legacy-compat"><html lang="en-US" data-colors-preset="contrast" data-primary-color="#307FFF"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><meta charset="UTF-8">  <meta name="built-on" content="2024-01-12T08:19:17.2013245"><meta name="build-number" content="${buildNumber}">    <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-563TQVGF4C"></script>
+<script>window.dataLayer = window.dataLayer || []; function gtag() { dataLayer.push(arguments); } gtag('js', new Date()); gtag('config', 'G-563TQVGF4C');</script>
+
+<script>
+    window.addEventListener('load', () => {
+        const test = document.querySelector('.footer__powered')
+        test.innerText = ''
+    })
+</script>     <title>Animation | VIZWide3D Document</title><script id="virtual-toc-data" type="application/json">[{"id":"addanimationitem","level":0,"title":"AddAnimationItem","anchor":"#addanimationitem"},{"id":"addnoteanimation","level":0,"title":"AddNoteAnimation","anchor":"#addnoteanimation"},{"id":"addnoteanimation2dtemplate","level":0,"title":"AddNoteAnimation2DTemplate","anchor":"#addnoteanimation2dtemplate"},{"id":"clear","level":0,"title":"Clear","anchor":"#clear"},{"id":"clearnoteanimation","level":0,"title":"ClearNoteAnimation","anchor":"#clearnoteanimation"},{"id":"enableevent","level":0,"title":"EnableEvent","anchor":"#enableevent"},{"id":"getplaytime","level":0,"title":"GetPlayTime","anchor":"#getplaytime"},{"id":"init","level":0,"title":"Init","anchor":"#init"},{"id":"isanimationplay","level":0,"title":"IsAnimationPlay","anchor":"#isanimationplay"},{"id":"pause","level":0,"title":"Pause","anchor":"#pause"},{"id":"seteventinterval","level":0,"title":"SetEventInterval","anchor":"#seteventinterval"},{"id":"setplaytime","level":0,"title":"SetPlayTime","anchor":"#setplaytime"},{"id":"setrestorestatus","level":0,"title":"SetRestoreStatus","anchor":"#setrestorestatus"},{"id":"setstartdate","level":0,"title":"SetStartDate","anchor":"#setstartdate"},{"id":"start","level":0,"title":"Start","anchor":"#start"},{"id":"startnoteanimation","level":0,"title":"StartNoteAnimation","anchor":"#startnoteanimation"},{"id":"stop","level":0,"title":"Stop","anchor":"#stop"},{"id":"event-listener","level":0,"title":"--- Event Listener ---","anchor":"#event-listener"},{"id":"onchangedframeevent","level":0,"title":"OnChangedFrameEvent","anchor":"#onchangedframeevent"},{"id":"onchangedplaytimeevent","level":0,"title":"OnChangedPlayTimeEvent","anchor":"#onchangedplaytimeevent"}]</script><script id="topic-shortcuts" type="application/json"></script><link href="https://resources.jetbrains.com/writerside/apidoc/6.6.6-b205/app.css" rel="stylesheet">    <link rel="icon" type="image/png" sizes="16x16" href="images/Softhills_48px.png">   <meta name="image" content=""><!-- Open Graph --><meta property="og:title" content="Animation | VIZWide3D Document"/><meta property="og:description" content=""/><meta property="og:image" content=""/><meta property="og:site_name" content="VIZWide3D Document Help"/><meta property="og:type" content="website"/><meta property="og:locale" content="en_US"/><meta property="og:url" content="https://some.domain/animation.html"/><!-- End Open Graph --><!-- Twitter Card --><meta name="twitter:card" content="summary_large_image"><meta name="twitter:site" content=""><meta name="twitter:title" content="Animation | VIZWide3D Document"><meta name="twitter:description" content=""><meta name="twitter:creator" content=""><meta name="twitter:image:src" content=""><!-- End Twitter Card --><!-- Schema.org WebPage --><script type="application/ld+json"> { "@context": "http://schema.org", "@type": "WebPage", "@id": "https://some.domain/animation.html#webpage", "url": "https://some.domain/animation.html", "name": "Animation | VIZWide3D Document", "description": "", "image": "", "inLanguage":"en-US" }</script><!-- End Schema.org --><!-- Schema.org WebSite --><script type="application/ld+json"> { "@type": "WebSite", "@id": "https://some.domain/#website", "url": "https://some.domain/", "name": "VIZWide3D Document Help" }</script><!-- End Schema.org --></head>      <body data-id="Animation" data-main-title="Animation" data-article-props="{&quot;seeAlsoStyle&quot;:&quot;links&quot;}"  data-template="article"  data-breadcrumbs="VIZWide3D.md|VIZWide3D///VIZWide3D API"  >   <div class="wrapper"><main class="panel _main"><header class="panel__header"><div class="container"><h3>VIZWide3D Document  Help</h3><div class="panel-trigger"></div></div></header><section class="panel__content"><div class="container"><article class="article" data-shortcut-switcher="inactive"><h1 data-toc="Animation"   id="Animation.md">Animation</h1>  <section class="chapter"><h2 id="addanimationitem" data-toc="addanimationitem"   >AddAnimationItem</h2><section class="procedure-steps"   > <div class="collapse" ><div class="collapse__title"  ><h3 id="15fd260a_537" data-toc="15fd260a_537">애니메이션 추가</h3 ></div><div class="collapse__content" ><aside class="prompt" data-type="note" data-title="" id="15fd260a_538"><p>AddAnimationItem(ids, startTime, duration, startColor, endColor)</p></aside><p id="15fd260a_539"><span class="control" id="15fd260a_540">Example</span></p><div class="code-block" data-lang="javascript"         >
+// 애니메이션 시작일 지정
+vizcore.Animation.SetStartDate(new Date(2022,7,9), 1);
+//노드 이름에 해당하는 노드 반환
+let nodes = vizcore.Object3D.Find.GetNodeByName(
+    'PIPE101'   // Keyword
+    , true      // Full Match
+);
+//지정된 노드 하위 BodyID 목록 반환
+let ids = vizcore.Object3D.GetBodyIdsByNode(nodes);
+
+// 애니메이션 추가
+vizcore.Animation.AddAnimationItem(
+    ids                                                 // Body IDs(Array or Number)
+    ,0                                                  // 시작 시간
+    ,10                                                 // 재생 시간
+    ,new VIZCore.Color(255,0,0,255)                     //시작 색상 (R, G, B, A)
+    ,new VIZCore.Color(0,255,0,255)                    //종료 색상 (R, G, B, A)
+);
+
+// 애니메이션 시작
+vizcore.Animation.Start();
+</div><p id="15fd260a_542"><span class="control" id="15fd260a_543">Parameters</span></p><div class="table-wrapper"><table class="wide" id="15fd260a_544"><thead><tr class="ijRowHead" id="15fd260a_545"><th id="15fd260a_546"><p>Name</p></th><th id="15fd260a_547"><p>Type</p></th><th id="15fd260a_548"><p>Description</p></th></tr></thead><tbody><tr id="15fd260a_549"><td id="15fd260a_550"><p>ids</p></td><td id="15fd260a_551"><p>Array</p></td><td id="15fd260a_552"><p>Body IDs(Array or Number)</p></td></tr><tr id="15fd260a_553"><td id="15fd260a_554"><p>startTime</p></td><td id="15fd260a_555"><p>Number</p></td><td id="15fd260a_556"><p>시작 시간</p></td></tr><tr id="15fd260a_557"><td id="15fd260a_558"><p>duration</p></td><td id="15fd260a_559"><p>Number</p></td><td id="15fd260a_560"><p>재생 시간</p></td></tr><tr id="15fd260a_561"><td id="15fd260a_562"><p>startColor</p></td><td id="15fd260a_563"><p>VIZCore.Color</p></td><td id="15fd260a_564"><p>시작 색상</p></td></tr><tr id="15fd260a_565"><td id="15fd260a_566"><p>endColor</p></td><td id="15fd260a_567"><p>VIZCore.Color</p></td><td id="15fd260a_568"><p>종료 색상</p></td></tr></tbody></table></div><ol class="list _decimal"></ol></div ></div></section></section><section class="chapter"><h2 id="addnoteanimation" data-toc="addnoteanimation"   >AddNoteAnimation</h2><section class="procedure-steps"   > <div class="collapse" ><div class="collapse__title"  ><h3 id="15fd260a_569" data-toc="15fd260a_569">노트 애니메이션 키 등록</h3 ></div><div class="collapse__content" ><aside class="prompt" data-type="note" data-title="" id="15fd260a_570"><p>AddNoteAnimation(key)</p></aside><p id="15fd260a_571"><span class="control" id="15fd260a_572">Example</span></p><div class="code-block" data-lang="javascript"         >
+//3D 노트 생성
+let note = vizcore.Review.Note.NewNote3D();
+
+let text = [];
+text.push('3D Note #1');
+text.push('3D Note #2');
+
+note.text.value = text;                             // Array
+note.text.position = new VIZCore.Vector3(0, 0, 0);  // x, y, z
+note.style.font.size = 10;                          // number
+note.style.font.color.set(0, 56, 101, 255);          // R, G, B, A
+note.style.border.type = 1;                          // 0 (Rectangle), 1(Rounded Rectangle)
+note.style.border.color.set(41, 143, 194, 255);      // R, G, B, A
+note.style.background.color.set(255, 255, 255, 200); // R, G, B, A
+
+//3D 노트 추가
+let noteId = vizcore.Review.Note.AddNote(note);
+
+//노트 애니메이션 템플릿 등록
+vizcore.Animation.AddNoteAnimation2DTemplate(
+    &quot;ANIMATION1&quot;                     // Animation Key
+    , [noteId]                        // Note ID Array
+    , 1                              // Action Kind
+    , 1000                           // Duration (ms.)
+    , new VIZCore.Vector3(0.3, 0.1, 0.1) // 시작 위치 ( -1 ~ +1 )
+    , new VIZCore.Vector3(0.1, 0.1, 0.1)   // 종료 위치 ( -1 ~ +1 )
+);
+
+//노트 애니메이션 키 등록
+vizcore.Animation.AddNoteAnimation(&quot;ANIMATION1&quot;);
+
+//노트 애니메이션 재생
+vizcore.Animation.StartNoteAnimation();
+</div><p id="15fd260a_574"><span class="control" id="15fd260a_575">Parameters</span></p><div class="table-wrapper"><table class="wide" id="15fd260a_576"><thead><tr class="ijRowHead" id="15fd260a_577"><th id="15fd260a_578"><p>Name</p></th><th id="15fd260a_579"><p>Type</p></th><th id="15fd260a_580"><p>Description</p></th></tr></thead><tbody><tr id="15fd260a_581"><td id="15fd260a_582"><p>key</p></td><td id="15fd260a_583"><p>String</p></td><td id="15fd260a_584"><p>Animation Key</p></td></tr></tbody></table></div><ol class="list _decimal"></ol></div ></div></section></section><section class="chapter"><h2 id="addnoteanimation2dtemplate" data-toc="addnoteanimation2dtemplate"   >AddNoteAnimation2DTemplate</h2><section class="procedure-steps"   > <div class="collapse" ><div class="collapse__title"  ><h3 id="15fd260a_585" data-toc="15fd260a_585">노트 애니메이션 템플릿 등록</h3 ></div><div class="collapse__content" ><aside class="prompt" data-type="note" data-title="" id="15fd260a_586"><p>AddNoteAnimation2DTemplate(key, noteId, actionKind, duration, start, end)</p></aside><p id="15fd260a_587"><span class="control" id="15fd260a_588">Example</span></p><div class="code-block" data-lang="javascript"         >
+//3D 노트 생성
+let note = vizcore.Review.Note.NewNote3D();
+
+//3D 노트 추가
+let noteId = vizcore.Review.Note.AddNote(note);
+
+//노트 애니메이션 템플릿 등록
+vizcore.Animation.AddNoteAnimation2DTemplate(
+    &quot;ANIMATION1&quot;                     // Animation Key
+    , [noteId]                        // Note ID Array
+    , 1                              // Action Kind
+    , 1000                           // Duration (ms.)
+    , new VIZCore.Vector3(0.3, 0.1, 0.1) // 시작 위치 ( -1 ~ +1 )
+    , new VIZCore.Vector3(0.1, 0.1, 0.1)   // 종료 위치 ( -1 ~ +1 )
+);
+</div><p id="15fd260a_590"><span class="control" id="15fd260a_591">Parameters</span></p><div class="table-wrapper"><table class="wide" id="15fd260a_592"><thead><tr class="ijRowHead" id="15fd260a_593"><th id="15fd260a_594"><p>Name</p></th><th id="15fd260a_595"><p>Type</p></th><th id="15fd260a_596"><p>Description</p></th></tr></thead><tbody><tr id="15fd260a_597"><td id="15fd260a_598"><p>key</p></td><td id="15fd260a_599"><p>String</p></td><td id="15fd260a_600"><p>Animation Key</p></td></tr><tr id="15fd260a_601"><td id="15fd260a_602"><p>noteId</p></td><td id="15fd260a_603"><p>Array</p></td><td id="15fd260a_604"><p>Note Id Array</p></td></tr><tr id="15fd260a_605"><td id="15fd260a_606"><p>actionKind</p></td><td id="15fd260a_607"><p>Number</p></td><td id="15fd260a_608"><p>Action Kind</p></td></tr><tr id="15fd260a_609"><td id="15fd260a_610"><p>duration</p></td><td id="15fd260a_611"><p>Number</p></td><td id="15fd260a_612"><p>Duration</p></td></tr><tr id="15fd260a_613"><td id="15fd260a_614"><p>start</p></td><td id="15fd260a_615"><p>VIZCore.Vector3</p></td><td id="15fd260a_616"><p>Start Position</p></td></tr><tr id="15fd260a_617"><td id="15fd260a_618"><p>end</p></td><td id="15fd260a_619"><p>VIZCore.Vector3</p></td><td id="15fd260a_620"><p>End Position</p></td></tr></tbody></table></div><ol class="list _decimal"></ol></div ></div></section></section><section class="chapter"><h2 id="clear" data-toc="clear"   >Clear</h2><section class="procedure-steps"   > <div class="collapse" ><div class="collapse__title"  ><h3 id="15fd260a_621" data-toc="15fd260a_621">애니메이션 데이터 초기화(삭제)</h3 ></div><div class="collapse__content" ><aside class="prompt" data-type="note" data-title="" id="15fd260a_622"><p>Clear()</p></aside><p id="15fd260a_623"><span class="control" id="15fd260a_624">Example</span></p><div class="code-block" data-lang="javascript"         >
+//애니메이션 데이터 초기화
+vizcore.Animation.Clear();
+</div><ol class="list _decimal"></ol></div ></div></section></section><section class="chapter"><h2 id="clearnoteanimation" data-toc="clearnoteanimation"   >ClearNoteAnimation</h2><section class="procedure-steps"   > <div class="collapse" ><div class="collapse__title"  ><h3 id="15fd260a_626" data-toc="15fd260a_626">노트 애니메이션 초기화(삭제)</h3 ></div><div class="collapse__content" ><aside class="prompt" data-type="note" data-title="" id="15fd260a_627"><p>ClearNoteAnimation()</p></aside><p id="15fd260a_628"><span class="control" id="15fd260a_629">Example</span></p><div class="code-block" data-lang="javascript"         >
+//노트 애니메이션 초기화(삭제)
+vizcore.Animation.ClearNoteAnimation();
+</div><ol class="list _decimal"></ol></div ></div></section></section><section class="chapter"><h2 id="enableevent" data-toc="enableevent"   >EnableEvent</h2><section class="procedure-steps"   > <div class="collapse" ><div class="collapse__title"  ><h3 id="15fd260a_631" data-toc="15fd260a_631">애니메이션 이벤트 제어 활성화 시 이벤트 발생</h3 ></div><div class="collapse__content" ><aside class="prompt" data-type="note" data-title="" id="15fd260a_632"><p>EnableEvent(enable)</p></aside><p id="15fd260a_633"><span class="control" id="15fd260a_634">Example</span></p><div class="code-block" data-lang="javascript"         >
+//애니메이션 이벤트 제어 활성화 시 이벤트 발생
+vizcore.Animation.EnableEvent(true);
+</div><p id="15fd260a_636"><span class="control" id="15fd260a_637">Parameters</span></p><div class="table-wrapper"><table class="wide" id="15fd260a_638"><thead><tr class="ijRowHead" id="15fd260a_639"><th id="15fd260a_640"><p>Name</p></th><th id="15fd260a_641"><p>Type</p></th><th id="15fd260a_642"><p>Description</p></th></tr></thead><tbody><tr id="15fd260a_643"><td id="15fd260a_644"><p>enable</p></td><td id="15fd260a_645"><p>Boolean</p></td><td id="15fd260a_646"><p>활성화/비활성화</p></td></tr></tbody></table></div><ol class="list _decimal"></ol></div ></div></section></section><section class="chapter"><h2 id="getplaytime" data-toc="getplaytime"   >GetPlayTime</h2><section class="procedure-steps"   > <div class="collapse" ><div class="collapse__title"  ><h3 id="15fd260a_647" data-toc="15fd260a_647">애니메이션 재생 시간 반환</h3 ></div><div class="collapse__content" ><aside class="prompt" data-type="note" data-title="" id="15fd260a_648"><p>GetPlayTime() &rarr; {Number}</p></aside><p id="15fd260a_649"><span class="control" id="15fd260a_650">Example</span></p><div class="code-block" data-lang="javascript"         >
+//애니메이션 재생 시간 반환
+let time = vizcore.Animation.GetPlayTime();
+</div><p id="15fd260a_652"><span class="control" id="15fd260a_653">Returns</span></p><div class="table-wrapper"><table class="wide" id="15fd260a_654"><thead><tr class="ijRowHead" id="15fd260a_655"><th id="15fd260a_656"><p>Type</p></th><th id="15fd260a_657"><p>Description</p></th></tr></thead><tbody><tr id="15fd260a_658"><td id="15fd260a_659"><p>Number</p></td><td id="15fd260a_660"><p>재생 시간</p></td></tr></tbody></table></div><ol class="list _decimal"></ol></div ></div></section></section><section class="chapter"><h2 id="init" data-toc="init"   >Init</h2><section class="procedure-steps"   > <div class="collapse" ><div class="collapse__title"  ><h3 id="15fd260a_661" data-toc="15fd260a_661">애니메이션 초기화</h3 ></div><div class="collapse__content" ><aside class="prompt" data-type="note" data-title="" id="15fd260a_662"><p>Init()</p></aside><p id="15fd260a_663"><span class="control" id="15fd260a_664">Example</span></p><div class="code-block" data-lang="javascript"         >
+// 애니메이션 초기화
+vizcore.Animation.Init();
+</div><ol class="list _decimal"></ol></div ></div></section></section><section class="chapter"><h2 id="isanimationplay" data-toc="isanimationplay"   >IsAnimationPlay</h2><section class="procedure-steps"   > <div class="collapse" ><div class="collapse__title"  ><h3 id="15fd260a_666" data-toc="15fd260a_666">애니메이션 재생 상태 확인</h3 ></div><div class="collapse__content" ><aside class="prompt" data-type="note" data-title="" id="15fd260a_667"><p>IsAnimationPlay() &rarr; {Boolean}</p></aside><p id="15fd260a_668"><span class="control" id="15fd260a_669">Example</span></p><div class="code-block" data-lang="javascript"         >
+//애니메이션 재생 상태 확인
+let play = vizcore.Animation.IsAnimationPlay();
+</div><p id="15fd260a_671"><span class="control" id="15fd260a_672">Returns</span></p><div class="table-wrapper"><table class="wide" id="15fd260a_673"><thead><tr class="ijRowHead" id="15fd260a_674"><th id="15fd260a_675"><p>Type</p></th><th id="15fd260a_676"><p>Description</p></th></tr></thead><tbody><tr id="15fd260a_677"><td id="15fd260a_678"><p>Boolean</p></td><td id="15fd260a_679"><p>재생 상태</p></td></tr></tbody></table></div><ol class="list _decimal"></ol></div ></div></section></section><section class="chapter"><h2 id="pause" data-toc="pause"   >Pause</h2><section class="procedure-steps"   > <div class="collapse" ><div class="collapse__title"  ><h3 id="15fd260a_680" data-toc="15fd260a_680">애니메이션 일시 정지</h3 ></div><div class="collapse__content" ><aside class="prompt" data-type="note" data-title="" id="15fd260a_681"><p>Pause()</p></aside><p id="15fd260a_682"><span class="control" id="15fd260a_683">Example</span></p><div class="code-block" data-lang="javascript"         >
+//애니메이션 일시 정지
+vizcore.Animation.Pause();
+</div><ol class="list _decimal"></ol></div ></div></section></section><section class="chapter"><h2 id="seteventinterval" data-toc="seteventinterval"   >SetEventInterval</h2><section class="procedure-steps"   > <div class="collapse" ><div class="collapse__title"  ><h3 id="15fd260a_685" data-toc="15fd260a_685">애니메이션 이벤트 발생 시간 설정</h3 ></div><div class="collapse__content" ><aside class="prompt" data-type="note" data-title="" id="15fd260a_686"><p>SetEventInterval(val)</p></aside><p id="15fd260a_687"><span class="control" id="15fd260a_688">Example</span></p><div class="code-block" data-lang="javascript"         >
+// 이벤트 발생시간 3초 설정
+vizcore.Animation.SetEventInterval(3000);
+</div><p id="15fd260a_690"><span class="control" id="15fd260a_691">Parameters</span></p><div class="table-wrapper"><table class="wide" id="15fd260a_692"><thead><tr class="ijRowHead" id="15fd260a_693"><th id="15fd260a_694"><p>Name</p></th><th id="15fd260a_695"><p>Type</p></th><th id="15fd260a_696"><p>Description</p></th></tr></thead><tbody><tr id="15fd260a_697"><td id="15fd260a_698"><p>val</p></td><td id="15fd260a_699"><p>Number</p></td><td id="15fd260a_700"><p>이벤트 발생 시간(ms)</p></td></tr></tbody></table></div><ol class="list _decimal"></ol></div ></div></section></section><section class="chapter"><h2 id="setplaytime" data-toc="setplaytime"   >SetPlayTime</h2><section class="procedure-steps"   > <div class="collapse" ><div class="collapse__title"  ><h3 id="15fd260a_701" data-toc="15fd260a_701">애니메이션 재생 시간 설정</h3 ></div><div class="collapse__content" ><aside class="prompt" data-type="note" data-title="" id="15fd260a_702"><p>SetPlayTime(tick)</p></aside><p id="15fd260a_703"><span class="control" id="15fd260a_704">Example</span></p><div class="code-block" data-lang="javascript"         >
+//애니메이션 재생 시간 5초 설정
+vizcore.Animation.SetPlayTime(5000);
+</div><p id="15fd260a_706"><span class="control" id="15fd260a_707">Parameters</span></p><div class="table-wrapper"><table class="wide" id="15fd260a_708"><thead><tr class="ijRowHead" id="15fd260a_709"><th id="15fd260a_710"><p>Name</p></th><th id="15fd260a_711"><p>Type</p></th><th id="15fd260a_712"><p>Description</p></th></tr></thead><tbody><tr id="15fd260a_713"><td id="15fd260a_714"><p>tick</p></td><td id="15fd260a_715"><p>Number</p></td><td id="15fd260a_716"><p>Animation 재생 시간</p></td></tr></tbody></table></div><ol class="list _decimal"></ol></div ></div></section></section><section class="chapter"><h2 id="setrestorestatus" data-toc="setrestorestatus"   >SetRestoreStatus</h2><section class="procedure-steps"   > <div class="collapse" ><div class="collapse__title"  ><h3 id="15fd260a_717" data-toc="15fd260a_717">애니메이션 재생 시 자동 색상 복원 설정</h3 ></div><div class="collapse__content" ><aside class="prompt" data-type="note" data-title="" id="15fd260a_718"><p>SetRestoreStatus(enable)</p></aside><p id="15fd260a_719"><span class="control" id="15fd260a_720">Example</span></p><div class="code-block" data-lang="javascript"         >
+// 자동 색상 복원 설정
+vizcore.Animation.SetRestoreStatus(true);
+</div><p id="15fd260a_722"><span class="control" id="15fd260a_723">Parameters</span></p><div class="table-wrapper"><table class="wide" id="15fd260a_724"><thead><tr class="ijRowHead" id="15fd260a_725"><th id="15fd260a_726"><p>Name</p></th><th id="15fd260a_727"><p>Type</p></th><th id="15fd260a_728"><p>Description</p></th></tr></thead><tbody><tr id="15fd260a_729"><td id="15fd260a_730"><p>enable</p></td><td id="15fd260a_731"><p>Boolean</p></td><td id="15fd260a_732"><p>활성화/비활성화</p></td></tr></tbody></table></div><ol class="list _decimal"></ol></div ></div></section></section><section class="chapter"><h2 id="setstartdate" data-toc="setstartdate"   >SetStartDate</h2><section class="procedure-steps"   > <div class="collapse" ><div class="collapse__title"  ><h3 id="15fd260a_733" data-toc="15fd260a_733">애니메이션 시작일 지정</h3 ></div><div class="collapse__content" ><aside class="prompt" data-type="note" data-title="" id="15fd260a_734"><p>SetStartDate(date, offset)</p></aside><p id="15fd260a_735"><span class="control" id="15fd260a_736">Example</span></p><div class="code-block" data-lang="javascript"         >
+// 애니메이션 시작일 지정
+vizcore.Animation.SetStartDate(                     
+new Date(2022,7, 9)                           // 시작일
+,1);                                          // 1초 재생시간 기준 1 Day 변화
+</div><p id="15fd260a_738"><span class="control" id="15fd260a_739">Parameters</span></p><div class="table-wrapper"><table class="wide" id="15fd260a_740"><thead><tr class="ijRowHead" id="15fd260a_741"><th id="15fd260a_742"><p>Name</p></th><th id="15fd260a_743"><p>Type</p></th><th id="15fd260a_744"><p>Description</p></th></tr></thead><tbody><tr id="15fd260a_745"><td id="15fd260a_746"><p>date</p></td><td id="15fd260a_747"><p>Date</p></td><td id="15fd260a_748"><p>시작일</p></td></tr><tr id="15fd260a_749"><td id="15fd260a_750"><p>offset</p></td><td id="15fd260a_751"><p>Number</p></td><td id="15fd260a_752"><p>재생시간(1초)에 따른 Date 변화량(Day)</p></td></tr></tbody></table></div><ol class="list _decimal"></ol></div ></div></section></section><section class="chapter"><h2 id="start" data-toc="start"   >Start</h2><section class="procedure-steps"   > <div class="collapse" ><div class="collapse__title"  ><h3 id="15fd260a_753" data-toc="15fd260a_753">애니메이션 시작</h3 ></div><div class="collapse__content" ><aside class="prompt" data-type="note" data-title="" id="15fd260a_754"><p>Start()</p></aside><p id="15fd260a_755"><span class="control" id="15fd260a_756">Example</span></p><div class="code-block" data-lang="javascript"         >
+// 애니메이션 시작
+vizcore.Animation.Start();
+</div><ol class="list _decimal"></ol></div ></div></section></section><section class="chapter"><h2 id="startnoteanimation" data-toc="startnoteanimation"   >StartNoteAnimation</h2><section class="procedure-steps"   > <div class="collapse" ><div class="collapse__title"  ><h3 id="15fd260a_758" data-toc="15fd260a_758">노트 애니메이션 재생(시작)</h3 ></div><div class="collapse__content" ><aside class="prompt" data-type="note" data-title="" id="15fd260a_759"><p>StartNoteAnimation()</p></aside><p id="15fd260a_760"><span class="control" id="15fd260a_761">Example</span></p><div class="code-block" data-lang="javascript"         >
+//노트 애니메이션 재생
+vizcore.Animation.StartNoteAnimation();       
+</div><ol class="list _decimal"></ol></div ></div></section></section><section class="chapter"><h2 id="stop" data-toc="stop"   >Stop</h2><section class="procedure-steps"   > <div class="collapse" ><div class="collapse__title"  ><h3 id="15fd260a_763" data-toc="15fd260a_763">애니메이션 정지</h3 ></div><div class="collapse__content" ><aside class="prompt" data-type="note" data-title="" id="15fd260a_764"><p>Stop()</p></aside><p id="15fd260a_765"><span class="control" id="15fd260a_766">Example</span></p><div class="code-block" data-lang="javascript"         >
+//애니메이션 정지
+vizcore.Animation.Stop();
+</div><ol class="list _decimal"></ol></div ></div></section></section><section class="chapter"><h2 id="event-listener" data-toc="event-listener"   >--- Event Listener ---</h2></section><section class="chapter"><h2 id="onchangedframeevent" data-toc="onchangedframeevent"   >OnChangedFrameEvent</h2><section class="procedure-steps"   > <div class="collapse" ><div class="collapse__title"  ><h3 id="15fd260a_768" data-toc="15fd260a_768">애니메이션 재생 이벤트 등록</h3 ></div><div class="collapse__content" ><aside class="prompt" data-type="note" data-title="" id="15fd260a_769"><p>OnChangedFrameEvent(listener)</p></aside><p id="15fd260a_770"><span class="control" id="15fd260a_771">Example</span></p><div class="code-block" data-lang="javascript"         >
+
+// Event : onChangedFrameEvent
+let onChangedFrameEvent = function (event) {
+    console.log(event.data);
+}
+
+// Add Event Handler : 애니메이션 재생 이벤트
+vizcore.Animation.OnChangedFrameEvent(onChangedFrameEvent);
+</div><p id="15fd260a_773"><span class="control" id="15fd260a_774">Parameters</span></p><div class="table-wrapper"><table class="wide" id="15fd260a_775"><thead><tr class="ijRowHead" id="15fd260a_776"><th id="15fd260a_777"><p>Name</p></th><th id="15fd260a_778"><p>Type</p></th><th id="15fd260a_779"><p>Description</p></th></tr></thead><tbody><tr id="15fd260a_780"><td id="15fd260a_781"><p>listener</p></td><td id="15fd260a_782"><p>Object</p></td><td id="15fd260a_783"><p>Event Listener</p></td></tr></tbody></table></div><ol class="list _decimal"></ol></div ></div></section></section><section class="chapter"><h2 id="onchangedplaytimeevent" data-toc="onchangedplaytimeevent"   >OnChangedPlayTimeEvent</h2><section class="procedure-steps"   > <div class="collapse" ><div class="collapse__title"  ><h3 id="15fd260a_784" data-toc="15fd260a_784">애니메이션 재생 시간 변경 이벤트 등록</h3 ></div><div class="collapse__content" ><aside class="prompt" data-type="note" data-title="" id="15fd260a_785"><p>OnChangedPlayTimeEvent(listener)</p></aside><p id="15fd260a_786"><span class="control" id="15fd260a_787">Example</span></p><div class="code-block" data-lang="javascript"         >
+
+// Event : onChangedPlayTimeEvent
+let onChangedPlayTimeEvent = function (event) {
+    console.log(event);
+}
+
+// Add Event Handler : 애니메이션 재생 시간 변경 이벤트
+vizcore.Animation.OnChangedPlayTimeEvent(onChangedPlayTimeEvent);
+</div><p id="15fd260a_789"><span class="control" id="15fd260a_790">Parameters</span></p><div class="table-wrapper"><table class="wide" id="15fd260a_791"><thead><tr class="ijRowHead" id="15fd260a_792"><th id="15fd260a_793"><p>Name</p></th><th id="15fd260a_794"><p>Type</p></th><th id="15fd260a_795"><p>Description</p></th></tr></thead><tbody><tr id="15fd260a_796"><td id="15fd260a_797"><p>listener</p></td><td id="15fd260a_798"><p>Object</p></td><td id="15fd260a_799"><p>Event Listener</p></td></tr></tbody></table></div><ol class="list _decimal"></ol></div ></div></section></section><div class="last-modified"> Last modified: 11 1월 2024</div><div data-feedback-placeholder="true"></div><div class="navigation-links _bottom">  <a class="navigation-links__prev" href="initialization.html">Initialization</a>   <a class="navigation-links__next" href="contextmenu.html">ContextMenu</a>  </div></article><div id="disqus_thread"></div></div></section></main></div>  <script src="https://resources.jetbrains.com/writerside/apidoc/6.6.6-b205/app.js"></script></body></html>
