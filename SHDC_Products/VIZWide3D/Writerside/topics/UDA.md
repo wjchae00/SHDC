@@ -339,7 +339,7 @@ let uda_NodeID = vizcore.Object3D.UDA.Select("NAME", "/NO1_FLEX_G3");
 </procedure> 
 
 ## SetCustomDataByNodeID
-<procedure title="휘발성 사용자 정의 속성 설정 속성 최상단에 추가 Object 선택 이벤트와 연동하여 사용 권장" collapsible="true">
+<procedure title="휘발성 사용자 정의 속성 설정" collapsible="true">
 <note>SetCustomDataByNodeID(id, items)</note>
 
 **Example**
@@ -352,6 +352,7 @@ for (let index = 0; index < 3; index++) {
     items.push(item);
 }
 //사용자 정의 속성 설정 속성
+//※속성 최상단에 표시됨
 vizcore.Object3D.UDA.SetCustomDataByNodeID(id, items);
 ```
 **Parameters**

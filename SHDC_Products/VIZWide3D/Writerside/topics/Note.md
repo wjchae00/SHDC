@@ -1,28 +1,19 @@
 # Note
 
 ## AddNote
-<procedure title="3D 노트 추가" collapsible="true">
+<procedure title="노트 추가" collapsible="true">
 <note>AddNote(note) → {String}</note>
 
 **Example**
 ```Javascript
-//3D 노트 생성
+//노트 객체 생성
 let note = vizcore.Review.Note.NewNote3D();
+//or
+//let note = vizcore.Review.Note.NewNote2D();
+//let note = vizcore.Review.Note.NewNoteSurface();
+//let note = vizcore.Review.Note.NewImageNote();
 
-let text = [];                  //Array<String>
-text.push('3D Note #1');
-text.push('3D Note #2');
-
-note.text.value = text;             //value
-note.text.position = new VIZCore.Vector3(1000, 2000, 3000);         //생성 위치
-
-note.style.font.size = 10;
-note.style.font.color.set(0, 56, 101, 255);          // R, G, B, A
-note.style.border.type = 1;                          // 0 (Rectangle), 1(Rounded Rectangle)
-note.style.border.color.set(41, 143, 194, 255);      // R, G, B, A
-note.style.background.color.set(255, 255, 255, 200); // R, G, B, A
-
-//3D 노트 추가
+//노트 추가
 let noteId = vizcore.Review.Note.AddNote(note);
 ```
 **Parameters**
@@ -146,7 +137,7 @@ vizcore.Render();
 </procedure>
 
 ## NewImageNote
-<procedure title="이미지 노트 추가" collapsible="true">
+<procedure title="이미지 노트 객체 생성" collapsible="true">
 <note>NewImageNote(image, size) → {Object}</note>
 
 **Example**
@@ -155,34 +146,32 @@ vizcore.Render();
 let img = new Image();
 img.src = 'image.jpg';
 img.onload = function () {
-let note = vizcore.Review.Note.NewImageNote(img); //image src size
-//let note = vizcore.Review.Note.NewImageNote(img, new VIZCore.Vector2(128, 128)); //set image Size
-
+    let note = vizcore.Review.Note.NewImageNote(img); //image src size
+    //let note = vizcore.Review.Note.NewImageNote(img, new VIZCore.Vector2(128, 128)); //set image Size
+    
      let text = [];                                       //Array<String>
      text.push('Image Note #1');
      text.push('Image Note #2');
-
+    
      note.text.value = text;
      note.text.position = new VIZCore.Vector3(0, 0, 0);          // Text
      note.drawitem.position.push(new VIZCore.Vector3(1000, 6000, 6000));  // Image Postion
-
+    
      note.style.font.size = 10;
      note.style.font.color.set(0, 56, 101, 255);          // R, G, B, A
-
+    
      note.style.border.enable = false;
      note.style.border.type = 1;                          // 0 (Rectangle), 1(Rounded Rectangle)
      note.style.border.color.set(41, 143, 194, 255);      // R, G, B, A
-
+    
      note.style.background.enable = false;
      note.style.background.color.set(255, 255, 255, 200); // R, G, B, A
-
+    
      note.style.arrow.color.set(255, 0, 0, 255);          // R, G, B, A
      note.style.arrow.size = 10;
-
+    
      note.style.line.color.set(0, 0, 0, 255);             // R, G, B, A
      note.style.line.thickness = 4;
-
-     let noteId = vizcore.Review.Note.AddNote(note);
 };
 ```
 **Parameters**
@@ -200,8 +189,39 @@ let note = vizcore.Review.Note.NewImageNote(img); //image src size
 
 </procedure>
 
+## NewNote2D
+<procedure title="2D 노트 객체 생성" collapsible="true">
+
+<note>NewNote2D() → {Object}</note>
+
+**Example**
+```Javascript
+//2D 노트 생성
+let note = vizcore.Review.Note.NewNote2D();
+
+let text = [];                           //Array<String>
+text.push('2D Note #1');
+text.push('2D Note #2');
+
+note.text.value = text;                     //value
+note.text.position = new VIZCore.Vector2(1000, 2000, 3000);             //생성 위치
+
+note.style.font.size = 10;
+note.style.font.color.set(0, 56, 101, 255);          // R, G, B, A
+note.style.border.type = 1;                          // 0 (Rectangle), 1(Rounded Rectangle)
+note.style.border.color.set(41, 143, 194, 255);      // R, G, B, A
+note.style.background.color.set(255, 255, 255, 200); // R, G, B, A
+```
+**Returns**
+
+| Type   | Description |
+|--------|-------------|
+| Object | Note Object |
+
+</procedure>
+
 ## NewNote3D
-<procedure title="3D 노트 추가" collapsible="true">
+<procedure title="3D 노트 객체 생성" collapsible="true">
 
 <note>NewNote3D() → {Object}</note>
 
@@ -222,8 +242,6 @@ note.style.font.color.set(0, 56, 101, 255);          // R, G, B, A
 note.style.border.type = 1;                          // 0 (Rectangle), 1(Rounded Rectangle)
 note.style.border.color.set(41, 143, 194, 255);      // R, G, B, A
 note.style.background.color.set(255, 255, 255, 200); // R, G, B, A
-//3D 노트 추가
-let noteId = vizcore.Review.Note.AddNote(note);
 ```
 **Returns**
 
@@ -234,7 +252,7 @@ let noteId = vizcore.Review.Note.AddNote(note);
 </procedure>
 
 ## NewNoteSurface
-<procedure title="표면 노트 추가" collapsible="true">
+<procedure title="표면 노트 객체 생성" collapsible="true">
 <note>NewNoteSurface() → {Object}</note>
 
 **Example**
@@ -261,8 +279,6 @@ note.style.arrow.size = 10;
 
 note.style.line.color.set(0, 0, 0, 255);             // R, G, B, A
 note.style.line.thickness = 4;
-//노트 정보 추가
-let noteId = vizcore.Review.Note.AddNote(note);
 ```
 **Returns**
 

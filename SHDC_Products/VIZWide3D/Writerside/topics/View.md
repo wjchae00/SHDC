@@ -938,7 +938,7 @@ vizcore.View.SetCameraData(camera);
 </procedure>
 
 ## SetCameraDataByMatrix
-<procedure title="피벗 위치로 화면 중심이동" collapsible="true">
+<procedure title="매트릭스로 화면 이동" collapsible="true">
 <note>SetCameraDataByMatrix(matrix, zoom)</note>
 
 **Example**

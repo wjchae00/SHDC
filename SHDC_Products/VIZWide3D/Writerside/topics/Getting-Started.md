@@ -30,7 +30,7 @@ IIS 관리자를 열고 VIZWide3D 실행 시 ".wasm" MIME 형식이 중복됐을
 
 ![](500Error.png)
 
-VIZWide3D 폴더의 web.comfig 파일을 열고 ".wasm" mimeMap을 제외하여 해결
+VIZWide3D 폴더의 web.config 파일을 열고 ".wasm" mimeMap을 제외하여 해결
 
 ![](mimeMap.png)
 
