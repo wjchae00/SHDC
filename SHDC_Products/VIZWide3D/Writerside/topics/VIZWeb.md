@@ -169,6 +169,17 @@ vizcore.Clear();
 ```
 </procedure>
 
+## Connect
+<procedure title="VIZCore 라이선스 서버 연결" collapsible="true">
+<note>Connect()</note>
+
+**Example**
+```Javascript
+//VIZCore 라이선스 서버 연결
+vizcore.Connect();
+```
+</procedure>
+
 ## Disconnect
 <procedure title="VIZCore 라이선스 서버 연결 해제" collapsible="true">
 <note>Disconnect()</note>
