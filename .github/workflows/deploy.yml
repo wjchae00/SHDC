@@ -11,19 +11,19 @@ on:
 
 env:
     # Name of module and id separated by a slash
-    INSTANCE: Writerside/VIZWide3D
+    INSTANCE: Writerside/in
     # Replace HI with the ID of the instance in capital letters
-    ARTIFACT: webHelpVIZWIDE3D2-all.zip
+    ARTIFACT: webHelpIN2-all.zip
     # Writerside docker image version
-    DOCKER_VERSION: 233.14272
+    DOCKER_VERSION: 241.15989
 # Add the variable below to upload Algolia indexes
 # Replace HI with the ID of the instance in capital letters
-    ALGOLIA_ARTIFACT: algolia-indexes-VIZWIDE3D.zip
+    ALGOLIA_ARTIFACT: algolia-indexes-IN.zip
     
-    ALGOLIA_APP_NAME: 646SQZ8Y4F
-    ALGOLIA_INDEX_NAME: PROD_SHDC
+    ALGOLIA_APP_NAME: DSG85W6A71
+    ALGOLIA_INDEX_NAME: test
     ALGOLIA_KEY: ${{ secrets.ALGOLIA_KEY }}
-    CONFIG_JSON_PRODUCT: VIZWide3D
+    CONFIG_JSON_PRODUCT: IN
     CONFIG_JSON_VERSION: 1.0
   
 jobs:
@@ -31,7 +31,7 @@ jobs:
         runs-on: ubuntu-latest
         steps:
             - name: Checkout repository
-              uses: actions/checkout@v3
+              uses: actions/checkout@v4
 
             - name: Build Writerside docs using Docker
               uses: JetBrains/writerside-github-action@v4
@@ -51,7 +51,7 @@ jobs:
 
 # Add the step below to upload Algolia indexes
             - name: Upload algolia-indexes
-              uses: actions/upload-artifact@v3
+              uses: actions/upload-artifact@v4
               with:
                 name: algolia-indexes
                 path: artifacts/${{ env.ALGOLIA_ARTIFACT }}
@@ -80,11 +80,11 @@ jobs:
         needs: build
         runs-on: ubuntu-latest
         container:
-            image: registry.jetbrains.team/p/writerside/builder/algolia-publisher:2.0.32-2
+            image: registry.jetbrains.team/p/writerside/builder/algolia-publisher:2.0.32-3
     
         steps:
             - name: Download artifact
-              uses: actions/download-artifact@v3
+              uses: actions/download-artifact@v4
               with:
                 name: algolia-indexes
             - name: Unzip artifact
