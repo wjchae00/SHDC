@@ -11,14 +11,14 @@ on:
 
 env:
     # Name of module and id separated by a slash
-    INSTANCE: Writerside/in
+    INSTANCE: Writerside/VIZWide3D
     # Replace HI with the ID of the instance in capital letters
-    ARTIFACT: webHelpIN2-all.zip
+    ARTIFACT: webHelpVIZWIDE3D2-all.zip
     # Writerside docker image version
     DOCKER_VERSION: 241.15989
 # Add the variable below to upload Algolia indexes
 # Replace HI with the ID of the instance in capital letters
-    ALGOLIA_ARTIFACT: algolia-indexes-IN.zip
+    ALGOLIA_ARTIFACT: algolia-indexes-VIZWide3D.zip
     
     ALGOLIA_APP_NAME: DSG85W6A71
     ALGOLIA_INDEX_NAME: test
