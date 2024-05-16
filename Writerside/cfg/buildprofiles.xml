@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<buildprofiles xsi:noNamespaceSchemaLocation="https://resources.jetbrains.com/writerside/1.0/build-profiles.xsd"
+               xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+
+    <variables>
+    </variables>
+    <build-profile instance="in">
+        <variables>
+            <noindex-content>true</noindex-content>
+            <algolia-id>DSG85W6A71</algolia-id>
+            <algolia-index>test</algolia-index>
+            <algolia-api-key>3f4de1a0c3c2a14f1e4903f28c7f17a2</algolia-api-key>
+            <web-root>https://some.domain</web-root>
+        </variables>
+    </build-profile>
+    <build-profile instance="v">
+        <variables>
+            <noindex-content>true</noindex-content>
+        </variables>
+    </build-profile>
+    <build-profile instance="NewInstance">
+        <variables>
+            <algolia-id>DSG85W6A71</algolia-id>
+            <algolia-index>test</algolia-index>
+            <algolia-api-key>3f4de1a0c3c2a14f1e4903f28c7f17a2</algolia-api-key>
+            <web-root>https://some.domain</web-root>
+            <noindex-content>false</noindex-content>
+        </variables>
+    </build-profile>
+
+</buildprofiles>
